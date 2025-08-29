@@ -19,7 +19,7 @@ git clone https://github.com/yundongjun/ItelLastProject.git
 
 # git에 올릴때마다 해야될 일
 
-1. git에 올리기
+1. 원격 repository 동기화
 
    1-1. 전에 받았던 내용 기준으로 올릴 경우
    ```
