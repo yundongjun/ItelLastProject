@@ -4,20 +4,39 @@ import numpy as np
 from ultralytics import YOLO
 import torch
 import os
+import socket
+import threading
+import time
 
-# YOLO 모델 로드
+# --- Socket Client Configuration ---
+SERVER_HOST = "10.10.16.166"   # 서버 IP (외부라면 IP 바꾸면 됨)
+SERVER_PORT = 5000          # 서버 포트 (ROS2 노드 launch 파라미터와 맞추기)
+
+# --- YOLO Model Loading ---
 print("Loading custom model...")
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = YOLO('runs/detect/person_and_flame_detector/weights/best.pt')
 model.to(device)
 print(f"Custom model loaded successfully on {device}.")
 
-# 원본 MJPEG 스트림 URL
+# --- MJPEG Stream URL ---
 MJPEG_URL = "http://10.10.16.78:8080/?action=stream"
 
-def display_stream():
+def recv_loop(sock: socket.socket):
+    """서버에서 오는 메시지 수신 및 출력"""
+    try:
+        while True:
+            data = sock.recv(1024)
+            if not data:
+                print("🔌 서버 연결이 끊어졌습니다.")
+                break
+            print("📥 From Server:", data.decode().strip())
+    except Exception as e:
+        print(f"❌ 수신 중 에러 발생: {e}")
+        
+def display_stream(sock: socket.socket):
     """
-    스트림에서 프레임을 가져와 YOLO 처리를 한 후, 불꽃을 감지하여 화면에 표시하고, 지도에 위치를 매핑합니다.
+    스트림에서 프레임을 가져와 YOLO 처리를 하고, 감지된 객체의 좌표를 서버로 전송합니다.
     """
     # 호모그래피 행렬 및 지도 로드
     homography_path = 'homography_matrix.npy'
@@ -42,11 +61,8 @@ def display_stream():
         print("Connection to source stream successful.")
         
         bytes_buffer = bytes()
-        lower_flame = np.array([10, 100, 200])
-        upper_flame = np.array([40, 255, 255])
 
         while True:
-            # 스트림에서 프레임 읽기
             bytes_buffer += stream.raw.read(4096)
             start = bytes_buffer.find(b'\xff\xd8')
             end = bytes_buffer.find(b'\xff\xd9')
@@ -63,7 +79,6 @@ def display_stream():
                 annotated_frame = frame.copy()
                 map_display = map_img.copy()
 
-                # 객체 감지
                 results = model(frame, verbose=False, conf=0.1)
 
                 for r in results:
@@ -81,26 +96,30 @@ def display_stream():
                                 label = f"Person: {conf:.2f}"
                                 color = (0, 255, 0) # Green
 
-                            # 원본 프레임에 바운딩 박스 그리기
                             cv2.rectangle(annotated_frame, (x1, y1), (x2, y2), color, 2)
                             cv2.putText(annotated_frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
 
-                            # 중심 좌표 계산
                             center_x = (x1 + x2) // 2
                             center_y = (y1 + y2) // 2
 
-                            # 중심 좌표를 지도 좌표로 변환
                             pts = np.array([[[center_x, center_y]]], dtype=np.float32)
                             transformed_pts = cv2.perspectiveTransform(pts, homography_matrix)
                             map_x = int(transformed_pts[0][0][0])
                             map_y = int(transformed_pts[0][0][1])
-
-                            # 지도에 위치 표시
+                            
+                            # --- 좌표 전송 ---
+                            try:
+                                msg = f"{map_x},{map_y}\n"
+                                sock.sendall(msg.encode())
+                                print(f"📤 Sent coordinates: ({map_x}, {map_y}) for {class_name}")
+                            except Exception as e:
+                                print(f"❌ 좌표 전송 에러: {e}")
+                                # 여기서 연결을 끊고 재시도 로직을 추가할 수도 있습니다.
+                                
                             if 0 <= map_x < map_display.shape[1] and 0 <= map_y < map_display.shape[0]:
                                 cv2.circle(map_display, (map_x, map_y), 10, color, -1)
                                 cv2.putText(map_display, class_name, (map_x + 15, map_y + 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-                # 결과 보여주기
                 cv2.imshow('Detection', annotated_frame)
                 cv2.imshow('Map', map_display)
 
@@ -116,5 +135,28 @@ def display_stream():
         print("Closing stream and windows.")
         cv2.destroyAllWindows()
 
+def main():
+    """소켓을 생성하고 서버에 연결한 후, 스트림 처리를 시작합니다.""" 
+    # TCP 소켓 생성
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        print(f"Attempting to connect to server at {SERVER_HOST}:{SERVER_PORT}...")
+        sock.connect((SERVER_HOST, SERVER_PORT))
+        print(f"✅ 서버({SERVER_HOST}:{SERVER_PORT}) 연결 성공")
+
+        # 서버 수신용 스레드 시작
+        threading.Thread(target=recv_loop, args=(sock,), daemon=True).start()
+
+        # 비디오 스트림 처리 및 좌표 전송 시작
+        display_stream(sock)
+
+    except ConnectionRefusedError:
+        print(f"❌ Connection to server ({SERVER_HOST}:{SERVER_PORT}) failed. Is the server running?")
+    except Exception as e:
+        print(f"❌ An error occurred during socket connection: {e}")
+    finally:
+        print("⏹️ Closing client.")
+        sock.close()
+
 if __name__ == '__main__':
-    display_stream()
+    main()
