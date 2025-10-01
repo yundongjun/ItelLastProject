@@ -1,13 +1,6 @@
-train: train/images
-val: valid/images
-test: test/images
+train: dataset/images/train
+val: dataset/images/valid
+test: dataset/images/test
 
 nc: 2
-names: ['Fire_Dangerous', 'Fire_Save']
-
-roboflow:
-  workspace: fire-u8uti
-  project: fire-enofj
-  version: 4
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/fire-u8uti/fire-enofj/dataset/4
+names: ['fire', 'person']
