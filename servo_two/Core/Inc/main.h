@@ -76,6 +76,8 @@ void Error_Handler(void);
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
+#define water_Pin GPIO_PIN_7
+#define water_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

@@ -36,9 +36,9 @@ typedef enum { MODE_IDLE = 0, MODE_GRID, MODE_TRACK } control_mode_t;
 /* USER CODE BEGIN PD */
 /* 서보 펄스폭(us) 보정: 필요하면 미세 조정 */
 #define SERVO1_MIN_US   1000   /* Pan  0°  */
-#define SERVO1_MAX_US   2000  /* Pan  180° */
+#define SERVO1_MAX_US   2000   /* Pan  180° */
 #define SERVO2_MIN_US   1000   /* Tilt 0°  */
-#define SERVO2_MAX_US   2000  /* Tilt 180° */
+#define SERVO2_MAX_US   2000   /* Tilt 180° */
 
 /* 방향이 반대면 1로 바꿔서 반전 */
 #define SERVO1_INVERT   1
@@ -47,10 +47,6 @@ typedef enum { MODE_IDLE = 0, MODE_GRID, MODE_TRACK } control_mode_t;
 /* 기본 자세(미검출일 때) */
 #define PAN_DEFAULT_DEG    90   /* 정면 */
 #define TILT_DEFAULT_DEG    90
-//#define PAN_MIN_DEG    45
-//#define PAN_MAX_DEG   135
-//#define TILT_MIN_DEG   70
-//#define TILT_MAX_DEG  110
 
 /* 스무딩 속도(한 틱당 각도 변화) & 제어주기 */
 #define STEP_DEG            3.0f
@@ -58,6 +54,10 @@ typedef enum { MODE_IDLE = 0, MODE_GRID, MODE_TRACK } control_mode_t;
 
 /* 추적 신호 타임아웃(미검출 판정) */
 #define DETECT_TIMEOUT_MS 1000u
+
+/* [WATER+] 워터 스프레이: Active-Low (PB7=user label: water) */
+#define WATER_ON()   HAL_GPIO_WritePin(water_GPIO_Port, water_Pin, GPIO_PIN_RESET) /* Low=ON  */
+#define WATER_OFF()  HAL_GPIO_WritePin(water_GPIO_Port, water_Pin, GPIO_PIN_SET)   /* High=OFF */
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -88,7 +88,11 @@ static uint32_t last_detect_ms = 0;
 /* 9분할 프리셋 (좌/중/우, 상/중/하) — 필요시 값 튜닝 */
 static const uint8_t GRID_PAN[3]  = { 30,  90, 150 };  /* 좌 중 우 */
 static const uint8_t GRID_TILT[3] = {120,  90,  60 };  /* 상 중 하 (기구에 맞게 조절) */
-//static uint8_t boost_ticks = 0;   // 킥을 줄 틱 수(20ms 단위)
+//static uint8_t boost_ticks = 0;
+
+/* [WATER+] 스프레이 타이머 상태 */
+static volatile uint8_t  spray_active = 0;
+static uint32_t          spray_off_tick = 0;  /* HAL_GetTick() 기준 오프 시각 */
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -105,7 +109,6 @@ static void     apply_default_pose(void);
 static void     set_grid_cell(uint8_t cell_1to9);
 static void     set_track_xy(float x, float y);
 static void     handle_line(char *line);
-//static inline float clampf(float v, float lo, float hi);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -153,12 +156,8 @@ static void set_grid_cell(uint8_t cell_1to9)
   uint8_t col = idx % 3;   /* 0=좌,1=중,2=우 */
   pan_tgt  = GRID_PAN[col];
   tilt_tgt = GRID_TILT[row];
-//  pan_tgt  = clampf(pan_tgt,  PAN_MIN_DEG,  PAN_MAX_DEG);
-//  tilt_tgt = clampf(tilt_tgt, TILT_MIN_DEG, TILT_MAX_DEG);
-//  boost_ticks = 15; // 15*20ms = 300ms 동안 가속
 }
 
-/* 정규화 좌표 기반 추적 (x:0~1 좌→우, y:0~1 상→하) */
 static void set_track_xy(float x, float y)
 {
   if (x < 0) x = 0; if (x > 1) x = 1;
@@ -166,12 +165,10 @@ static void set_track_xy(float x, float y)
   mode = MODE_TRACK;
   pan_tgt  = 180.0f * x;
   tilt_tgt = 180.0f * y;
-  //pan_tgt  = clampf(pan_tgt,  PAN_MIN_DEG,  PAN_MAX_DEG);
-  //tilt_tgt = clampf(tilt_tgt, TILT_MIN_DEG, TILT_MAX_DEG);
   last_detect_ms = HAL_GetTick();
 }
 
-/* 한 줄 명령: "N" / "C 5" / "T 0.45 0.62" */
+/* 한 줄 명령: "N" / "C 5" / "T 0.45 0.62" + [WATER+] "SPRAY" */
 static void handle_line(char *line)
 {
   char *cmd = strtok(line, " \t\r\n");
@@ -187,33 +184,38 @@ static void handle_line(char *line)
     char *sy = strtok(NULL, " \t\r\n");
     if (sx && sy) set_track_xy(strtof(sx, NULL), strtof(sy, NULL));
   }
+  /* [WATER+] SPRAY: 5초간 분사 후 자동 OFF */
+  else if (strcmp(cmd, "SPRAY") == 0) {
+    WATER_ON();                               /* Active-Low: Low=ON */
+    spray_active   = 1;
+    spray_off_tick = HAL_GetTick() + 5000U;   /* 5초 */
+  }
 }
 
-/* UART 인터럽트: '\n' 기준으로 라인 수신 */
+/* UART 인터럽트: 줄끝을 CR(0x0D) 또는 LF(0x0A)로 인식하도록 수정 */
+// [CRLF]
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
   if (huart->Instance == USART2) {
     uint8_t c = rx_byte;
 
-    if (c == '\n' || rx_idx >= sizeof(rx_line) - 1) {
-      rx_line[rx_idx] = '\0';
-      handle_line(rx_line);            // ← 여기서 N/C/T 명령 처리
-      rx_idx = 0;
+    if (c == '\r' || c == '\n' || rx_idx >= sizeof(rx_line) - 1) {
+      if (rx_idx > 0) {               /* CRLF 두 번 들어와도 한 번만 처리 */
+        rx_line[rx_idx] = '\0';
+        handle_line(rx_line);
+        rx_idx = 0;
 
-      // 개행(한 줄 완성) 시에만 OK 에코
-      const char ok[] = "OK\r\n";
-      HAL_UART_Transmit(&huart2, (uint8_t*)ok, sizeof(ok)-1, 10);
-    } else if (c != '\r') {
+        const char ok[] = "OK\r\n";
+        HAL_UART_Transmit(&huart2, (uint8_t*)ok, sizeof(ok)-1, 10);
+      }
+      /* else: 연속된 CR/LF는 무시 */
+    } else {
       rx_line[rx_idx++] = (char)c;
     }
 
-    HAL_UART_Receive_IT(&huart2, &rx_byte, 1); // 다음 글자 수신 재개
+    HAL_UART_Receive_IT(&huart2, &rx_byte, 1);
   }
 }
-
-//static inline float clampf(float v, float lo, float hi){
-//  return v < lo ? lo : (v > hi ? hi : v);
-//}
 /* USER CODE END 0 */
 
 /**
@@ -229,37 +231,29 @@ int main(void)
 
   /* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
   SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
+
   /* USER CODE BEGIN 2 */
   /* PWM 시작 */
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); /* servo1: Pan */
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2); /* servo2: Tilt */
-  // ===== Servo self-test (임시) =====
+
+  /* Self-test */
   servo1_set_deg(90);  servo2_set_deg(90);  HAL_Delay(800);
   servo1_set_deg(60);  servo2_set_deg(60);  HAL_Delay(800);
   servo1_set_deg(120); servo2_set_deg(120); HAL_Delay(800);
-  // ===== end self-test =====
 
-  /* 기본 자세 적용 */
+  /* 기본 자세 */
   servo1_set_deg(PAN_DEFAULT_DEG);
   servo2_set_deg(TILT_DEFAULT_DEG);
+
+  /* [WATER+] 부팅 시 확실히 OFF */
+  WATER_OFF();
 
   /* UART 라인 수신 시작 */
   const char *hello = "READY\r\n";
@@ -271,7 +265,6 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* 20 ms 주기로 스무딩 적용 */
@@ -284,32 +277,36 @@ int main(void)
         apply_default_pose();
       }
 
+      /* [WATER+] 5초 지나면 자동 OFF */
+      if (spray_active && (int32_t)(HAL_GetTick() - spray_off_tick) >= 0) {
+        WATER_OFF();
+        spray_active = 0;
+      }
+
       /* 각도 범위 제한 & 스무딩 이동 */
       pan_tgt  = clamp_deg_int((int)lroundf(pan_tgt));
       tilt_tgt = clamp_deg_int((int)lroundf(tilt_tgt));
       move_toward(&pan_cur,  pan_tgt,  STEP_DEG);
       move_toward(&tilt_cur, tilt_tgt, STEP_DEG);
-      //float step_now = (boost_ticks > 0) ? 6.0f : STEP_DEG;
-      //move_toward(&pan_cur,  pan_tgt,  step_now);
-      //move_toward(&tilt_cur, tilt_tgt, step_now);
-      //if (boost_ticks > 0) boost_ticks--;
 
       servo1_set_deg((uint8_t)lroundf(pan_cur));
       servo2_set_deg((uint8_t)lroundf(tilt_cur));
     }
-    /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
-    // UART polling fallback (non-blocking)
+    /* UART polling fallback (non-blocking) — CR/LF 둘 다 줄끝 처리 */
+    // [CRLF]
     static char pline[64]; static uint8_t pidx=0; uint8_t ch;
     while (HAL_UART_Receive(&huart2, &ch, 1, 0) == HAL_OK) {
-      if (ch == '\n' || pidx >= sizeof(pline)-1) {
-        pline[pidx] = '\0'; handle_line(pline); pidx = 0;
-        const char ok[]="OK\r\n"; HAL_UART_Transmit(&huart2,(uint8_t*)ok,sizeof(ok)-1,10);
-      } else if (ch != '\r') pline[pidx++] = (char)ch;
+      if (ch == '\r' || ch == '\n' || pidx >= sizeof(pline)-1) {
+        if (pidx > 0) {
+          pline[pidx] = '\0'; handle_line(pline); pidx = 0;
+          const char ok[]="OK\r\n"; HAL_UART_Transmit(&huart2,(uint8_t*)ok,sizeof(ok)-1,10);
+        }
+      } else {
+        pline[pidx++] = (char)ch;
+      }
     }
   }
-  /* USER CODE END 3 */
 }
 
 /**
@@ -321,22 +318,14 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) { Error_Handler(); }
 
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
@@ -344,10 +333,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) { Error_Handler(); }
 }
 
 /**
@@ -357,61 +343,31 @@ void SystemClock_Config(void)
   */
 static void MX_TIM2_Init(void)
 {
-
-  /* USER CODE BEGIN TIM2_Init 0 */
-
-  /* USER CODE END TIM2_Init 0 */
-
   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
   TIM_OC_InitTypeDef sConfigOC = {0};
 
-  /* USER CODE BEGIN TIM2_Init 1 */
-
-  /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 63;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 19999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
-  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK) { Error_Handler(); }
   sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
-  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_TIM_PWM_Init(&htim2) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK) { Error_Handler(); }
+  if (HAL_TIM_PWM_Init(&htim2) != HAL_OK) { Error_Handler(); }
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK) { Error_Handler(); }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
   sConfigOC.Pulse = 1500;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1) != HAL_OK) { Error_Handler(); }
   sConfigOC.Pulse = 500;
-  if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM2_Init 2 */
-
-  /* USER CODE END TIM2_Init 2 */
+  if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_2) != HAL_OK) { Error_Handler(); }
   HAL_TIM_MspPostInit(&htim2);
-
 }
 
 /**
@@ -421,14 +377,6 @@ static void MX_TIM2_Init(void)
   */
 static void MX_USART2_UART_Init(void)
 {
-
-  /* USER CODE BEGIN USART2_Init 0 */
-
-  /* USER CODE END USART2_Init 0 */
-
-  /* USER CODE BEGIN USART2_Init 1 */
-
-  /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
   huart2.Init.BaudRate = 115200;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
@@ -437,14 +385,7 @@ static void MX_USART2_UART_Init(void)
   huart2.Init.Mode = UART_MODE_TX_RX;
   huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART2_Init 2 */
-
-  /* USER CODE END USART2_Init 2 */
-
+  if (HAL_UART_Init(&huart2) != HAL_OK) { Error_Handler(); }
 }
 
 /**
@@ -455,38 +396,41 @@ static void MX_USART2_UART_Init(void)
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  /* USER CODE BEGIN MX_GPIO_Init_1 */
 
-  /* USER CODE END MX_GPIO_Init_1 */
-
-  /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
+  /* LD2 */
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : B1_Pin */
+  /* water (Active-Low) — 기본 High=OFF */
+  HAL_GPIO_WritePin(water_GPIO_Port, water_Pin, GPIO_PIN_SET);
+
+  /* B1 */
   GPIO_InitStruct.Pin = B1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : LD2_Pin */
+  /* LD2 */
   GPIO_InitStruct.Pin = LD2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /* EXTI interrupt init*/
+  /* water */
+  GPIO_InitStruct.Pin = water_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(water_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI init */
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
-
-  /* USER CODE BEGIN MX_GPIO_Init_2 */
-
-  /* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
@@ -498,26 +442,12 @@ static void MX_GPIO_Init(void)
   */
 void Error_Handler(void)
 {
-  /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
-  while (1)
-  {
-  }
-  /* USER CODE END Error_Handler_Debug */
+  while (1) { }
 }
 
 #ifdef  USE_FULL_ASSERT
-/**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
 void assert_failed(uint8_t *file, uint32_t line)
 {
-  /* USER CODE BEGIN 6 */
-  /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
