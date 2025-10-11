@@ -9,7 +9,7 @@ import threading
 import time
 
 # --- Socket Client Configuration ---
-SERVER_HOST = "10.10.16.166"   # TurtleBot (ROS)
+SERVER_HOST = "10.10.16.41"   # TurtleBot (ROS)
 SERVER_PORT = 5000
 RPI_HOST = "10.10.16.78"       # Raspberry Pi (Buzzer)
 RPI_PORT = 5000
@@ -63,6 +63,7 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
     buzzer_state = 0         # 0=OFF, 1=ON
     last_trigger_time = 0    # 마지막으로 부저 켠 시간
     alert_sent = False       # 터틀봇에 좌표 보냈는지 여부
+    last_coord_sent_time = 0 # 마지막으로 좌표 보낸 시간
 
     print(f"Connecting to source stream: {MJPEG_URL}")
     try:
@@ -139,12 +140,12 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
                         buzzer_state = 1
                         last_trigger_time = time.time()
 
-                    # TurtleBot 좌표는 한 번만 전송
-                    if not alert_sent and turtle_sock:
-                        msg = f"{person_coords[0]},{person_coords[1]} {fire_coords[0]},{fire_coords[1]}\n"
+                    # TurtleBot 좌표는 10분에 한 번만 전송
+                    if turtle_sock and (time.time() - last_coord_sent_time > 600):
+                        msg = f"{person_coords[0]},{person_coords[1]},{fire_coords[0]},{fire_coords[1]}\n"
                         turtle_sock.sendall(msg.encode())
                         print(f"📤 Sent coords to TurtleBot: {msg.strip()}")
-                        alert_sent = True
+                        last_coord_sent_time = time.time()  # Update the time
 
                 else:
                     # 부저가 켜져 있다면 최소 10초 유지
@@ -154,7 +155,6 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
                             buzzer_sock.sendall(b"0\n")
                             print("📤 Sent buzzer OFF (after 10s)")
                             buzzer_state = 0
-                            alert_sent = False
 
                 cv2.imshow('Detection', annotated_frame)
                 cv2.imshow('Map', map_display)
