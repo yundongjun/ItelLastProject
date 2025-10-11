@@ -36,7 +36,7 @@ git clone https://github.com/yundongjun/ItelLastProject.git
    ```
 4. 자기 자신 repository에 저장
    ```
-   git commit -m "<메세지>"
+   git commit -m "#<issue번호> <메세지>"
    ```
 5. 자기 자신 repository에 있는 내용 원격 repository에 올리기
    ```
