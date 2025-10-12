@@ -1,0 +1,557 @@
+[0.000000] (-) TimerEvent: {}
+[0.001141] (uart_bridge) JobQueued: {'identifier': 'uart_bridge', 'dependencies': OrderedDict()}
+[0.001369] (uart_bridge) JobStarted: {'identifier': 'uart_bridge'}
+[0.089707] (uart_bridge) JobProgress: {'identifier': 'uart_bridge', 'progress': 'cmake'}
+[0.091562] (uart_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/uart_bridge', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/uart_bridge'], 'cwd': '/home/ubuntu/ros2_ws/build/uart_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 54266 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src/uart_bridge/launch'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ld08_driver:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/uart_bridge'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 54266 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ld08_driver:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[0.100004] (-) TimerEvent: {}
+[0.206313] (-) TimerEvent: {}
+[0.307188] (-) TimerEvent: {}
+[0.408298] (-) TimerEvent: {}
+[0.509100] (-) TimerEvent: {}
+[0.609909] (-) TimerEvent: {}
+[0.710794] (-) TimerEvent: {}
+[0.811601] (-) TimerEvent: {}
+[0.912465] (-) TimerEvent: {}
+[1.013384] (-) TimerEvent: {}
+[1.114262] (-) TimerEvent: {}
+[1.215149] (-) TimerEvent: {}
+[1.290652] (uart_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.315319] (-) TimerEvent: {}
+[1.416117] (-) TimerEvent: {}
+[1.517054] (-) TimerEvent: {}
+[1.617862] (-) TimerEvent: {}
+[1.718727] (-) TimerEvent: {}
+[1.819616] (-) TimerEvent: {}
+[1.920626] (-) TimerEvent: {}
+[2.021420] (-) TimerEvent: {}
+[2.024075] (uart_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.073945] (uart_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.121598] (-) TimerEvent: {}
+[2.222298] (-) TimerEvent: {}
+[2.323032] (-) TimerEvent: {}
+[2.423905] (-) TimerEvent: {}
+[2.474592] (uart_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.501125] (uart_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.505941] (uart_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.508750] (uart_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.524046] (-) TimerEvent: {}
+[2.525243] (uart_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.624224] (-) TimerEvent: {}
+[2.725060] (-) TimerEvent: {}
+[2.825869] (-) TimerEvent: {}
+[2.902796] (uart_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.926012] (-) TimerEvent: {}
+[2.929465] (uart_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.930447] (uart_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.932023] (uart_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.988124] (uart_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.026214] (-) TimerEvent: {}
+[3.126868] (-) TimerEvent: {}
+[3.227614] (-) TimerEvent: {}
+[3.328498] (-) TimerEvent: {}
+[3.429302] (-) TimerEvent: {}
+[3.530047] (-) TimerEvent: {}
+[3.630984] (-) TimerEvent: {}
+[3.731563] (-) TimerEvent: {}
+[3.784794] (uart_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.831866] (-) TimerEvent: {}
+[3.932944] (-) TimerEvent: {}
+[4.033658] (-) TimerEvent: {}
+[4.134623] (-) TimerEvent: {}
+[4.235454] (-) TimerEvent: {}
+[4.308470] (uart_bridge) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.335629] (-) TimerEvent: {}
+[4.436322] (-) TimerEvent: {}
+[4.537453] (-) TimerEvent: {}
+[4.638189] (-) TimerEvent: {}
+[4.738891] (-) TimerEvent: {}
+[4.755944] (uart_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.839154] (-) TimerEvent: {}
+[4.939929] (-) TimerEvent: {}
+[5.040588] (-) TimerEvent: {}
+[5.141274] (-) TimerEvent: {}
+[5.241974] (-) TimerEvent: {}
+[5.244488] (uart_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.314650] (uart_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.342195] (-) TimerEvent: {}
+[5.408494] (uart_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.442363] (-) TimerEvent: {}
+[5.531227] (uart_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.542530] (-) TimerEvent: {}
+[5.643229] (-) TimerEvent: {}
+[5.689094] (uart_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.743405] (-) TimerEvent: {}
+[5.844096] (-) TimerEvent: {}
+[5.944784] (-) TimerEvent: {}
+[6.045621] (-) TimerEvent: {}
+[6.146307] (-) TimerEvent: {}
+[6.148369] (uart_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.185461] (uart_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.246527] (-) TimerEvent: {}
+[6.347283] (-) TimerEvent: {}
+[6.447963] (-) TimerEvent: {}
+[6.548692] (-) TimerEvent: {}
+[6.649832] (-) TimerEvent: {}
+[6.751089] (-) TimerEvent: {}
+[6.770972] (uart_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.851267] (-) TimerEvent: {}
+[6.913938] (uart_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.951455] (-) TimerEvent: {}
+[7.052832] (-) TimerEvent: {}
+[7.133282] (uart_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.152999] (-) TimerEvent: {}
+[7.244975] (uart_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.253194] (-) TimerEvent: {}
+[7.354476] (-) TimerEvent: {}
+[7.455350] (-) TimerEvent: {}
+[7.556153] (-) TimerEvent: {}
+[7.637945] (uart_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.640335] (uart_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.656321] (-) TimerEvent: {}
+[7.757462] (-) TimerEvent: {}
+[7.858332] (-) TimerEvent: {}
+[7.959180] (-) TimerEvent: {}
+[8.002378] (uart_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.007027] (uart_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.059359] (-) TimerEvent: {}
+[8.160182] (-) TimerEvent: {}
+[8.261003] (-) TimerEvent: {}
+[8.361681] (-) TimerEvent: {}
+[8.415872] (uart_bridge) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[8.461852] (-) TimerEvent: {}
+[8.562687] (-) TimerEvent: {}
+[8.664140] (-) TimerEvent: {}
+[8.765094] (-) TimerEvent: {}
+[8.866447] (-) TimerEvent: {}
+[8.967122] (-) TimerEvent: {}
+[9.038229] (uart_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.067321] (-) TimerEvent: {}
+[9.113241] (uart_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[9.167514] (-) TimerEvent: {}
+[9.176501] (uart_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/uart_bridge\n'}
+[9.208052] (uart_bridge) CommandEnded: {'returncode': 0}
+[9.210668] (uart_bridge) JobProgress: {'identifier': 'uart_bridge', 'progress': 'build'}
+[9.214184] (uart_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/uart_bridge', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/uart_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 54266 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src/uart_bridge/launch'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ld08_driver:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/uart_bridge'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 54266 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ld08_driver:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[9.267743] (-) TimerEvent: {}
+[9.368557] (-) TimerEvent: {}
+[9.454145] (uart_bridge) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/uart_bridge_tx.dir/src/uart_bridge_tx.cpp.o\x1b[0m\n'}
+[9.459347] (uart_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/uart_bridge_rx.dir/src/uart_bridge_rx.cpp.o\x1b[0m\n'}
+[9.468758] (-) TimerEvent: {}
+[9.570049] (-) TimerEvent: {}
+[9.671328] (-) TimerEvent: {}
+[9.772563] (-) TimerEvent: {}
+[9.873728] (-) TimerEvent: {}
+[9.974833] (-) TimerEvent: {}
+[10.075511] (-) TimerEvent: {}
+[10.176218] (-) TimerEvent: {}
+[10.276937] (-) TimerEvent: {}
+[10.377643] (-) TimerEvent: {}
+[10.478774] (-) TimerEvent: {}
+[10.579513] (-) TimerEvent: {}
+[10.680234] (-) TimerEvent: {}
+[10.780952] (-) TimerEvent: {}
+[10.881648] (-) TimerEvent: {}
+[10.982509] (-) TimerEvent: {}
+[11.083205] (-) TimerEvent: {}
+[11.183958] (-) TimerEvent: {}
+[11.285097] (-) TimerEvent: {}
+[11.385941] (-) TimerEvent: {}
+[11.486744] (-) TimerEvent: {}
+[11.587446] (-) TimerEvent: {}
+[11.688270] (-) TimerEvent: {}
+[11.788958] (-) TimerEvent: {}
+[11.890020] (-) TimerEvent: {}
+[11.990963] (-) TimerEvent: {}
+[12.091839] (-) TimerEvent: {}
+[12.193303] (-) TimerEvent: {}
+[12.294378] (-) TimerEvent: {}
+[12.395856] (-) TimerEvent: {}
+[12.496870] (-) TimerEvent: {}
+[12.597812] (-) TimerEvent: {}
+[12.699170] (-) TimerEvent: {}
+[12.800232] (-) TimerEvent: {}
+[12.901446] (-) TimerEvent: {}
+[13.002454] (-) TimerEvent: {}
+[13.103491] (-) TimerEvent: {}
+[13.204467] (-) TimerEvent: {}
+[13.305379] (-) TimerEvent: {}
+[13.406592] (-) TimerEvent: {}
+[13.507596] (-) TimerEvent: {}
+[13.608625] (-) TimerEvent: {}
+[13.709640] (-) TimerEvent: {}
+[13.810832] (-) TimerEvent: {}
+[13.911795] (-) TimerEvent: {}
+[14.013323] (-) TimerEvent: {}
+[14.114537] (-) TimerEvent: {}
+[14.215481] (-) TimerEvent: {}
+[14.316705] (-) TimerEvent: {}
+[14.417676] (-) TimerEvent: {}
+[14.518637] (-) TimerEvent: {}
+[14.620249] (-) TimerEvent: {}
+[14.721726] (-) TimerEvent: {}
+[14.822882] (-) TimerEvent: {}
+[14.924343] (-) TimerEvent: {}
+[15.025814] (-) TimerEvent: {}
+[15.126993] (-) TimerEvent: {}
+[15.228269] (-) TimerEvent: {}
+[15.329560] (-) TimerEvent: {}
+[15.431235] (-) TimerEvent: {}
+[15.532365] (-) TimerEvent: {}
+[15.633356] (-) TimerEvent: {}
+[15.734685] (-) TimerEvent: {}
+[15.835832] (-) TimerEvent: {}
+[15.936782] (-) TimerEvent: {}
+[16.038163] (-) TimerEvent: {}
+[16.139130] (-) TimerEvent: {}
+[16.240354] (-) TimerEvent: {}
+[16.341228] (-) TimerEvent: {}
+[16.442330] (-) TimerEvent: {}
+[16.543579] (-) TimerEvent: {}
+[16.644517] (-) TimerEvent: {}
+[16.745712] (-) TimerEvent: {}
+[16.846536] (-) TimerEvent: {}
+[16.947326] (-) TimerEvent: {}
+[17.048095] (-) TimerEvent: {}
+[17.149078] (-) TimerEvent: {}
+[17.249898] (-) TimerEvent: {}
+[17.350746] (-) TimerEvent: {}
+[17.451874] (-) TimerEvent: {}
+[17.552913] (-) TimerEvent: {}
+[17.653942] (-) TimerEvent: {}
+[17.754945] (-) TimerEvent: {}
+[17.856103] (-) TimerEvent: {}
+[17.957075] (-) TimerEvent: {}
+[18.058395] (-) TimerEvent: {}
+[18.159902] (-) TimerEvent: {}
+[18.260942] (-) TimerEvent: {}
+[18.361918] (-) TimerEvent: {}
+[18.463447] (-) TimerEvent: {}
+[18.564586] (-) TimerEvent: {}
+[18.665817] (-) TimerEvent: {}
+[18.766817] (-) TimerEvent: {}
+[18.867832] (-) TimerEvent: {}
+[18.968814] (-) TimerEvent: {}
+[19.070767] (-) TimerEvent: {}
+[19.178966] (-) TimerEvent: {}
+[19.280842] (-) TimerEvent: {}
+[19.382717] (-) TimerEvent: {}
+[19.484657] (-) TimerEvent: {}
+[19.586577] (-) TimerEvent: {}
+[19.688523] (-) TimerEvent: {}
+[19.790508] (-) TimerEvent: {}
+[19.892169] (-) TimerEvent: {}
+[19.993927] (-) TimerEvent: {}
+[20.095686] (-) TimerEvent: {}
+[20.197539] (-) TimerEvent: {}
+[20.299239] (-) TimerEvent: {}
+[20.400966] (-) TimerEvent: {}
+[20.502660] (-) TimerEvent: {}
+[20.604485] (-) TimerEvent: {}
+[20.706224] (-) TimerEvent: {}
+[20.807978] (-) TimerEvent: {}
+[20.909655] (-) TimerEvent: {}
+[21.011616] (-) TimerEvent: {}
+[21.113721] (-) TimerEvent: {}
+[21.215509] (-) TimerEvent: {}
+[21.317196] (-) TimerEvent: {}
+[21.418989] (-) TimerEvent: {}
+[21.519809] (-) TimerEvent: {}
+[21.620661] (-) TimerEvent: {}
+[21.721476] (-) TimerEvent: {}
+[21.822318] (-) TimerEvent: {}
+[21.923169] (-) TimerEvent: {}
+[22.023984] (-) TimerEvent: {}
+[22.124799] (-) TimerEvent: {}
+[22.225629] (-) TimerEvent: {}
+[22.326448] (-) TimerEvent: {}
+[22.427205] (-) TimerEvent: {}
+[22.527980] (-) TimerEvent: {}
+[22.628765] (-) TimerEvent: {}
+[22.729527] (-) TimerEvent: {}
+[22.830339] (-) TimerEvent: {}
+[22.931123] (-) TimerEvent: {}
+[23.031909] (-) TimerEvent: {}
+[23.132666] (-) TimerEvent: {}
+[23.233450] (-) TimerEvent: {}
+[23.334294] (-) TimerEvent: {}
+[23.435061] (-) TimerEvent: {}
+[23.535847] (-) TimerEvent: {}
+[23.636626] (-) TimerEvent: {}
+[23.737411] (-) TimerEvent: {}
+[23.838226] (-) TimerEvent: {}
+[23.938973] (-) TimerEvent: {}
+[24.039748] (-) TimerEvent: {}
+[24.140533] (-) TimerEvent: {}
+[24.249417] (-) TimerEvent: {}
+[24.350299] (-) TimerEvent: {}
+[24.451055] (-) TimerEvent: {}
+[24.551811] (-) TimerEvent: {}
+[24.652611] (-) TimerEvent: {}
+[24.753375] (-) TimerEvent: {}
+[24.854157] (-) TimerEvent: {}
+[24.954906] (-) TimerEvent: {}
+[25.055671] (-) TimerEvent: {}
+[25.156470] (-) TimerEvent: {}
+[25.257244] (-) TimerEvent: {}
+[25.358062] (-) TimerEvent: {}
+[25.459184] (-) TimerEvent: {}
+[25.560178] (-) TimerEvent: {}
+[25.660882] (-) TimerEvent: {}
+[25.761655] (-) TimerEvent: {}
+[25.862443] (-) TimerEvent: {}
+[25.963167] (-) TimerEvent: {}
+[26.063927] (-) TimerEvent: {}
+[26.164709] (-) TimerEvent: {}
+[26.265499] (-) TimerEvent: {}
+[26.366275] (-) TimerEvent: {}
+[26.467053] (-) TimerEvent: {}
+[26.567830] (-) TimerEvent: {}
+[26.668587] (-) TimerEvent: {}
+[26.769458] (-) TimerEvent: {}
+[26.870241] (-) TimerEvent: {}
+[26.971036] (-) TimerEvent: {}
+[27.071808] (-) TimerEvent: {}
+[27.172560] (-) TimerEvent: {}
+[27.273341] (-) TimerEvent: {}
+[27.374140] (-) TimerEvent: {}
+[27.474959] (-) TimerEvent: {}
+[27.575759] (-) TimerEvent: {}
+[27.676528] (-) TimerEvent: {}
+[27.777396] (-) TimerEvent: {}
+[27.878416] (-) TimerEvent: {}
+[27.979162] (-) TimerEvent: {}
+[28.079964] (-) TimerEvent: {}
+[28.180727] (-) TimerEvent: {}
+[28.281525] (-) TimerEvent: {}
+[28.382291] (-) TimerEvent: {}
+[28.483058] (-) TimerEvent: {}
+[28.583806] (-) TimerEvent: {}
+[28.684582] (-) TimerEvent: {}
+[28.785323] (-) TimerEvent: {}
+[28.886087] (-) TimerEvent: {}
+[28.986914] (-) TimerEvent: {}
+[29.087694] (-) TimerEvent: {}
+[29.188501] (-) TimerEvent: {}
+[29.289322] (-) TimerEvent: {}
+[29.390103] (-) TimerEvent: {}
+[29.490933] (-) TimerEvent: {}
+[29.591764] (-) TimerEvent: {}
+[29.692698] (-) TimerEvent: {}
+[29.793655] (-) TimerEvent: {}
+[29.894393] (-) TimerEvent: {}
+[29.995096] (-) TimerEvent: {}
+[30.095819] (-) TimerEvent: {}
+[30.196620] (-) TimerEvent: {}
+[30.297520] (-) TimerEvent: {}
+[30.398605] (-) TimerEvent: {}
+[30.499826] (-) TimerEvent: {}
+[30.505189] (uart_bridge) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable uart_bridge_rx\x1b[0m\n'}
+[30.600047] (-) TimerEvent: {}
+[30.700876] (-) TimerEvent: {}
+[30.801854] (-) TimerEvent: {}
+[30.902850] (-) TimerEvent: {}
+[31.003862] (-) TimerEvent: {}
+[31.105152] (-) TimerEvent: {}
+[31.206294] (-) TimerEvent: {}
+[31.307449] (-) TimerEvent: {}
+[31.408663] (-) TimerEvent: {}
+[31.510425] (-) TimerEvent: {}
+[31.550037] (uart_bridge) StdoutLine: {'line': b'[ 75%] Built target uart_bridge_rx\n'}
+[31.610580] (-) TimerEvent: {}
+[31.711294] (-) TimerEvent: {}
+[31.811991] (-) TimerEvent: {}
+[31.912749] (-) TimerEvent: {}
+[32.013684] (-) TimerEvent: {}
+[32.114377] (-) TimerEvent: {}
+[32.215075] (-) TimerEvent: {}
+[32.315734] (-) TimerEvent: {}
+[32.416423] (-) TimerEvent: {}
+[32.517158] (-) TimerEvent: {}
+[32.617902] (-) TimerEvent: {}
+[32.718752] (-) TimerEvent: {}
+[32.819443] (-) TimerEvent: {}
+[32.920137] (-) TimerEvent: {}
+[33.020877] (-) TimerEvent: {}
+[33.121608] (-) TimerEvent: {}
+[33.222309] (-) TimerEvent: {}
+[33.323004] (-) TimerEvent: {}
+[33.423693] (-) TimerEvent: {}
+[33.524386] (-) TimerEvent: {}
+[33.625203] (-) TimerEvent: {}
+[33.726527] (-) TimerEvent: {}
+[33.827420] (-) TimerEvent: {}
+[33.928264] (-) TimerEvent: {}
+[34.029020] (-) TimerEvent: {}
+[34.129720] (-) TimerEvent: {}
+[34.230463] (-) TimerEvent: {}
+[34.331169] (-) TimerEvent: {}
+[34.431856] (-) TimerEvent: {}
+[34.532584] (-) TimerEvent: {}
+[34.633270] (-) TimerEvent: {}
+[34.733949] (-) TimerEvent: {}
+[34.834721] (-) TimerEvent: {}
+[34.935412] (-) TimerEvent: {}
+[35.036078] (-) TimerEvent: {}
+[35.136755] (-) TimerEvent: {}
+[35.237409] (-) TimerEvent: {}
+[35.338099] (-) TimerEvent: {}
+[35.438831] (-) TimerEvent: {}
+[35.539478] (-) TimerEvent: {}
+[35.640166] (-) TimerEvent: {}
+[35.740813] (-) TimerEvent: {}
+[35.841479] (-) TimerEvent: {}
+[35.942210] (-) TimerEvent: {}
+[36.042851] (-) TimerEvent: {}
+[36.143528] (-) TimerEvent: {}
+[36.244201] (-) TimerEvent: {}
+[36.344894] (-) TimerEvent: {}
+[36.445584] (-) TimerEvent: {}
+[36.546293] (-) TimerEvent: {}
+[36.646973] (-) TimerEvent: {}
+[36.747629] (-) TimerEvent: {}
+[36.848313] (-) TimerEvent: {}
+[36.949003] (-) TimerEvent: {}
+[37.049714] (-) TimerEvent: {}
+[37.150468] (-) TimerEvent: {}
+[37.251147] (-) TimerEvent: {}
+[37.351819] (-) TimerEvent: {}
+[37.452519] (-) TimerEvent: {}
+[37.553244] (-) TimerEvent: {}
+[37.653913] (-) TimerEvent: {}
+[37.754663] (-) TimerEvent: {}
+[37.855351] (-) TimerEvent: {}
+[37.956053] (-) TimerEvent: {}
+[38.056768] (-) TimerEvent: {}
+[38.157471] (-) TimerEvent: {}
+[38.258228] (-) TimerEvent: {}
+[38.359078] (-) TimerEvent: {}
+[38.459812] (-) TimerEvent: {}
+[38.560566] (-) TimerEvent: {}
+[38.661275] (-) TimerEvent: {}
+[38.761977] (-) TimerEvent: {}
+[38.862719] (-) TimerEvent: {}
+[38.963485] (-) TimerEvent: {}
+[39.064183] (-) TimerEvent: {}
+[39.164906] (-) TimerEvent: {}
+[39.265596] (-) TimerEvent: {}
+[39.366331] (-) TimerEvent: {}
+[39.467052] (-) TimerEvent: {}
+[39.567732] (-) TimerEvent: {}
+[39.668422] (-) TimerEvent: {}
+[39.769121] (-) TimerEvent: {}
+[39.869826] (-) TimerEvent: {}
+[39.970590] (-) TimerEvent: {}
+[40.071291] (-) TimerEvent: {}
+[40.171992] (-) TimerEvent: {}
+[40.272700] (-) TimerEvent: {}
+[40.373391] (-) TimerEvent: {}
+[40.474090] (-) TimerEvent: {}
+[40.574805] (-) TimerEvent: {}
+[40.675488] (-) TimerEvent: {}
+[40.776214] (-) TimerEvent: {}
+[40.876866] (-) TimerEvent: {}
+[40.977591] (-) TimerEvent: {}
+[41.078318] (-) TimerEvent: {}
+[41.179017] (-) TimerEvent: {}
+[41.279737] (-) TimerEvent: {}
+[41.380438] (-) TimerEvent: {}
+[41.481098] (-) TimerEvent: {}
+[41.581815] (-) TimerEvent: {}
+[41.682533] (-) TimerEvent: {}
+[41.783219] (-) TimerEvent: {}
+[41.883919] (-) TimerEvent: {}
+[41.984627] (-) TimerEvent: {}
+[42.085329] (-) TimerEvent: {}
+[42.186040] (-) TimerEvent: {}
+[42.286765] (-) TimerEvent: {}
+[42.387433] (-) TimerEvent: {}
+[42.488107] (-) TimerEvent: {}
+[42.588785] (-) TimerEvent: {}
+[42.689494] (-) TimerEvent: {}
+[42.790216] (-) TimerEvent: {}
+[42.890889] (-) TimerEvent: {}
+[42.991569] (-) TimerEvent: {}
+[43.092278] (-) TimerEvent: {}
+[43.192987] (-) TimerEvent: {}
+[43.293658] (-) TimerEvent: {}
+[43.394389] (-) TimerEvent: {}
+[43.495047] (-) TimerEvent: {}
+[43.595729] (-) TimerEvent: {}
+[43.696418] (-) TimerEvent: {}
+[43.797117] (-) TimerEvent: {}
+[43.897790] (-) TimerEvent: {}
+[43.998526] (-) TimerEvent: {}
+[44.099222] (-) TimerEvent: {}
+[44.199917] (-) TimerEvent: {}
+[44.370251] (-) TimerEvent: {}
+[44.470950] (-) TimerEvent: {}
+[44.571630] (-) TimerEvent: {}
+[44.672291] (-) TimerEvent: {}
+[44.772975] (-) TimerEvent: {}
+[44.873676] (-) TimerEvent: {}
+[44.974367] (-) TimerEvent: {}
+[45.075063] (-) TimerEvent: {}
+[45.175835] (-) TimerEvent: {}
+[45.276519] (-) TimerEvent: {}
+[45.377295] (-) TimerEvent: {}
+[45.478214] (-) TimerEvent: {}
+[45.579165] (-) TimerEvent: {}
+[45.679854] (-) TimerEvent: {}
+[45.780574] (-) TimerEvent: {}
+[45.881493] (-) TimerEvent: {}
+[45.982703] (-) TimerEvent: {}
+[46.083435] (-) TimerEvent: {}
+[46.111990] (uart_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable uart_bridge_tx\x1b[0m\n'}
+[46.183696] (-) TimerEvent: {}
+[46.284662] (-) TimerEvent: {}
+[46.385560] (-) TimerEvent: {}
+[46.486331] (-) TimerEvent: {}
+[46.587277] (-) TimerEvent: {}
+[46.688428] (-) TimerEvent: {}
+[46.789388] (-) TimerEvent: {}
+[46.890438] (-) TimerEvent: {}
+[46.991362] (-) TimerEvent: {}
+[47.092453] (-) TimerEvent: {}
+[47.193149] (-) TimerEvent: {}
+[47.293765] (-) TimerEvent: {}
+[47.394488] (-) TimerEvent: {}
+[47.495558] (-) TimerEvent: {}
+[47.596224] (-) TimerEvent: {}
+[47.697002] (-) TimerEvent: {}
+[47.797652] (-) TimerEvent: {}
+[47.898432] (-) TimerEvent: {}
+[47.905483] (uart_bridge) StdoutLine: {'line': b'[100%] Built target uart_bridge_tx\n'}
+[47.943256] (uart_bridge) CommandEnded: {'returncode': 0}
+[47.945221] (uart_bridge) JobProgress: {'identifier': 'uart_bridge', 'progress': 'install'}
+[47.977902] (uart_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/build/uart_bridge'], 'cwd': '/home/ubuntu/ros2_ws/build/uart_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 54266 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src/uart_bridge/launch'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ld08_driver:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/uart_bridge'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 54266 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ld08_driver:/home/ubuntu/turtlebot3_ws/install/coin_d4_driver:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[47.998624] (-) TimerEvent: {}
+[48.012027] (uart_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[48.013566] (uart_bridge) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[48.015331] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/lib/uart_bridge/uart_bridge_tx\n'}
+[48.047376] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/lib/uart_bridge/uart_bridge_rx\n'}
+[48.080780] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge//launch/uart_bridge.launch.py\n'}
+[48.098809] (-) TimerEvent: {}
+[48.115373] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/ament_index/resource_index/package_run_dependencies/uart_bridge\n'}
+[48.150187] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/ament_index/resource_index/parent_prefix_path/uart_bridge\n'}
+[48.184041] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/ament_prefix_path.sh\n'}
+[48.199034] (-) TimerEvent: {}
+[48.216335] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/ament_prefix_path.dsv\n'}
+[48.248760] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/path.sh\n'}
+[48.283704] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/path.dsv\n'}
+[48.299223] (-) TimerEvent: {}
+[48.316551] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.bash\n'}
+[48.348718] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.sh\n'}
+[48.381392] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.zsh\n'}
+[48.399411] (-) TimerEvent: {}
+[48.415154] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.dsv\n'}
+[48.446680] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/package.dsv\n'}
+[48.478539] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/ament_index/resource_index/packages/uart_bridge\n'}
+[48.499649] (-) TimerEvent: {}
+[48.511593] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/cmake/uart_bridgeConfig.cmake\n'}
+[48.544580] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/cmake/uart_bridgeConfig-version.cmake\n'}
+[48.576690] (uart_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/package.xml\n'}
+[48.599825] (-) TimerEvent: {}
+[48.613126] (uart_bridge) CommandEnded: {'returncode': 0}
+[48.700046] (-) TimerEvent: {}
+[48.724196] (uart_bridge) JobEnded: {'identifier': 'uart_bridge', 'rc': 0}
+[48.726598] (-) EventReactorShutdown: {}

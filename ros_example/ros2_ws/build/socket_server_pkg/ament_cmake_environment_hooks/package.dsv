@@ -1,0 +1,4 @@
+source;share/socket_server_pkg/local_setup.bash
+source;share/socket_server_pkg/local_setup.dsv
+source;share/socket_server_pkg/local_setup.sh
+source;share/socket_server_pkg/local_setup.zsh

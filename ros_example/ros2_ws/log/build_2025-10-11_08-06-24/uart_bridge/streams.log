@@ -1,0 +1,28 @@
+[0.086s] Invoking command in '/home/ubuntu/ros2_ws/build/uart_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/uart_bridge -- -j4 -l4
+[0.651s] [35m[1mConsolidate compiler generated dependencies of target uart_bridge_tx[0m
+[0.652s] [35m[1mConsolidate compiler generated dependencies of target uart_bridge_rx[0m
+[0.863s] [ 50%] Built target uart_bridge_tx
+[0.866s] [100%] Built target uart_bridge_rx
+[0.906s] Invoked command in '/home/ubuntu/ros2_ws/build/uart_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/uart_bridge -- -j4 -l4
+[0.953s] Invoking command in '/home/ubuntu/ros2_ws/build/uart_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/uart_bridge
+[0.981s] -- Install configuration: ""
+[0.984s] -- Execute custom install script
+[0.989s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/lib/uart_bridge/uart_bridge_tx
+[0.990s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/lib/uart_bridge/uart_bridge_rx
+[0.996s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge//launch/uart_bridge.launch.py
+[1.001s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/ament_index/resource_index/package_run_dependencies/uart_bridge
+[1.004s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/ament_index/resource_index/parent_prefix_path/uart_bridge
+[1.007s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/ament_prefix_path.sh
+[1.009s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/ament_prefix_path.dsv
+[1.011s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/path.sh
+[1.013s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/environment/path.dsv
+[1.015s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.bash
+[1.017s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.sh
+[1.018s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.zsh
+[1.020s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/local_setup.dsv
+[1.021s] -- Symlinking: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/package.dsv
+[1.056s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/ament_index/resource_index/packages/uart_bridge
+[1.062s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/cmake/uart_bridgeConfig.cmake
+[1.065s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/cmake/uart_bridgeConfig-version.cmake
+[1.067s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/uart_bridge/share/uart_bridge/package.xml
+[1.077s] Invoked command in '/home/ubuntu/ros2_ws/build/uart_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/uart_bridge

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/ros2_ws/build/uart_bridge/uart_bridge_tx" "/home/ubuntu/ros2_ws/build/uart_bridge/uart_bridge_rx" "TARGETS" "uart_bridge_tx" "uart_bridge_rx" "DESTINATION" "lib/uart_bridge")

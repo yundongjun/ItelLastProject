@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/src/socket_server_pkg/launch/socket_server.launch.py

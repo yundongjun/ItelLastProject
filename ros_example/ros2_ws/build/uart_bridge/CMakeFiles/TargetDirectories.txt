@@ -1,0 +1,11 @@
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/uninstall.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/uart_bridge_uninstall.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/uart_bridge_tx.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/uart_bridge_rx.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/test.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/list_install_components.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/install.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/install/local.dir
+/home/ubuntu/ros2_ws/build/uart_bridge/CMakeFiles/install/strip.dir

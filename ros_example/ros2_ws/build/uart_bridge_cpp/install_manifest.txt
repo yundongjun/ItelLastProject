@@ -1,0 +1,17 @@
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/lib/uart_bridge_cpp/uart_bridge_node
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/launch/uart_bridge.launch.py
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/ament_index/resource_index/package_run_dependencies/uart_bridge_cpp
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/ament_index/resource_index/parent_prefix_path/uart_bridge_cpp
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/ament_prefix_path.sh
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/ament_prefix_path.dsv
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/path.sh
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/path.dsv
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.bash
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.sh
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.zsh
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.dsv
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/package.dsv
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/ament_index/resource_index/packages/uart_bridge_cpp
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/cmake/uart_bridge_cppConfig.cmake
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/cmake/uart_bridge_cppConfig-version.cmake
+/home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/package.xml

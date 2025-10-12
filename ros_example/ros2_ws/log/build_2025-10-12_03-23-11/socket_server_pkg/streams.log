@@ -1,0 +1,26 @@
+[0.101s] Invoking command in '/home/ubuntu/ros2_ws/build/socket_server_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/socket_server_pkg -- -j4 -l4
+[0.713s] [35m[1mConsolidate compiler generated dependencies of target socket_server_node[0m
+[0.901s] [100%] Built target socket_server_node
+[0.988s] Invoked command in '/home/ubuntu/ros2_ws/build/socket_server_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/socket_server_pkg -- -j4 -l4
+[1.004s] Invoking command in '/home/ubuntu/ros2_ws/build/socket_server_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/socket_server_pkg
+[1.030s] -- Install configuration: ""
+[1.036s] -- Execute custom install script
+[1.041s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/lib/socket_server_pkg/socket_server_node
+[1.046s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/include/socket_server_pkg/socket_server_node.hpp
+[1.051s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/launch/socket_server.launch.py
+[1.052s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/ament_index/resource_index/package_run_dependencies/socket_server_pkg
+[1.056s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/ament_index/resource_index/parent_prefix_path/socket_server_pkg
+[1.058s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/environment/ament_prefix_path.sh
+[1.060s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/environment/ament_prefix_path.dsv
+[1.061s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/environment/path.sh
+[1.062s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/environment/path.dsv
+[1.064s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/local_setup.bash
+[1.066s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/local_setup.sh
+[1.068s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/local_setup.zsh
+[1.069s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/local_setup.dsv
+[1.070s] -- Symlinking: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/package.dsv
+[1.103s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/ament_index/resource_index/packages/socket_server_pkg
+[1.109s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/cmake/socket_server_pkgConfig.cmake
+[1.110s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/cmake/socket_server_pkgConfig-version.cmake
+[1.110s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/socket_server_pkg/share/socket_server_pkg/package.xml
+[1.235s] Invoked command in '/home/ubuntu/ros2_ws/build/socket_server_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/socket_server_pkg

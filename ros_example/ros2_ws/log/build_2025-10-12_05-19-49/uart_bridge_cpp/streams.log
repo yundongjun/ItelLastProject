@@ -1,0 +1,28 @@
+[0.049s] Invoking command in '/home/ubuntu/ros2_ws/build/uart_bridge_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/uart_bridge_cpp -- -j4 -l4
+[0.228s] [35m[1mConsolidate compiler generated dependencies of target uart_bridge_node[0m
+[0.317s] [ 50%] [32mBuilding CXX object CMakeFiles/uart_bridge_node.dir/src/uart_bridge_node.cpp.o[0m
+[32.462s] [100%] [32m[1mLinking CXX executable uart_bridge_node[0m
+[34.200s] [100%] Built target uart_bridge_node
+[34.240s] Invoked command in '/home/ubuntu/ros2_ws/build/uart_bridge_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/uart_bridge_cpp -- -j4 -l4
+[34.278s] Invoking command in '/home/ubuntu/ros2_ws/build/uart_bridge_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/uart_bridge_cpp
+[34.303s] -- Install configuration: ""
+[34.305s] -- Installing: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/lib/uart_bridge_cpp/uart_bridge_node
+[34.335s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/uart_bridge_cpp/lib/uart_bridge_cpp/uart_bridge_node" to ""
+[34.336s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/launch
+[34.337s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/launch/uart_bridge.launch.py
+[34.338s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/ament_index/resource_index/package_run_dependencies/uart_bridge_cpp
+[34.339s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/ament_index/resource_index/parent_prefix_path/uart_bridge_cpp
+[34.340s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/ament_prefix_path.sh
+[34.340s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/ament_prefix_path.dsv
+[34.341s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/path.sh
+[34.342s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/path.dsv
+[34.343s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.bash
+[34.343s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.sh
+[34.344s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.zsh
+[34.344s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.dsv
+[34.345s] -- Installing: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/package.dsv
+[34.346s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/ament_index/resource_index/packages/uart_bridge_cpp
+[34.347s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/cmake/uart_bridge_cppConfig.cmake
+[34.350s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/cmake/uart_bridge_cppConfig-version.cmake
+[34.351s] -- Up-to-date: /home/ubuntu/ros2_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/package.xml
+[34.352s] Invoked command in '/home/ubuntu/ros2_ws/build/uart_bridge_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/uart_bridge_cpp
