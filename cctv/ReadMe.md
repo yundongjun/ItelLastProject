@@ -7,5 +7,6 @@ python3 mlx90640_read.py
 
 
 ## 2. 우분투에서 서버 실행
-python3 server.py
+python3 server.py (우분투)
+set MAP_SCALE=4.0 && python server.py
 

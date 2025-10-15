@@ -8,6 +8,22 @@ import socket
 import threading
 import time
 
+# Dummy socket to allow running without RPi connection
+class DummySock:
+    def sendall(self, data: bytes):
+        try:
+            msg = data.decode().strip()
+        except Exception:
+            msg = str(data)
+        print(f"(buzzer OFFLINE) sendall called with: {msg}")
+
+# --- Display Scaling ---
+# Map 창 확대 배율 (환경변수 MAP_SCALE로 조정 가능). 예: 2.0이면 2배 확대 표시
+try:
+    MAP_SCALE = float(os.getenv("MAP_SCALE", "2.0"))
+except Exception:
+    MAP_SCALE = 2.0
+
 # --- Socket Client Configuration ---
 SERVER_HOST = "10.10.16.41"   # TurtleBot (ROS)
 SERVER_PORT = 5000
@@ -85,10 +101,30 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
 
     if not os.path.exists(homography_path) or not os.path.exists(map_path):
         print("❌ Map or homography missing.")
-        return
+        buzzer_sock = DummySock()
 
     homography_matrix = np.load(homography_path)
     map_img = cv2.imread(map_path)
+    # 회색 배경(여백) 자동 크롭
+    crop_x, crop_y = 0, 0
+    base_map = map_img
+    try:
+        gray = cv2.cvtColor(map_img, cv2.COLOR_BGR2GRAY)
+        edges = np.concatenate((gray[0, :], gray[-1, :], gray[:, 0], gray[:, -1]))
+        if edges.size:
+            bg_val = int(np.bincount(edges.flatten()).argmax())
+        else:
+            bg_val = int(gray[0, 0])
+        mask = np.abs(gray - bg_val) > 5
+        rows = np.where(mask.any(axis=1))[0]
+        cols = np.where(mask.any(axis=0))[0]
+        if rows.size and cols.size:
+            y1, y2 = int(rows[0]), int(rows[-1]) + 1
+            x1, x2 = int(cols[0]), int(cols[-1]) + 1
+            crop_x, crop_y = x1, y1
+            base_map = map_img[y1:y2, x1:x2].copy()
+    except Exception:
+        base_map = map_img
     print("🗺️ Map and homography loaded.")
 
     buzzer_state = 0
@@ -114,7 +150,13 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
             continue
 
         annotated_frame = frame.copy()
-        map_display = map_img.copy()
+        if abs(MAP_SCALE - 1.0) > 1e-6:
+            mh, mw = base_map.shape[:2]
+            map_display = cv2.resize(
+                base_map, (int(mw * MAP_SCALE), int(mh * MAP_SCALE)), interpolation=cv2.INTER_NEAREST
+            )
+        else:
+            map_display = base_map.copy()
 
         person_coords = None
         fire_coords = None
@@ -135,9 +177,13 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
                 cv2.putText(annotated_frame, label, (x1, y1-10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
 
-                if 0 <= mx < map_display.shape[1] and 0 <= my < map_display.shape[0]:
-                    cv2.circle(map_display, (mx, my), 10, color, -1)
-                    cv2.putText(map_display, class_name, (mx+10, my),
+                rx = mx - crop_x
+                ry = my - crop_y
+                if 0 <= rx < base_map.shape[1] and 0 <= ry < base_map.shape[0]:
+                    dx = int(rx * MAP_SCALE)
+                    dy = int(ry * MAP_SCALE)
+                    cv2.circle(map_display, (dx, dy), 10, color, -1)
+                    cv2.putText(map_display, class_name, (dx+10, dy),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
                 if class_name == 'person':
@@ -193,7 +239,8 @@ def main():
         print(f"❌ Failed to connect to RPi: {e}")
         return
 
-    threading.Thread(target=recv_from_rpi, args=(buzzer_sock,), daemon=True).start()
+    if isinstance(buzzer_sock, socket.socket):
+        threading.Thread(target=recv_from_rpi, args=(buzzer_sock,), daemon=True).start()
 
     # --- Connect to TurtleBot ---
     turtle_sock = None
