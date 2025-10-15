@@ -1,7 +1,7 @@
 ### 서버 사용법
 ## 1. rpi 
-sudo insmode buzzer_device.ko 
-sudo ./app
+sudo insmode buzzer_device.ko <br>
+sudo ./app <br>
 python3 mlx90640_read.py
 
 
