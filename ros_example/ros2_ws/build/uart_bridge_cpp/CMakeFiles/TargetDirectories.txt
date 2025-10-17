@@ -1,6 +1,7 @@
 /home/ubuntu/ros2_ws/build/uart_bridge_cpp/CMakeFiles/uninstall.dir
 /home/ubuntu/ros2_ws/build/uart_bridge_cpp/CMakeFiles/uart_bridge_cpp_uninstall.dir
 /home/ubuntu/ros2_ws/build/uart_bridge_cpp/CMakeFiles/uart_bridge_node.dir
+/home/ubuntu/ros2_ws/build/uart_bridge_cpp/CMakeFiles/uart_bridge_ama1_node.dir
 /home/ubuntu/ros2_ws/build/uart_bridge_cpp/CMakeFiles/test.dir
 /home/ubuntu/ros2_ws/build/uart_bridge_cpp/CMakeFiles/edit_cache.dir
 /home/ubuntu/ros2_ws/build/uart_bridge_cpp/CMakeFiles/rebuild_cache.dir

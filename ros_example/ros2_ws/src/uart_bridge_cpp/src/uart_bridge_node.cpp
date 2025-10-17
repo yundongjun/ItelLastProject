@@ -30,8 +30,8 @@ public:
     tx_topic_  = this->declare_parameter<std::string>("tx_topic", "/uart/tx");
     poll_ms_   = this->declare_parameter<int>("poll_ms", 50);
     rx_chunk_  = this->declare_parameter<int>("rx_chunk", 512);
-    log_bytes_ = this->declare_parameter<bool>("log_bytes", false); // raw hex bytes
-    log_lines_ = this->declare_parameter<bool>("log_lines", true);  // line text
+    log_bytes_ = this->declare_parameter<bool>("log_bytes", false);
+    log_lines_ = this->declare_parameter<bool>("log_lines", true);
 
     // Pub/Sub
     pub_rx_ = this->create_publisher<std_msgs::msg::String>(rx_topic_, 10);
@@ -52,17 +52,12 @@ public:
     rx_thread_ = std::thread(&UartBridgeNode::rx_loop, this);
 
     // Shutdown hook
-    rclcpp::on_shutdown([this]() {
-      this->graceful_stop();
-    });
+    rclcpp::on_shutdown([this]() { this->graceful_stop(); });
   }
 
-  ~UartBridgeNode() override {
-    graceful_stop();
-  }
+  ~UartBridgeNode() override { graceful_stop(); }
 
 private:
-  // ---------- Helpers ----------
   static std::string sanitize_printable(const std::string &s, size_t max_len = 200) {
     std::string out;
     out.reserve(std::min(s.size(), max_len));
@@ -114,126 +109,69 @@ private:
   int open_serial(const char* dev, int baud) {
     int fd = ::open(dev, O_RDWR | O_NOCTTY | O_NONBLOCK);
     if (fd < 0) return -1;
-
 #ifdef TIOCEXCL
-    ioctl(fd, TIOCEXCL); // best-effort exclusive
+    ioctl(fd, TIOCEXCL);
 #endif
-
     int flags = fcntl(fd, F_GETFL, 0);
-    fcntl(fd, F_SETFL, flags & ~O_NONBLOCK); // use blocking with select
+    fcntl(fd, F_SETFL, flags & ~O_NONBLOCK);
 
     struct termios tio{};
     if (tcgetattr(fd, &tio) != 0) { ::close(fd); return -1; }
-
     cfmakeraw(&tio);
     tio.c_cflag |= (CLOCAL | CREAD);
-    tio.c_cflag &= ~PARENB;
-    tio.c_cflag &= ~CSTOPB;
-    tio.c_cflag &= ~CSIZE;
-    tio.c_cflag |= CS8;
+    tio.c_cflag &= ~PARENB; tio.c_cflag &= ~CSTOPB; tio.c_cflag &= ~CSIZE; tio.c_cflag |= CS8;
     tio.c_iflag &= ~(IXON | IXOFF | IXANY);
     tio.c_cflag &= ~CRTSCTS;
 
     speed_t spd = to_speed_t(baud);
-    cfsetispeed(&tio, spd);
-    cfsetospeed(&tio, spd);
-
-    tio.c_cc[VMIN]  = 0;
-    tio.c_cc[VTIME] = 0;
+    cfsetispeed(&tio, spd); cfsetospeed(&tio, spd);
+    tio.c_cc[VMIN] = 0; tio.c_cc[VTIME] = 0;
 
     if (tcsetattr(fd, TCSANOW, &tio) != 0) { ::close(fd); return -1; }
     tcflush(fd, TCIOFLUSH);
     return fd;
   }
 
-  // ---------- TX ----------
   void on_tx_msg(const std_msgs::msg::String::SharedPtr msg) {
     if (fd_ < 0) return;
-
     std::string data = msg->data;
-    // append newline based on param
     if (!newline_.empty()) {
-      if (newline_ == "\n") {
-        if (data.empty() || data.back() != '\n') data += "\n";
-      } else if (newline_ == "\r\n") {
-        if (data.size() < 2 || data.substr(data.size()-2) != "\r\n") data += "\r\n";
-      }
+      if (newline_ == "\n") { if (data.empty() || data.back() != '\n') data += "\n"; }
+      else if (newline_ == "\r\n") { if (data.size() < 2 || data.substr(data.size()-2) != "\r\n") data += "\r\n"; }
     }
-
-    // 로그 (문자 + hex)
-    if (log_lines_) {
-      RCLCPP_INFO(get_logger(), "[TX line] \"%s\"",
-                  sanitize_printable(data).c_str());
-    }
+    if (log_lines_) RCLCPP_INFO(get_logger(), "[TX line] \"%s\"", sanitize_printable(data).c_str());
     if (log_bytes_) {
       const auto* p = reinterpret_cast<const uint8_t*>(data.data());
-      RCLCPP_DEBUG(get_logger(), "[TX bytes] %zu bytes: %s",
-                   data.size(), hex_dump(p, data.size()).c_str());
+      RCLCPP_DEBUG(get_logger(), "[TX bytes] %zu bytes: %s", data.size(), hex_dump(p, data.size()).c_str());
     }
-
     std::lock_guard<std::mutex> lk(tx_mtx_);
     ssize_t n = ::write(fd_, data.data(), data.size());
-    if (n < 0) {
-      RCLCPP_WARN(get_logger(), "UART write error: %s", std::strerror(errno));
-    } else {
-      RCLCPP_DEBUG(get_logger(), "TX wrote %zd bytes", n);
-    }
+    if (n < 0) RCLCPP_WARN(get_logger(), "UART write error: %s", std::strerror(errno));
   }
 
-  // ---------- RX ----------
   void rx_loop() {
     std::string linebuf;
-
     while (!stop_.load()) {
       if (fd_ < 0) break;
 
-      fd_set rfds;
-      FD_ZERO(&rfds);
-      FD_SET(fd_, &rfds);
-      struct timeval tv;
-      tv.tv_sec = 0;
-      tv.tv_usec = poll_ms_ * 1000;
-
+      fd_set rfds; FD_ZERO(&rfds); FD_SET(fd_, &rfds);
+      struct timeval tv{0, static_cast<suseconds_t>(poll_ms_ * 1000)};
       int rv = ::select(fd_ + 1, &rfds, nullptr, nullptr, &tv);
-      if (rv < 0) {
-        if (errno == EINTR) continue;
-        if (stop_.load()) break;
-        RCLCPP_WARN(get_logger(), "select error: %s", std::strerror(errno));
-        continue;
-      }
-      if (rv == 0) continue; // timeout
+      if (rv < 0) { if (errno == EINTR) continue; if (stop_.load()) break; RCLCPP_WARN(get_logger(),"select: %s", std::strerror(errno)); continue; }
+      if (rv == 0) continue;
 
       std::vector<uint8_t> tmp(rx_chunk_);
       ssize_t n = ::read(fd_, tmp.data(), tmp.size());
-      if (n < 0) {
-        if (errno == EAGAIN || errno == EINTR) continue;
-        if (stop_.load()) break;
-        RCLCPP_WARN(get_logger(), "read error: %s", std::strerror(errno));
-        continue;
-      }
+      if (n < 0) { if (errno == EAGAIN || errno == EINTR) continue; if (stop_.load()) break; RCLCPP_WARN(get_logger(),"read: %s", std::strerror(errno)); continue; }
       tmp.resize(n);
 
-      if (n > 0 && log_bytes_) {
-        RCLCPP_DEBUG(get_logger(), "[RX bytes] %zd bytes: %s",
-                     n, hex_dump(tmp.data(), tmp.size()).c_str());
-      }
+      if (n > 0 && log_bytes_) RCLCPP_DEBUG(get_logger(), "[RX bytes] %zd bytes: %s", n, hex_dump(tmp.data(), tmp.size()).c_str());
 
-      // '\n' 기준 라인 분할, '\r' 트림
       for (uint8_t c : tmp) {
         if (c == '\n') {
           if (!linebuf.empty() && linebuf.back() == '\r') linebuf.pop_back();
-
-          if (log_lines_) {
-            RCLCPP_INFO(get_logger(), "[RX line] \"%s\"",
-                        sanitize_printable(linebuf).c_str());
-          } else {
-            RCLCPP_DEBUG(get_logger(), "[RX line] len=%zu", linebuf.size());
-          }
-
-          auto msg = std_msgs::msg::String();
-          msg.data = linebuf;
-          pub_rx_->publish(msg);
-
+          if (log_lines_) RCLCPP_INFO(get_logger(), "[RX line] \"%s\"", sanitize_printable(linebuf).c_str());
+          std_msgs::msg::String msg; msg.data = linebuf; pub_rx_->publish(msg);
           linebuf.clear();
         } else {
           linebuf.push_back(static_cast<char>(c));
@@ -244,16 +182,10 @@ private:
   }
 
   void graceful_stop() {
-    if (stop_.exchange(true)) return; // already stopping
+    if (stop_.exchange(true)) return;
     RCLCPP_INFO(get_logger(), "Stopping uart_bridge_node...");
-
-    {
-      std::lock_guard<std::mutex> lk(tx_mtx_);
-      if (fd_ >= 0) {
-        ::close(fd_);
-        fd_ = -1;
-      }
-    }
+    { std::lock_guard<std::mutex> lk(tx_mtx_);
+      if (fd_ >= 0) { ::close(fd_); fd_ = -1; } }
     if (rx_thread_.joinable()) rx_thread_.join();
     RCLCPP_INFO(get_logger(), "Closed");
   }

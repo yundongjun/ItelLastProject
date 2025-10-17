@@ -1,1 +1,0 @@
-/home/ubuntu/ros2_ws/build/socket_server_pkg/ament_cmake_environment_hooks/local_setup.sh

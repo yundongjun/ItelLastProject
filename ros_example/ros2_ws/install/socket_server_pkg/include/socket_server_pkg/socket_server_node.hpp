@@ -1,1 +1,0 @@
-/home/ubuntu/ros2_ws/src/socket_server_pkg/include/socket_server_pkg/socket_server_node.hpp

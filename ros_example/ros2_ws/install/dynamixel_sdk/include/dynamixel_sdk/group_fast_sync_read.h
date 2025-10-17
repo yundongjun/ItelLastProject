@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/src/turtlebot3/src/DynamixelSDK/ros/dynamixel_sdk/include/dynamixel_sdk/group_fast_sync_read.h

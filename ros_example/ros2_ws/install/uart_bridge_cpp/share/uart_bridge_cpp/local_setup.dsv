@@ -1,2 +1,1 @@
-source;share/uart_bridge_cpp/environment/ament_prefix_path.sh
-source;share/uart_bridge_cpp/environment/path.sh
+/home/ubuntu/ros2_ws/build/uart_bridge_cpp/ament_cmake_environment_hooks/local_setup.dsv

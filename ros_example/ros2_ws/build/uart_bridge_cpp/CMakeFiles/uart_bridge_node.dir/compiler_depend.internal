@@ -729,4 +729,12 @@ CMakeFiles/uart_bridge_node.dir/src/uart_bridge_node.cpp.o
  /usr/include/linux/falloc.h
  /usr/include/aarch64-linux-gnu/bits/stat.h
  /usr/include/aarch64-linux-gnu/bits/struct_stat.h
+ /usr/include/aarch64-linux-gnu/sys/ioctl.h
+ /usr/include/aarch64-linux-gnu/bits/ioctls.h
+ /usr/include/aarch64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/aarch64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/aarch64-linux-gnu/bits/ioctl-types.h
 

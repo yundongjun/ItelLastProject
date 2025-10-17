@@ -210,6 +210,43 @@ uart_bridge_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uart_bridge_node.dir/build.make CMakeFiles/uart_bridge_node.dir/build
 .PHONY : uart_bridge_node/fast
 
+#=============================================================================
+# Target rules for targets named uart_bridge_ama1_node
+
+# Build rule for target.
+uart_bridge_ama1_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uart_bridge_ama1_node
+.PHONY : uart_bridge_ama1_node
+
+# fast build rule for target.
+uart_bridge_ama1_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uart_bridge_ama1_node.dir/build.make CMakeFiles/uart_bridge_ama1_node.dir/build
+.PHONY : uart_bridge_ama1_node/fast
+
+src/uart_bridge_ama1_node.o: src/uart_bridge_ama1_node.cpp.o
+.PHONY : src/uart_bridge_ama1_node.o
+
+# target to build an object file
+src/uart_bridge_ama1_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uart_bridge_ama1_node.dir/build.make CMakeFiles/uart_bridge_ama1_node.dir/src/uart_bridge_ama1_node.cpp.o
+.PHONY : src/uart_bridge_ama1_node.cpp.o
+
+src/uart_bridge_ama1_node.i: src/uart_bridge_ama1_node.cpp.i
+.PHONY : src/uart_bridge_ama1_node.i
+
+# target to preprocess a source file
+src/uart_bridge_ama1_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uart_bridge_ama1_node.dir/build.make CMakeFiles/uart_bridge_ama1_node.dir/src/uart_bridge_ama1_node.cpp.i
+.PHONY : src/uart_bridge_ama1_node.cpp.i
+
+src/uart_bridge_ama1_node.s: src/uart_bridge_ama1_node.cpp.s
+.PHONY : src/uart_bridge_ama1_node.s
+
+# target to generate assembly for a file
+src/uart_bridge_ama1_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uart_bridge_ama1_node.dir/build.make CMakeFiles/uart_bridge_ama1_node.dir/src/uart_bridge_ama1_node.cpp.s
+.PHONY : src/uart_bridge_ama1_node.cpp.s
+
 src/uart_bridge_node.o: src/uart_bridge_node.cpp.o
 .PHONY : src/uart_bridge_node.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... uart_bridge_cpp_uninstall"
 	@echo "... uninstall"
+	@echo "... uart_bridge_ama1_node"
 	@echo "... uart_bridge_node"
+	@echo "... src/uart_bridge_ama1_node.o"
+	@echo "... src/uart_bridge_ama1_node.i"
+	@echo "... src/uart_bridge_ama1_node.s"
 	@echo "... src/uart_bridge_node.o"
 	@echo "... src/uart_bridge_node.i"
 	@echo "... src/uart_bridge_node.s"

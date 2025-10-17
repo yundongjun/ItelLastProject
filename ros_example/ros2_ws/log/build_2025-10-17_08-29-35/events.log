@@ -1,0 +1,1511 @@
+[0.000000] (-) TimerEvent: {}
+[0.001753] (cpp_talker_listener) JobQueued: {'identifier': 'cpp_talker_listener', 'dependencies': OrderedDict()}
+[0.002363] (dynamixel_sdk) JobQueued: {'identifier': 'dynamixel_sdk', 'dependencies': OrderedDict()}
+[0.002861] (dynamixel_sdk_custom_interfaces) JobQueued: {'identifier': 'dynamixel_sdk_custom_interfaces', 'dependencies': OrderedDict()}
+[0.003042] (rescue_orchestrator) JobQueued: {'identifier': 'rescue_orchestrator', 'dependencies': OrderedDict()}
+[0.003123] (ros_goal_client) JobQueued: {'identifier': 'ros_goal_client', 'dependencies': OrderedDict()}
+[0.003202] (ros_tutorials_topic) JobQueued: {'identifier': 'ros_tutorials_topic', 'dependencies': OrderedDict()}
+[0.003277] (simple_navigation_goals) JobQueued: {'identifier': 'simple_navigation_goals', 'dependencies': OrderedDict()}
+[0.003351] (socket_server_pkg) JobQueued: {'identifier': 'socket_server_pkg', 'dependencies': OrderedDict()}
+[0.003426] (turtlebot3_cartographer) JobQueued: {'identifier': 'turtlebot3_cartographer', 'dependencies': OrderedDict()}
+[0.003500] (turtlebot3_description) JobQueued: {'identifier': 'turtlebot3_description', 'dependencies': OrderedDict()}
+[0.003573] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict()}
+[0.003646] (turtlebot3_manipulation_gazebo) JobQueued: {'identifier': 'turtlebot3_manipulation_gazebo', 'dependencies': OrderedDict()}
+[0.003720] (turtlebot3_msgs) JobQueued: {'identifier': 'turtlebot3_msgs', 'dependencies': OrderedDict()}
+[0.003794] (turtlebot3_navigation2) JobQueued: {'identifier': 'turtlebot3_navigation2', 'dependencies': OrderedDict()}
+[0.003866] (turtlebot3_teleop) JobQueued: {'identifier': 'turtlebot3_teleop', 'dependencies': OrderedDict()}
+[0.003939] (uart_bridge_cpp) JobQueued: {'identifier': 'uart_bridge_cpp', 'dependencies': OrderedDict()}
+[0.004013] (dynamixel_sdk_examples) JobQueued: {'identifier': 'dynamixel_sdk_examples', 'dependencies': OrderedDict([('dynamixel_sdk', '/home/ubuntu/ros2_ws/install/dynamixel_sdk'), ('dynamixel_sdk_custom_interfaces', '/home/ubuntu/ros2_ws/install/dynamixel_sdk_custom_interfaces')])}
+[0.004319] (roskccistc) JobQueued: {'identifier': 'roskccistc', 'dependencies': OrderedDict([('turtlebot3_msgs', '/home/ubuntu/ros2_ws/install/turtlebot3_msgs')])}
+[0.004481] (turtlebot3_example) JobQueued: {'identifier': 'turtlebot3_example', 'dependencies': OrderedDict([('turtlebot3_msgs', '/home/ubuntu/ros2_ws/install/turtlebot3_msgs')])}
+[0.004608] (turtlebot3_fake_node) JobQueued: {'identifier': 'turtlebot3_fake_node', 'dependencies': OrderedDict([('turtlebot3_msgs', '/home/ubuntu/ros2_ws/install/turtlebot3_msgs')])}
+[0.004690] (turtlebot3_node) JobQueued: {'identifier': 'turtlebot3_node', 'dependencies': OrderedDict([('dynamixel_sdk', '/home/ubuntu/ros2_ws/install/dynamixel_sdk'), ('turtlebot3_msgs', '/home/ubuntu/ros2_ws/install/turtlebot3_msgs')])}
+[0.004774] (turtlebot3_bringup) JobQueued: {'identifier': 'turtlebot3_bringup', 'dependencies': OrderedDict([('dynamixel_sdk', '/home/ubuntu/ros2_ws/install/dynamixel_sdk'), ('turtlebot3_description', '/home/ubuntu/ros2_ws/install/turtlebot3_description'), ('turtlebot3_msgs', '/home/ubuntu/ros2_ws/install/turtlebot3_msgs'), ('turtlebot3_node', '/home/ubuntu/ros2_ws/install/turtlebot3_node')])}
+[0.004867] (turtlebot3_simulations) JobQueued: {'identifier': 'turtlebot3_simulations', 'dependencies': OrderedDict([('turtlebot3_gazebo', '/home/ubuntu/ros2_ws/install/turtlebot3_gazebo'), ('turtlebot3_manipulation_gazebo', '/home/ubuntu/ros2_ws/install/turtlebot3_manipulation_gazebo'), ('turtlebot3_msgs', '/home/ubuntu/ros2_ws/install/turtlebot3_msgs'), ('turtlebot3_fake_node', '/home/ubuntu/ros2_ws/install/turtlebot3_fake_node')])}
+[0.004956] (turtlebot3) JobQueued: {'identifier': 'turtlebot3', 'dependencies': OrderedDict([('dynamixel_sdk', '/home/ubuntu/ros2_ws/install/dynamixel_sdk'), ('turtlebot3_cartographer', '/home/ubuntu/ros2_ws/install/turtlebot3_cartographer'), ('turtlebot3_description', '/home/ubuntu/ros2_ws/install/turtlebot3_description'), ('turtlebot3_msgs', '/home/ubuntu/ros2_ws/install/turtlebot3_msgs'), ('turtlebot3_navigation2', '/home/ubuntu/ros2_ws/install/turtlebot3_navigation2'), ('turtlebot3_teleop', '/home/ubuntu/ros2_ws/install/turtlebot3_teleop'), ('turtlebot3_example', '/home/ubuntu/ros2_ws/install/turtlebot3_example'), ('turtlebot3_node', '/home/ubuntu/ros2_ws/install/turtlebot3_node'), ('turtlebot3_bringup', '/home/ubuntu/ros2_ws/install/turtlebot3_bringup')])}
+[0.005117] (turtlebot3_msgs) JobStarted: {'identifier': 'turtlebot3_msgs'}
+[0.041158] (dynamixel_sdk) JobStarted: {'identifier': 'dynamixel_sdk'}
+[0.070335] (turtlebot3_description) JobStarted: {'identifier': 'turtlebot3_description'}
+[0.098455] (-) TimerEvent: {}
+[0.099804] (dynamixel_sdk_custom_interfaces) JobStarted: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.135914] (turtlebot3_msgs) JobProgress: {'identifier': 'turtlebot3_msgs', 'progress': 'cmake'}
+[0.138267] (turtlebot3_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/turtlebot3_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/turtlebot3_msgs'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_msgs'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[0.151843] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'cmake'}
+[0.154364] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/turtlebot3/src/DynamixelSDK/ros/dynamixel_sdk', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/dynamixel_sdk'], 'cwd': '/home/ubuntu/ros2_ws/build/dynamixel_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/dynamixel_sdk'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[0.166026] (turtlebot3_description) JobProgress: {'identifier': 'turtlebot3_description', 'progress': 'cmake'}
+[0.168401] (turtlebot3_description) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/turtlebot3/src/turtlebot3/turtlebot3_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/turtlebot3_description'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_description'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[0.193916] (dynamixel_sdk_custom_interfaces) JobProgress: {'identifier': 'dynamixel_sdk_custom_interfaces', 'progress': 'cmake'}
+[0.197090] (dynamixel_sdk_custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/turtlebot3/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/dynamixel_sdk_custom_interfaces'], 'cwd': '/home/ubuntu/ros2_ws/build/dynamixel_sdk_custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/dynamixel_sdk_custom_interfaces'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[0.208879] (-) TimerEvent: {}
+[0.310450] (-) TimerEvent: {}
+[0.411779] (-) TimerEvent: {}
+[0.502451] (dynamixel_sdk) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.511872] (-) TimerEvent: {}
+[0.549639] (turtlebot3_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.566495] (turtlebot3_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.576892] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.612113] (-) TimerEvent: {}
+[0.713321] (-) TimerEvent: {}
+[0.815203] (-) TimerEvent: {}
+[0.841863] (dynamixel_sdk) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.891324] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.915465] (-) TimerEvent: {}
+[0.927517] (turtlebot3_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.969258] (turtlebot3_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.996087] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.011862] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.015732] (-) TimerEvent: {}
+[1.029657] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.031140] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.115996] (-) TimerEvent: {}
+[1.217138] (-) TimerEvent: {}
+[1.318289] (-) TimerEvent: {}
+[1.419538] (-) TimerEvent: {}
+[1.430730] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.472088] (dynamixel_sdk) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.474811] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.477849] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.499136] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.519769] (-) TimerEvent: {}
+[1.540335] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.592303] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.593379] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.595619] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.597818] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.611428] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.619995] (-) TimerEvent: {}
+[1.657560] (turtlebot3_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.662133] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.665486] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.694406] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.720231] (-) TimerEvent: {}
+[1.724884] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.763240] (turtlebot3_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.767629] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.770751] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.791919] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.820483] (-) TimerEvent: {}
+[1.922521] (-) TimerEvent: {}
+[2.024991] (-) TimerEvent: {}
+[2.035617] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.065515] (dynamixel_sdk) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.067343] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.070331] (dynamixel_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.123656] (dynamixel_sdk) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.125165] (-) TimerEvent: {}
+[2.226208] (-) TimerEvent: {}
+[2.232033] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.292594] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.301433] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.311959] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.326613] (-) TimerEvent: {}
+[2.377186] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.417197] (turtlebot3_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.417819] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.418274] (turtlebot3_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.418795] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.426186] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.426822] (-) TimerEvent: {}
+[2.458998] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[2.507730] (turtlebot3_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.508424] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.509612] (turtlebot3_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.527028] (-) TimerEvent: {}
+[2.564462] (turtlebot3_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.627248] (-) TimerEvent: {}
+[2.729430] (-) TimerEvent: {}
+[2.831255] (-) TimerEvent: {}
+[2.932348] (-) TimerEvent: {}
+[3.037919] (-) TimerEvent: {}
+[3.141970] (-) TimerEvent: {}
+[3.244675] (-) TimerEvent: {}
+[3.345900] (-) TimerEvent: {}
+[3.447469] (-) TimerEvent: {}
+[3.481268] (dynamixel_sdk) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.547741] (-) TimerEvent: {}
+[3.648976] (-) TimerEvent: {}
+[3.750008] (-) TimerEvent: {}
+[3.785919] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.850169] (-) TimerEvent: {}
+[3.951593] (-) TimerEvent: {}
+[3.953670] (turtlebot3_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.007647] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.051818] (-) TimerEvent: {}
+[4.152629] (-) TimerEvent: {}
+[4.254477] (-) TimerEvent: {}
+[4.270062] (dynamixel_sdk) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.354622] (-) TimerEvent: {}
+[4.409901] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.455188] (-) TimerEvent: {}
+[4.465496] (turtlebot3_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.555335] (-) TimerEvent: {}
+[4.657092] (-) TimerEvent: {}
+[4.682566] (turtlebot3_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.757287] (-) TimerEvent: {}
+[4.858795] (-) TimerEvent: {}
+[4.960293] (-) TimerEvent: {}
+[5.061573] (-) TimerEvent: {}
+[5.117901] (turtlebot3_description) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[5.161796] (-) TimerEvent: {}
+[5.196453] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[5.261991] (-) TimerEvent: {}
+[5.363097] (-) TimerEvent: {}
+[5.465019] (-) TimerEvent: {}
+[5.566439] (-) TimerEvent: {}
+[5.668031] (-) TimerEvent: {}
+[5.756888] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.768276] (-) TimerEvent: {}
+[5.847330] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.860459] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.868491] (-) TimerEvent: {}
+[5.955628] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.968711] (-) TimerEvent: {}
+[5.970802] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.975589] (dynamixel_sdk) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.021213] (dynamixel_sdk) StdoutLine: {'line': b'-- Generating done\n'}
+[6.034770] (dynamixel_sdk) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/dynamixel_sdk\n'}
+[6.058555] (dynamixel_sdk) CommandEnded: {'returncode': 0}
+[6.060487] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'build'}
+[6.060727] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/dynamixel_sdk', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/dynamixel_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/dynamixel_sdk'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[6.062932] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.068928] (-) TimerEvent: {}
+[6.110837] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.169130] (-) TimerEvent: {}
+[6.185665] (turtlebot3_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.269374] (-) TimerEvent: {}
+[6.330357] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.356350] (dynamixel_sdk) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o\x1b[0m\n'}
+[6.369587] (-) TimerEvent: {}
+[6.379084] (dynamixel_sdk) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o\x1b[0m\n'}
+[6.415637] (dynamixel_sdk) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o\x1b[0m\n'}
+[6.422309] (turtlebot3_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.469870] (-) TimerEvent: {}
+[6.532049] (dynamixel_sdk) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_symlink_dynamixel_sdk\n'}
+[6.570052] (-) TimerEvent: {}
+[6.670601] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[6.671373] (-) TimerEvent: {}
+[6.772870] (-) TimerEvent: {}
+[6.849316] (turtlebot3_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.873148] (-) TimerEvent: {}
+[6.889439] (turtlebot3_description) StdoutLine: {'line': b'-- Generating done\n'}
+[6.934069] (turtlebot3_description) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/turtlebot3_description\n'}
+[6.973437] (-) TimerEvent: {}
+[6.996460] (turtlebot3_description) CommandEnded: {'returncode': 0}
+[6.998490] (turtlebot3_description) JobProgress: {'identifier': 'turtlebot3_description', 'progress': 'build'}
+[6.998735] (turtlebot3_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/turtlebot3_description', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_description'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[7.074433] (-) TimerEvent: {}
+[7.176134] (-) TimerEvent: {}
+[7.196098] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.276566] (-) TimerEvent: {}
+[7.377926] (-) TimerEvent: {}
+[7.454342] (turtlebot3_description) CommandEnded: {'returncode': 0}
+[7.465927] (turtlebot3_description) JobProgress: {'identifier': 'turtlebot3_description', 'progress': 'install'}
+[7.478123] (-) TimerEvent: {}
+[7.526618] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[7.596550] (turtlebot3_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/build/turtlebot3_description'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_description'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[7.598425] (-) TimerEvent: {}
+[7.693902] (turtlebot3_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.698182] (turtlebot3_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.698919] (-) TimerEvent: {}
+[7.719798] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl\n'}
+[7.730231] (dynamixel_sdk) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o\x1b[0m\n'}
+[7.734479] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[7.799179] (-) TimerEvent: {}
+[7.814312] (dynamixel_sdk) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o\x1b[0m\n'}
+[7.866190] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl\n'}
+[7.899434] (-) TimerEvent: {}
+[8.001079] (-) TimerEvent: {}
+[8.007568] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl\n'}
+[8.101307] (-) TimerEvent: {}
+[8.132064] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae\n'}
+[8.201550] (-) TimerEvent: {}
+[8.252937] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg\n'}
+[8.301933] (-) TimerEvent: {}
+[8.346393] (dynamixel_sdk) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o\x1b[0m\n'}
+[8.357049] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl\n'}
+[8.402164] (-) TimerEvent: {}
+[8.475939] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae\n'}
+[8.502347] (-) TimerEvent: {}
+[8.603210] (-) TimerEvent: {}
+[8.606057] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg\n'}
+[8.703440] (-) TimerEvent: {}
+[8.716032] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl\n'}
+[8.803819] (-) TimerEvent: {}
+[8.811815] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl\n'}
+[8.904112] (-) TimerEvent: {}
+[8.948871] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz\n'}
+[9.004350] (-) TimerEvent: {}
+[9.078375] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf\n'}
+[9.104684] (-) TimerEvent: {}
+[9.197491] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf\n'}
+[9.205174] (-) TimerEvent: {}
+[9.279711] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf\n'}
+[9.305375] (-) TimerEvent: {}
+[9.376169] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf\n'}
+[9.405667] (-) TimerEvent: {}
+[9.430807] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description\n'}
+[9.486094] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description\n'}
+[9.505936] (-) TimerEvent: {}
+[9.543939] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh\n'}
+[9.595982] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.dsv\n'}
+[9.606165] (-) TimerEvent: {}
+[9.656374] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh\n'}
+[9.706431] (-) TimerEvent: {}
+[9.774099] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.dsv\n'}
+[9.806702] (-) TimerEvent: {}
+[9.888178] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash\n'}
+[9.906900] (-) TimerEvent: {}
+[10.004155] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh\n'}
+[10.007194] (-) TimerEvent: {}
+[10.109200] (-) TimerEvent: {}
+[10.137215] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh\n'}
+[10.209625] (-) TimerEvent: {}
+[10.231562] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.dsv\n'}
+[10.309903] (-) TimerEvent: {}
+[10.320307] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv\n'}
+[10.410123] (-) TimerEvent: {}
+[10.432481] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description\n'}
+[10.510358] (-) TimerEvent: {}
+[10.552462] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake\n'}
+[10.610627] (-) TimerEvent: {}
+[10.621332] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake\n'}
+[10.636470] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[10.676283] (dynamixel_sdk) StdoutLine: {'line': b'running egg_info\n'}
+[10.681997] (dynamixel_sdk) StdoutLine: {'line': b'creating dynamixel_sdk.egg-info\n'}
+[10.683565] (turtlebot3_description) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_description/share/turtlebot3_description/package.xml\n'}
+[10.699125] (dynamixel_sdk) StdoutLine: {'line': b'writing dynamixel_sdk.egg-info/PKG-INFO\n'}
+[10.700231] (dynamixel_sdk) StdoutLine: {'line': b'writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt\n'}
+[10.701551] (dynamixel_sdk) StdoutLine: {'line': b'writing top-level names to dynamixel_sdk.egg-info/top_level.txt\n'}
+[10.702867] (dynamixel_sdk) StdoutLine: {'line': b"writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'\n"}
+[10.710836] (-) TimerEvent: {}
+[10.750082] (turtlebot3_description) CommandEnded: {'returncode': 0}
+[10.779532] (dynamixel_sdk) StdoutLine: {'line': b"reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'\n"}
+[10.785271] (dynamixel_sdk) StdoutLine: {'line': b"writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'\n"}
+[10.811344] (-) TimerEvent: {}
+[10.912461] (-) TimerEvent: {}
+[11.014265] (-) TimerEvent: {}
+[11.040034] (turtlebot3_description) JobEnded: {'identifier': 'turtlebot3_description', 'rc': 0}
+[11.043872] (turtlebot3_cartographer) JobStarted: {'identifier': 'turtlebot3_cartographer'}
+[11.114657] (-) TimerEvent: {}
+[11.151321] (turtlebot3_cartographer) JobProgress: {'identifier': 'turtlebot3_cartographer', 'progress': 'cmake'}
+[11.159025] (turtlebot3_cartographer) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/turtlebot3/src/turtlebot3/turtlebot3_cartographer', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/turtlebot3_cartographer'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[11.215036] (-) TimerEvent: {}
+[11.241449] (dynamixel_sdk) StdoutLine: {'line': b'[ 46%] Built target ament_cmake_python_build_dynamixel_sdk_egg\n'}
+[11.315328] (-) TimerEvent: {}
+[11.367968] (dynamixel_sdk) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o\x1b[0m\n'}
+[11.415562] (-) TimerEvent: {}
+[11.517538] (-) TimerEvent: {}
+[11.620181] (-) TimerEvent: {}
+[11.721120] (-) TimerEvent: {}
+[11.822265] (-) TimerEvent: {}
+[11.828721] (turtlebot3_cartographer) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[11.922548] (-) TimerEvent: {}
+[12.023592] (-) TimerEvent: {}
+[12.124864] (-) TimerEvent: {}
+[12.168027] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[12.225102] (-) TimerEvent: {}
+[12.256574] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[12.263777] (dynamixel_sdk) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_bulk_read.cpp.o\x1b[0m\n'}
+[12.325397] (-) TimerEvent: {}
+[12.360965] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[12.425870] (-) TimerEvent: {}
+[12.456159] (dynamixel_sdk) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_sync_read.cpp.o\x1b[0m\n'}
+[12.470637] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[12.526064] (-) TimerEvent: {}
+[12.605967] (turtlebot3_cartographer) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[12.626474] (-) TimerEvent: {}
+[12.682330] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[12.726890] (-) TimerEvent: {}
+[12.828782] (-) TimerEvent: {}
+[12.930651] (-) TimerEvent: {}
+[13.032657] (-) TimerEvent: {}
+[13.134621] (-) TimerEvent: {}
+[13.236024] (-) TimerEvent: {}
+[13.337010] (-) TimerEvent: {}
+[13.438112] (-) TimerEvent: {}
+[13.539120] (-) TimerEvent: {}
+[13.561862] (dynamixel_sdk) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_handler.cpp.o\x1b[0m\n'}
+[13.639424] (-) TimerEvent: {}
+[13.710705] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[13.739652] (-) TimerEvent: {}
+[13.781494] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[13.788293] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[13.791867] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[13.830808] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.840102] (-) TimerEvent: {}
+[13.941542] (-) TimerEvent: {}
+[14.042837] (-) TimerEvent: {}
+[14.143935] (-) TimerEvent: {}
+[14.245663] (-) TimerEvent: {}
+[14.347531] (-) TimerEvent: {}
+[14.449198] (-) TimerEvent: {}
+[14.551231] (-) TimerEvent: {}
+[14.653282] (-) TimerEvent: {}
+[14.755458] (-) TimerEvent: {}
+[14.857375] (-) TimerEvent: {}
+[14.959291] (-) TimerEvent: {}
+[15.061533] (-) TimerEvent: {}
+[15.107973] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.141406] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.161848] (-) TimerEvent: {}
+[15.204646] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.205989] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.208001] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.262032] (-) TimerEvent: {}
+[15.297246] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[15.362359] (-) TimerEvent: {}
+[15.451019] (dynamixel_sdk) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o\x1b[0m\n'}
+[15.462605] (-) TimerEvent: {}
+[15.564530] (-) TimerEvent: {}
+[15.582622] (dynamixel_sdk) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o\x1b[0m\n'}
+[15.664966] (-) TimerEvent: {}
+[15.768056] (-) TimerEvent: {}
+[15.870780] (-) TimerEvent: {}
+[15.972547] (-) TimerEvent: {}
+[16.074426] (-) TimerEvent: {}
+[16.176392] (-) TimerEvent: {}
+[16.279260] (-) TimerEvent: {}
+[16.386089] (-) TimerEvent: {}
+[16.393382] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[16.486228] (-) TimerEvent: {}
+[16.576447] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[16.586621] (-) TimerEvent: {}
+[16.592827] (dynamixel_sdk) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk.so\x1b[0m\n'}
+[16.608287] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[16.633086] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[16.686953] (-) TimerEvent: {}
+[16.788396] (-) TimerEvent: {}
+[16.846384] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[16.848633] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[16.850155] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[16.851490] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[16.888577] (-) TimerEvent: {}
+[16.989842] (-) TimerEvent: {}
+[17.022880] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[17.090102] (-) TimerEvent: {}
+[17.102062] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[17.133567] (dynamixel_sdk) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk\n'}
+[17.190302] (-) TimerEvent: {}
+[17.204929] (dynamixel_sdk) CommandEnded: {'returncode': 0}
+[17.207911] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'install'}
+[17.208373] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/build/dynamixel_sdk'], 'cwd': '/home/ubuntu/ros2_ws/build/dynamixel_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/dynamixel_sdk'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[17.250915] (dynamixel_sdk) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.252967] (dynamixel_sdk) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.257452] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h\n'}
+[17.290810] (-) TimerEvent: {}
+[17.312825] (turtlebot3_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[17.318223] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h\n'}
+[17.362525] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h\n'}
+[17.391015] (-) TimerEvent: {}
+[17.398432] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[17.403607] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h\n'}
+[17.443116] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h\n'}
+[17.487598] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h\n'}
+[17.491290] (-) TimerEvent: {}
+[17.526821] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h\n'}
+[17.567747] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h\n'}
+[17.591681] (-) TimerEvent: {}
+[17.609713] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h\n'}
+[17.646925] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[17.652325] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h\n'}
+[17.691753] (-) TimerEvent: {}
+[17.702722] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h\n'}
+[17.718667] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/dynamixel_sdk_custom_interfaces\n'}
+[17.752012] (dynamixel_sdk_custom_interfaces) CommandEnded: {'returncode': 0}
+[17.754252] (dynamixel_sdk_custom_interfaces) JobProgress: {'identifier': 'dynamixel_sdk_custom_interfaces', 'progress': 'build'}
+[17.754603] (dynamixel_sdk_custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/dynamixel_sdk_custom_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/dynamixel_sdk_custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/dynamixel_sdk_custom_interfaces'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[17.761585] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h\n'}
+[17.791976] (-) TimerEvent: {}
+[17.809720] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h\n'}
+[17.860883] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h\n'}
+[17.892175] (-) TimerEvent: {}
+[17.904021] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h\n'}
+[17.961002] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h\n'}
+[17.992542] (-) TimerEvent: {}
+[18.009334] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh\n'}
+[18.053474] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[18.072618] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv\n'}
+[18.092914] (-) TimerEvent: {}
+[18.148318] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[18.168028] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/PKG-INFO\n'}
+[18.193227] (-) TimerEvent: {}
+[18.204427] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.236661] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/SOURCES.txt\n'}
+[18.240196] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Generating done\n'}
+[18.252344] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/turtlebot3_cartographer\n'}
+[18.275622] (turtlebot3_cartographer) CommandEnded: {'returncode': 0}
+[18.278659] (turtlebot3_cartographer) JobProgress: {'identifier': 'turtlebot3_cartographer', 'progress': 'build'}
+[18.279258] (turtlebot3_cartographer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[18.299901] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_dynamixel_sdk_custom_interfaces\n'}
+[18.301235] (-) TimerEvent: {}
+[18.362653] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/dependency_links.txt\n'}
+[18.401458] (-) TimerEvent: {}
+[18.463459] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk-3.8.4-py3.10.egg-info/top_level.txt\n'}
+[18.478825] (turtlebot3_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[18.501943] (-) TimerEvent: {}
+[18.561409] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/__init__.py\n'}
+[18.602201] (-) TimerEvent: {}
+[18.626940] (turtlebot3_cartographer) CommandEnded: {'returncode': 0}
+[18.640536] (turtlebot3_cartographer) JobProgress: {'identifier': 'turtlebot3_cartographer', 'progress': 'install'}
+[18.642076] (turtlebot3_cartographer) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_cartographer'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[18.657309] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[18.678790] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.cpp\n'}
+[18.702442] (-) TimerEvent: {}
+[18.710175] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[18.745334] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.747666] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[18.754866] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua\n'}
+[18.760932] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.py\n'}
+[18.802696] (-) TimerEvent: {}
+[18.855750] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.cpp\n'}
+[18.870338] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py\n'}
+[18.902947] (-) TimerEvent: {}
+[18.946284] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.py\n'}
+[18.987932] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py\n'}
+[19.003280] (-) TimerEvent: {}
+[19.025156] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[19.027385] (turtlebot3_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[19.028962] (turtlebot3_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[19.031696] (turtlebot3_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[19.039970] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_bulk_read.cpp\n'}
+[19.105098] (-) TimerEvent: {}
+[19.106413] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz\n'}
+[19.149823] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_fast_sync_read.cpp\n'}
+[19.200505] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[19.205347] (-) TimerEvent: {}
+[19.225486] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer\n'}
+[19.267537] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_handler.cpp\n'}
+[19.305561] (-) TimerEvent: {}
+[19.328410] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer\n'}
+[19.363607] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.cpp\n'}
+[19.405867] (-) TimerEvent: {}
+[19.440666] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh\n'}
+[19.455632] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.py\n'}
+[19.506061] (-) TimerEvent: {}
+[19.519351] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv\n'}
+[19.548839] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.cpp\n'}
+[19.568716] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh\n'}
+[19.606273] (-) TimerEvent: {}
+[19.617467] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.dsv\n'}
+[19.666361] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash\n'}
+[19.680626] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.py\n'}
+[19.706517] (-) TimerEvent: {}
+[19.742355] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh\n'}
+[19.759449] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.cpp\n'}
+[19.789302] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh\n'}
+[19.806730] (-) TimerEvent: {}
+[19.847627] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.py\n'}
+[19.865926] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.dsv\n'}
+[19.868428] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[19.906902] (-) TimerEvent: {}
+[19.915693] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.cpp\n'}
+[19.938532] (turtlebot3_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[19.960790] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv\n'}
+[20.007169] (-) TimerEvent: {}
+[20.009530] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.py\n'}
+[20.107343] (-) TimerEvent: {}
+[20.119276] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer\n'}
+[20.138791] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_arduino.cpp\n'}
+[20.185426] (turtlebot3_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.207533] (-) TimerEvent: {}
+[20.211704] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake\n'}
+[20.213508] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_linux.cpp\n'}
+[20.268940] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_mac.cpp\n'}
+[20.282502] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake\n'}
+[20.307758] (-) TimerEvent: {}
+[20.320940] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler_windows.cpp\n'}
+[20.363829] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.cpp\n'}
+[20.387781] (turtlebot3_cartographer) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml\n'}
+[20.408013] (-) TimerEvent: {}
+[20.435459] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.py\n'}
+[20.485478] (turtlebot3_cartographer) CommandEnded: {'returncode': 0}
+[20.487062] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.cpp\n'}
+[20.508221] (-) TimerEvent: {}
+[20.529025] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.py\n'}
+[20.583992] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/robotis_def.py\n'}
+[20.604630] (turtlebot3_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[20.609807] (-) TimerEvent: {}
+[20.657983] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh\n'}
+[20.682585] (turtlebot3_cartographer) JobEnded: {'identifier': 'turtlebot3_cartographer', 'rc': 0}
+[20.687909] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[20.710236] (-) TimerEvent: {}
+[20.722894] (turtlebot3_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/turtlebot3_msgs\n'}
+[20.815054] (-) TimerEvent: {}
+[20.824030] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv\n'}
+[20.852691] (turtlebot3_msgs) CommandEnded: {'returncode': 0}
+[20.855187] (turtlebot3_msgs) JobProgress: {'identifier': 'turtlebot3_msgs', 'progress': 'build'}
+[20.855555] (turtlebot3_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/turtlebot3_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_msgs'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[20.875453] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[20.879548] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/turtlebot3/src/turtlebot3_simulations/turtlebot3_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/turtlebot3_gazebo'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_gazebo'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[20.898063] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk\n'}
+[20.915260] (-) TimerEvent: {}
+[20.941065] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[20.947504] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'creating dynamixel_sdk_custom_interfaces.egg-info\n'}
+[20.949930] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'writing dynamixel_sdk_custom_interfaces.egg-info/PKG-INFO\n'}
+[20.952960] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'writing dependency_links to dynamixel_sdk_custom_interfaces.egg-info/dependency_links.txt\n'}
+[20.956584] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'writing top-level names to dynamixel_sdk_custom_interfaces.egg-info/top_level.txt\n'}
+[20.957980] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk\n'}
+[20.958842] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'\n"}
+[20.980474] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"reading manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'\n"}
+[20.992474] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b"writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'\n"}
+[21.015631] (-) TimerEvent: {}
+[21.036676] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh\n'}
+[21.115959] (-) TimerEvent: {}
+[21.144332] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv\n'}
+[21.208103] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh\n'}
+[21.216191] (-) TimerEvent: {}
+[21.281405] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg\n'}
+[21.288445] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv\n'}
+[21.315392] (turtlebot3_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[21.316258] (-) TimerEvent: {}
+[21.387524] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash\n'}
+[21.423782] (-) TimerEvent: {}
+[21.451646] (turtlebot3_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[21.460785] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c.o\x1b[0m\n'}
+[21.481841] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh\n'}
+[21.518230] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c.o\x1b[0m\n'}
+[21.523948] (-) TimerEvent: {}
+[21.546416] (turtlebot3_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_turtlebot3_msgs\n'}
+[21.575895] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh\n'}
+[21.582050] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 10%] Built target dynamixel_sdk_custom_interfaces__cpp\n'}
+[21.624195] (-) TimerEvent: {}
+[21.661665] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv\n'}
+[21.724466] (-) TimerEvent: {}
+[21.746448] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[21.752606] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[21.810280] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[21.829986] (-) TimerEvent: {}
+[21.869866] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv\n'}
+[21.933886] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk\n'}
+[21.934541] (-) TimerEvent: {}
+[22.023420] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[22.040038] (-) TimerEvent: {}
+[22.140046] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.140783] (-) TimerEvent: {}
+[22.250194] (-) TimerEvent: {}
+[22.261564] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[22.350446] (-) TimerEvent: {}
+[22.451989] (-) TimerEvent: {}
+[22.519915] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake\n'}
+[22.552200] (-) TimerEvent: {}
+[22.650923] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[22.652396] (-) TimerEvent: {}
+[22.689198] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake\n'}
+[22.702237] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[22.752622] (-) TimerEvent: {}
+[22.816304] (dynamixel_sdk) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml\n'}
+[22.852920] (-) TimerEvent: {}
+[22.954694] (-) TimerEvent: {}
+[23.009508] (dynamixel_sdk) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so\n'}
+[23.032959] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 20%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c\n'}
+[23.054895] (-) TimerEvent: {}
+[23.124322] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[23.155121] (-) TimerEvent: {}
+[23.212620] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[23.255335] (-) TimerEvent: {}
+[23.274620] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[23.355732] (-) TimerEvent: {}
+[23.457289] (-) TimerEvent: {}
+[23.558915] (-) TimerEvent: {}
+[23.660229] (-) TimerEvent: {}
+[23.761623] (-) TimerEvent: {}
+[23.862949] (-) TimerEvent: {}
+[23.964533] (-) TimerEvent: {}
+[24.065827] (-) TimerEvent: {}
+[24.137433] (dynamixel_sdk) StdoutLine: {'line': b"Listing '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk'...\n"}
+[24.138928] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/__init__.py'...\n"}
+[24.141458] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_read.py'...\n"}
+[24.142306] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_bulk_write.py'...\n"}
+[24.142813] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_read.py'...\n"}
+[24.143340] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/group_sync_write.py'...\n"}
+[24.143867] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/packet_handler.py'...\n"}
+[24.144385] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/port_handler.py'...\n"}
+[24.144925] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol1_packet_handler.py'...\n"}
+[24.145442] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/protocol2_packet_handler.py'...\n"}
+[24.146024] (dynamixel_sdk) StdoutLine: {'line': b"Compiling '/home/ubuntu/ros2_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages/dynamixel_sdk/robotis_def.py'...\n"}
+[24.166189] (-) TimerEvent: {}
+[24.267628] (-) TimerEvent: {}
+[24.368979] (-) TimerEvent: {}
+[24.391007] (dynamixel_sdk) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake\n'}
+[24.394087] (dynamixel_sdk) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake\n'}
+[24.406896] (dynamixel_sdk) CommandEnded: {'returncode': 0}
+[24.481929] (-) TimerEvent: {}
+[24.599385] (-) TimerEvent: {}
+[24.706078] (-) TimerEvent: {}
+[24.754036] (dynamixel_sdk) JobEnded: {'identifier': 'dynamixel_sdk', 'rc': 0}
+[24.757952] (turtlebot3_manipulation_gazebo) JobStarted: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[24.806162] (-) TimerEvent: {}
+[24.840450] (turtlebot3_manipulation_gazebo) JobProgress: {'identifier': 'turtlebot3_manipulation_gazebo', 'progress': 'cmake'}
+[24.840689] (turtlebot3_manipulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/turtlebot3/src/turtlebot3_simulations/turtlebot3_manipulation_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/turtlebot3_manipulation_gazebo'], 'cwd': '/home/ubuntu/ros2_ws/build/turtlebot3_manipulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.17 49468 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install:/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/ros2_ws/build/turtlebot3_manipulation_gazebo'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.17 49468 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[24.906357] (-) TimerEvent: {}
+[24.912550] (turtlebot3_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[24.917558] (turtlebot3_msgs) StdoutLine: {'line': b'creating turtlebot3_msgs.egg-info\n'}
+[24.919124] (turtlebot3_msgs) StdoutLine: {'line': b'writing turtlebot3_msgs.egg-info/PKG-INFO\n'}
+[24.920172] (turtlebot3_msgs) StdoutLine: {'line': b'writing dependency_links to turtlebot3_msgs.egg-info/dependency_links.txt\n'}
+[24.922022] (turtlebot3_msgs) StdoutLine: {'line': b'writing top-level names to turtlebot3_msgs.egg-info/top_level.txt\n'}
+[24.923333] (turtlebot3_msgs) StdoutLine: {'line': b"writing manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'\n"}
+[24.937569] (turtlebot3_msgs) StdoutLine: {'line': b"reading manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'\n"}
+[24.941101] (turtlebot3_msgs) StdoutLine: {'line': b"writing manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'\n"}
+[25.006675] (-) TimerEvent: {}
+[25.108769] (-) TimerEvent: {}
+[25.135723] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[25.208957] (-) TimerEvent: {}
+[25.210206] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[25.218244] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[25.225344] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[25.234152] (turtlebot3_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_turtlebot3_msgs_egg\n'}
+[25.276020] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[25.309293] (-) TimerEvent: {}
+[25.410676] (-) TimerEvent: {}
+[25.511770] (-) TimerEvent: {}
+[25.613541] (-) TimerEvent: {}
+[25.675733] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o\x1b[0m\n'}
+[25.713819] (-) TimerEvent: {}
+[25.806100] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[25.813990] (-) TimerEvent: {}
+[25.915463] (-) TimerEvent: {}
+[26.017051] (-) TimerEvent: {}
+[26.118817] (-) TimerEvent: {}
+[26.220260] (-) TimerEvent: {}
+[26.321847] (-) TimerEvent: {}
+[26.410094] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[26.422257] (-) TimerEvent: {}
+[26.496001] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[26.522412] (-) TimerEvent: {}
+[26.534952] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[26.583842] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[26.586081] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[26.591409] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[26.622640] (-) TimerEvent: {}
+[26.724044] (-) TimerEvent: {}
+[26.742920] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[26.824272] (-) TimerEvent: {}
+[26.925612] (-) TimerEvent: {}
+[27.027034] (-) TimerEvent: {}
+[27.128457] (-) TimerEvent: {}
+[27.230070] (-) TimerEvent: {}
+[27.280055] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[27.330282] (-) TimerEvent: {}
+[27.341167] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[27.343580] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[27.347753] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[27.377972] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[27.430460] (-) TimerEvent: {}
+[27.531916] (-) TimerEvent: {}
+[27.633850] (-) TimerEvent: {}
+[27.735774] (-) TimerEvent: {}
+[27.838625] (-) TimerEvent: {}
+[27.939976] (-) TimerEvent: {}
+[28.041149] (-) TimerEvent: {}
+[28.142166] (-) TimerEvent: {}
+[28.243164] (-) TimerEvent: {}
+[28.320275] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp.o\x1b[0m\n'}
+[28.343388] (-) TimerEvent: {}
+[28.444833] (-) TimerEvent: {}
+[28.546584] (-) TimerEvent: {}
+[28.577258] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/set_position__type_support.cpp.o\x1b[0m\n'}
+[28.635366] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[28.646788] (-) TimerEvent: {}
+[28.661563] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support_c.cpp.o\x1b[0m\n'}
+[28.712473] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[28.715596] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[28.724314] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[28.747217] (-) TimerEvent: {}
+[28.849341] (-) TimerEvent: {}
+[28.877633] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[28.949558] (-) TimerEvent: {}
+[29.051332] (-) TimerEvent: {}
+[29.152892] (-) TimerEvent: {}
+[29.254305] (-) TimerEvent: {}
+[29.355950] (-) TimerEvent: {}
+[29.456816] (-) TimerEvent: {}
+[29.557732] (-) TimerEvent: {}
+[29.584654] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[29.657892] (-) TimerEvent: {}
+[29.759517] (-) TimerEvent: {}
+[29.861060] (-) TimerEvent: {}
+[29.962108] (-) TimerEvent: {}
+[30.021357] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[30.062267] (-) TimerEvent: {}
+[30.196487] (-) TimerEvent: {}
+[30.297631] (-) TimerEvent: {}
+[30.330683] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[30.397953] (-) TimerEvent: {}
+[30.499023] (-) TimerEvent: {}
+[30.600012] (-) TimerEvent: {}
+[30.700960] (-) TimerEvent: {}
+[30.802577] (-) TimerEvent: {}
+[30.904519] (-) TimerEvent: {}
+[31.006306] (-) TimerEvent: {}
+[31.107798] (-) TimerEvent: {}
+[31.152867] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:23 (find_package):\n'}
+[31.153818] (turtlebot3_gazebo) StderrLine: {'line': b'  By not providing "Findgazebo.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[31.154491] (turtlebot3_gazebo) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "gazebo", but\n'}
+[31.155570] (turtlebot3_gazebo) StderrLine: {'line': b'  CMake did not find one.\n'}
+[31.156600] (turtlebot3_gazebo) StderrLine: {'line': b'\n'}
+[31.157503] (turtlebot3_gazebo) StderrLine: {'line': b'  Could not find a package configuration file provided by "gazebo" with any\n'}
+[31.158632] (turtlebot3_gazebo) StderrLine: {'line': b'  of the following names:\n'}
+[31.159614] (turtlebot3_gazebo) StderrLine: {'line': b'\n'}
+[31.160920] (turtlebot3_gazebo) StderrLine: {'line': b'    gazeboConfig.cmake\n'}
+[31.162273] (turtlebot3_gazebo) StderrLine: {'line': b'    gazebo-config.cmake\n'}
+[31.163095] (turtlebot3_gazebo) StderrLine: {'line': b'\n'}
+[31.163890] (turtlebot3_gazebo) StderrLine: {'line': b'  Add the installation prefix of "gazebo" to CMAKE_PREFIX_PATH or set\n'}
+[31.164688] (turtlebot3_gazebo) StderrLine: {'line': b'  "gazebo_DIR" to a directory containing one of the above files.  If "gazebo"\n'}
+[31.172893] (turtlebot3_gazebo) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[31.193112] (turtlebot3_gazebo) StderrLine: {'line': b'  installed.\n'}
+[31.194147] (turtlebot3_gazebo) StderrLine: {'line': b'\n'}
+[31.194827] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[31.195363] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[31.195930] (turtlebot3_gazebo) StdoutLine: {'line': b'See also "/home/ubuntu/ros2_ws/build/turtlebot3_gazebo/CMakeFiles/CMakeOutput.log".\n'}
+[31.196423] (turtlebot3_gazebo) CommandEnded: {'returncode': 1}
+[31.209116] (-) TimerEvent: {}
+[31.311530] (-) TimerEvent: {}
+[31.332080] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 1}
+[31.411775] (-) TimerEvent: {}
+[31.513184] (-) TimerEvent: {}
+[31.615147] (-) TimerEvent: {}
+[31.716984] (-) TimerEvent: {}
+[31.818787] (-) TimerEvent: {}
+[31.916710] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[31.918993] (-) TimerEvent: {}
+[32.020365] (-) TimerEvent: {}
+[32.121991] (-) TimerEvent: {}
+[32.223758] (-) TimerEvent: {}
+[32.325908] (-) TimerEvent: {}
+[32.426863] (-) TimerEvent: {}
+[32.527807] (-) TimerEvent: {}
+[32.628777] (-) TimerEvent: {}
+[32.730033] (-) TimerEvent: {}
+[32.831717] (-) TimerEvent: {}
+[32.839139] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[32.931951] (-) TimerEvent: {}
+[33.033040] (-) TimerEvent: {}
+[33.134154] (-) TimerEvent: {}
+[33.195143] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp.o\x1b[0m\n'}
+[33.234373] (-) TimerEvent: {}
+[33.336092] (-) TimerEvent: {}
+[33.437851] (-) TimerEvent: {}
+[33.520894] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support_c.cpp.o\x1b[0m\n'}
+[33.538095] (-) TimerEvent: {}
+[33.628848] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[33.638297] (-) TimerEvent: {}
+[33.740069] (-) TimerEvent: {}
+[33.841858] (-) TimerEvent: {}
+[33.929518] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o\x1b[0m\n'}
+[33.942045] (-) TimerEvent: {}
+[34.043552] (-) TimerEvent: {}
+[34.144405] (-) TimerEvent: {}
+[34.211887] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 46%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp\n'}
+[34.244616] (-) TimerEvent: {}
+[34.264392] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[34.344868] (-) TimerEvent: {}
+[34.446644] (-) TimerEvent: {}
+[34.548912] (-) TimerEvent: {}
+[34.649845] (-) TimerEvent: {}
+[34.699123] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[34.750022] (-) TimerEvent: {}
+[34.757979] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[34.775804] (turtlebot3_manipulation_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/turtlebot3_manipulation_gazebo\n'}
+[34.812898] (turtlebot3_manipulation_gazebo) JobEnded: {'identifier': 'turtlebot3_manipulation_gazebo', 'rc': 'SIGINT'}
+[34.850414] (-) TimerEvent: {}
+[34.951906] (-) TimerEvent: {}
+[35.053777] (-) TimerEvent: {}
+[35.155706] (-) TimerEvent: {}
+[35.257613] (-) TimerEvent: {}
+[35.359423] (-) TimerEvent: {}
+[35.460570] (-) TimerEvent: {}
+[35.561833] (-) TimerEvent: {}
+[35.663011] (-) TimerEvent: {}
+[35.765118] (-) TimerEvent: {}
+[35.866859] (-) TimerEvent: {}
+[35.918283] (turtlebot3_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sensor_state__functions.c.o\x1b[0m\n'}
+[35.967089] (-) TimerEvent: {}
+[36.068063] (-) TimerEvent: {}
+[36.169451] (-) TimerEvent: {}
+[36.271568] (-) TimerEvent: {}
+[36.372568] (-) TimerEvent: {}
+[36.473718] (-) TimerEvent: {}
+[36.550248] (turtlebot3_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/version_info__functions.c.o\x1b[0m\n'}
+[36.573972] (-) TimerEvent: {}
+[36.675797] (-) TimerEvent: {}
+[36.778305] (-) TimerEvent: {}
+[36.880821] (-) TimerEvent: {}
+[36.982850] (-) TimerEvent: {}
+[37.041867] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o\x1b[0m\n'}
+[37.053823] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[37.083113] (-) TimerEvent: {}
+[37.109253] (turtlebot3_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/sound__functions.c.o\x1b[0m\n'}
+[37.183431] (-) TimerEvent: {}
+[37.209840] (turtlebot3_msgs) StdoutLine: {'line': b'[  6%] Built target turtlebot3_msgs__cpp\n'}
+[37.283644] (-) TimerEvent: {}
+[37.385626] (-) TimerEvent: {}
+[37.427986] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o\x1b[0m\n'}
+[37.485975] (-) TimerEvent: {}
+[37.587494] (-) TimerEvent: {}
+[37.617376] (turtlebot3_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/goal__functions.c.o\x1b[0m\n'}
+[37.640494] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[37.687770] (-) TimerEvent: {}
+[37.708266] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 58%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[37.748929] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[37.788159] (-) TimerEvent: {}
+[37.890588] (-) TimerEvent: {}
+[37.896151] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[37.930517] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[37.990603] (turtlebot3_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/srv/detail/dqn__functions.c.o\x1b[0m\n'}
+[37.991722] (-) TimerEvent: {}
+[38.092551] (-) TimerEvent: {}
+[38.127671] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[38.192813] (-) TimerEvent: {}
+[38.293668] (-) TimerEvent: {}
+[38.354381] (turtlebot3_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/msg/detail/sound__functions.c.o\x1b[0m\n'}
+[38.393886] (-) TimerEvent: {}
+[38.485746] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 64%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[38.494098] (-) TimerEvent: {}
+[38.534167] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[38.594288] (-) TimerEvent: {}
+[38.616575] (turtlebot3_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlebot3_msgs/action/detail/patrol__functions.c.o\x1b[0m\n'}
+[38.694555] (-) TimerEvent: {}
+[38.795382] (-) TimerEvent: {}
+[38.896169] (-) TimerEvent: {}
+[38.996895] (-) TimerEvent: {}
+[39.105873] (-) TimerEvent: {}
+[39.208314] (-) TimerEvent: {}
+[39.302054] (turtlebot3_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libturtlebot3_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[39.308393] (-) TimerEvent: {}
+[39.409943] (-) TimerEvent: {}
+[39.510827] (-) TimerEvent: {}
+[39.519141] (turtlebot3_msgs) StdoutLine: {'line': b'[ 12%] Built target turtlebot3_msgs__rosidl_generator_c\n'}
+[39.577475] (turtlebot3_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[39.611014] (-) TimerEvent: {}
+[39.712617] (-) TimerEvent: {}
+[39.813562] (-) TimerEvent: {}
+[39.914589] (-) TimerEvent: {}
+[39.982247] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o\x1b[0m\n'}
+[40.014818] (-) TimerEvent: {}
+[40.116051] (-) TimerEvent: {}
+[40.182957] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[40.216246] (-) TimerEvent: {}
+[40.317461] (-) TimerEvent: {}
+[40.383509] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[40.417797] (-) TimerEvent: {}
+[40.518755] (-) TimerEvent: {}
+[40.591007] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c\n'}
+[40.619186] (-) TimerEvent: {}
+[40.701547] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target dynamixel_sdk_custom_interfaces\n'}
+[40.719403] (-) TimerEvent: {}
+[40.813179] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[40.819614] (-) TimerEvent: {}
+[40.921350] (-) TimerEvent: {}
+[41.022456] (-) TimerEvent: {}
+[41.124131] (-) TimerEvent: {}
+[41.226240] (-) TimerEvent: {}
+[41.328466] (-) TimerEvent: {}
+[41.430764] (-) TimerEvent: {}
+[41.532732] (-) TimerEvent: {}
+[41.635108] (-) TimerEvent: {}
+[41.737272] (-) TimerEvent: {}
+[41.839396] (-) TimerEvent: {}
+[41.941831] (-) TimerEvent: {}
+[42.043493] (-) TimerEvent: {}
+[42.145204] (-) TimerEvent: {}
+[42.246782] (-) TimerEvent: {}
+[42.348537] (-) TimerEvent: {}
+[42.450739] (-) TimerEvent: {}
+[42.552864] (-) TimerEvent: {}
+[42.655110] (-) TimerEvent: {}
+[42.756816] (-) TimerEvent: {}
+[42.857529] (-) TimerEvent: {}
+[42.958407] (-) TimerEvent: {}
+[43.062980] (-) TimerEvent: {}
+[43.164199] (-) TimerEvent: {}
+[43.266446] (-) TimerEvent: {}
+[43.367346] (-) TimerEvent: {}
+[43.423197] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target dynamixel_sdk_custom_interfaces__py\n'}
+[43.467584] (-) TimerEvent: {}
+[43.526845] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c.o\x1b[0m\n'}
+[43.568062] (-) TimerEvent: {}
+[43.668924] (-) TimerEvent: {}
+[43.770376] (-) TimerEvent: {}
+[43.774647] (turtlebot3_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/msg/detail/sensor_state__type_support.cpp.o\x1b[0m\n'}
+[43.870687] (-) TimerEvent: {}
+[43.972378] (-) TimerEvent: {}
+[44.074313] (-) TimerEvent: {}
+[44.158382] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c.o\x1b[0m\n'}
+[44.174500] (-) TimerEvent: {}
+[44.275440] (-) TimerEvent: {}
+[44.376729] (-) TimerEvent: {}
+[44.478460] (-) TimerEvent: {}
+[44.580235] (-) TimerEvent: {}
+[44.681947] (-) TimerEvent: {}
+[44.783976] (-) TimerEvent: {}
+[44.786021] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[44.884174] (-) TimerEvent: {}
+[44.985445] (-) TimerEvent: {}
+[45.021479] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 84%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_py\n'}
+[45.085809] (-) TimerEvent: {}
+[45.154319] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[45.186085] (-) TimerEvent: {}
+[45.287857] (-) TimerEvent: {}
+[45.389505] (-) TimerEvent: {}
+[45.491945] (-) TimerEvent: {}
+[45.594294] (-) TimerEvent: {}
+[45.696608] (-) TimerEvent: {}
+[45.798607] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[45.799318] (-) TimerEvent: {}
+[45.900850] (-) TimerEvent: {}
+[45.961635] (turtlebot3_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/msg/detail/sound__type_support.cpp.o\x1b[0m\n'}
+[46.001095] (-) TimerEvent: {}
+[46.016612] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 89%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[46.101320] (-) TimerEvent: {}
+[46.119261] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[46.201498] (-) TimerEvent: {}
+[46.303115] (-) TimerEvent: {}
+[46.405082] (-) TimerEvent: {}
+[46.506732] (-) TimerEvent: {}
+[46.608287] (-) TimerEvent: {}
+[46.709894] (-) TimerEvent: {}
+[46.782175] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[46.810212] (-) TimerEvent: {}
+[46.912697] (-) TimerEvent: {}
+[47.001629] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 94%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[47.012909] (-) TimerEvent: {}
+[47.114026] (-) TimerEvent: {}
+[47.118145] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[47.214232] (-) TimerEvent: {}
+[47.315774] (-) TimerEvent: {}
+[47.417424] (-) TimerEvent: {}
+[47.519466] (-) TimerEvent: {}
+[47.621411] (-) TimerEvent: {}
+[47.723920] (-) TimerEvent: {}
+[47.782007] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[47.824176] (-) TimerEvent: {}
+[47.925344] (-) TimerEvent: {}
+[48.019083] (dynamixel_sdk_custom_interfaces) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[48.025759] (-) TimerEvent: {}
+[48.072245] (dynamixel_sdk_custom_interfaces) JobEnded: {'identifier': 'dynamixel_sdk_custom_interfaces', 'rc': 'SIGINT'}
+[48.076976] (turtlebot3_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/msg/detail/version_info__type_support.cpp.o\x1b[0m\n'}
+[48.126015] (-) TimerEvent: {}
+[48.227054] (-) TimerEvent: {}
+[48.328296] (-) TimerEvent: {}
+[48.429712] (-) TimerEvent: {}
+[48.531235] (-) TimerEvent: {}
+[48.632008] (-) TimerEvent: {}
+[48.732865] (-) TimerEvent: {}
+[48.833829] (-) TimerEvent: {}
+[48.934609] (-) TimerEvent: {}
+[49.035372] (-) TimerEvent: {}
+[49.136178] (-) TimerEvent: {}
+[49.236970] (-) TimerEvent: {}
+[49.337774] (-) TimerEvent: {}
+[49.438543] (-) TimerEvent: {}
+[49.539326] (-) TimerEvent: {}
+[49.640071] (-) TimerEvent: {}
+[49.740880] (-) TimerEvent: {}
+[49.841734] (-) TimerEvent: {}
+[49.858695] (turtlebot3_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/srv/detail/sound__type_support.cpp.o\x1b[0m\n'}
+[49.941915] (-) TimerEvent: {}
+[50.042637] (-) TimerEvent: {}
+[50.143311] (-) TimerEvent: {}
+[50.244339] (-) TimerEvent: {}
+[50.345067] (-) TimerEvent: {}
+[50.445853] (-) TimerEvent: {}
+[50.546592] (-) TimerEvent: {}
+[50.647480] (-) TimerEvent: {}
+[50.748267] (-) TimerEvent: {}
+[50.776539] (turtlebot3_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[50.848470] (-) TimerEvent: {}
+[50.949275] (-) TimerEvent: {}
+[51.050079] (-) TimerEvent: {}
+[51.150828] (-) TimerEvent: {}
+[51.251555] (-) TimerEvent: {}
+[51.352325] (-) TimerEvent: {}
+[51.453116] (-) TimerEvent: {}
+[51.553870] (-) TimerEvent: {}
+[51.648325] (turtlebot3_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/srv/detail/dqn__type_support.cpp.o\x1b[0m\n'}
+[51.654102] (-) TimerEvent: {}
+[51.755119] (-) TimerEvent: {}
+[51.779594] (turtlebot3_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[51.855345] (-) TimerEvent: {}
+[51.956083] (-) TimerEvent: {}
+[52.056828] (-) TimerEvent: {}
+[52.157542] (-) TimerEvent: {}
+[52.258352] (-) TimerEvent: {}
+[52.359152] (-) TimerEvent: {}
+[52.459902] (-) TimerEvent: {}
+[52.560676] (-) TimerEvent: {}
+[52.661518] (-) TimerEvent: {}
+[52.762323] (-) TimerEvent: {}
+[52.789473] (turtlebot3_msgs) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[52.862525] (-) TimerEvent: {}
+[52.963412] (-) TimerEvent: {}
+[53.064976] (-) TimerEvent: {}
+[53.166598] (-) TimerEvent: {}
+[53.268882] (-) TimerEvent: {}
+[53.371538] (-) TimerEvent: {}
+[53.472730] (-) TimerEvent: {}
+[53.573846] (-) TimerEvent: {}
+[53.674755] (-) TimerEvent: {}
+[53.775584] (-) TimerEvent: {}
+[53.876475] (-) TimerEvent: {}
+[53.977452] (-) TimerEvent: {}
+[54.078419] (-) TimerEvent: {}
+[54.123309] (turtlebot3_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/srv/detail/goal__type_support.cpp.o\x1b[0m\n'}
+[54.178656] (-) TimerEvent: {}
+[54.279560] (-) TimerEvent: {}
+[54.380474] (-) TimerEvent: {}
+[54.481261] (-) TimerEvent: {}
+[54.582108] (-) TimerEvent: {}
+[54.683276] (-) TimerEvent: {}
+[54.784301] (-) TimerEvent: {}
+[54.885128] (-) TimerEvent: {}
+[54.986073] (-) TimerEvent: {}
+[55.087225] (-) TimerEvent: {}
+[55.188667] (-) TimerEvent: {}
+[55.300960] (-) TimerEvent: {}
+[55.401879] (-) TimerEvent: {}
+[55.502792] (-) TimerEvent: {}
+[55.603661] (-) TimerEvent: {}
+[55.704486] (-) TimerEvent: {}
+[55.805306] (-) TimerEvent: {}
+[55.823766] (turtlebot3_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/msg/detail/sensor_state__type_support_c.cpp.o\x1b[0m\n'}
+[55.905571] (-) TimerEvent: {}
+[56.006578] (-) TimerEvent: {}
+[56.107713] (-) TimerEvent: {}
+[56.209208] (-) TimerEvent: {}
+[56.310851] (-) TimerEvent: {}
+[56.411956] (-) TimerEvent: {}
+[56.513072] (-) TimerEvent: {}
+[56.614420] (-) TimerEvent: {}
+[56.626279] (turtlebot3_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlebot3_msgs/action/detail/patrol__type_support.cpp.o\x1b[0m\n'}
+[56.649640] (turtlebot3_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/msg/sensor_state__type_support.cpp.o\x1b[0m\n'}
+[56.714647] (-) TimerEvent: {}
+[56.815624] (-) TimerEvent: {}
+[56.916504] (-) TimerEvent: {}
+[57.017384] (-) TimerEvent: {}
+[57.118542] (-) TimerEvent: {}
+[57.220354] (-) TimerEvent: {}
+[57.221954] (turtlebot3_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/msg/detail/dds_fastrtps/sensor_state__type_support.cpp.o\x1b[0m\n'}
+[57.320629] (-) TimerEvent: {}
+[57.422673] (-) TimerEvent: {}
+[57.524646] (-) TimerEvent: {}
+[57.626823] (-) TimerEvent: {}
+[57.729029] (-) TimerEvent: {}
+[57.831080] (-) TimerEvent: {}
+[57.933137] (-) TimerEvent: {}
+[58.035117] (-) TimerEvent: {}
+[58.074371] (turtlebot3_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/msg/detail/sound__type_support_c.cpp.o\x1b[0m\n'}
+[58.135487] (-) TimerEvent: {}
+[58.237430] (-) TimerEvent: {}
+[58.339225] (-) TimerEvent: {}
+[58.357838] (turtlebot3_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/msg/sound__type_support.cpp.o\x1b[0m\n'}
+[58.439470] (-) TimerEvent: {}
+[58.540967] (-) TimerEvent: {}
+[58.642577] (-) TimerEvent: {}
+[58.744290] (-) TimerEvent: {}
+[58.846007] (-) TimerEvent: {}
+[58.947976] (-) TimerEvent: {}
+[59.049211] (-) TimerEvent: {}
+[59.150453] (-) TimerEvent: {}
+[59.251910] (-) TimerEvent: {}
+[59.353138] (-) TimerEvent: {}
+[59.454230] (-) TimerEvent: {}
+[59.555417] (-) TimerEvent: {}
+[59.656835] (-) TimerEvent: {}
+[59.758420] (-) TimerEvent: {}
+[59.859580] (-) TimerEvent: {}
+[59.961641] (-) TimerEvent: {}
+[60.016837] (turtlebot3_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/msg/detail/dds_fastrtps/sound__type_support.cpp.o\x1b[0m\n'}
+[60.061927] (-) TimerEvent: {}
+[60.163215] (-) TimerEvent: {}
+[60.259265] (turtlebot3_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/msg/version_info__type_support.cpp.o\x1b[0m\n'}
+[60.263452] (-) TimerEvent: {}
+[60.364260] (-) TimerEvent: {}
+[60.459269] (turtlebot3_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/msg/detail/version_info__type_support_c.cpp.o\x1b[0m\n'}
+[60.464452] (-) TimerEvent: {}
+[60.479061] (turtlebot3_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[60.564649] (-) TimerEvent: {}
+[60.666101] (-) TimerEvent: {}
+[60.767603] (-) TimerEvent: {}
+[60.869137] (-) TimerEvent: {}
+[60.899667] (turtlebot3_msgs) StdoutLine: {'line': b'[ 37%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_cpp\n'}
+[60.969418] (-) TimerEvent: {}
+[61.070535] (-) TimerEvent: {}
+[61.172886] (-) TimerEvent: {}
+[61.275079] (-) TimerEvent: {}
+[61.377346] (-) TimerEvent: {}
+[61.479961] (-) TimerEvent: {}
+[61.580949] (-) TimerEvent: {}
+[61.681984] (-) TimerEvent: {}
+[61.782911] (-) TimerEvent: {}
+[61.823421] (turtlebot3_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/srv/sound__type_support.cpp.o\x1b[0m\n'}
+[61.883229] (-) TimerEvent: {}
+[61.984478] (-) TimerEvent: {}
+[62.085503] (-) TimerEvent: {}
+[62.186569] (-) TimerEvent: {}
+[62.287535] (-) TimerEvent: {}
+[62.310479] (turtlebot3_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/msg/detail/dds_fastrtps/version_info__type_support.cpp.o\x1b[0m\n'}
+[62.387763] (-) TimerEvent: {}
+[62.450805] (turtlebot3_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/srv/detail/sound__type_support_c.cpp.o\x1b[0m\n'}
+[62.488025] (-) TimerEvent: {}
+[62.590171] (-) TimerEvent: {}
+[62.692028] (-) TimerEvent: {}
+[62.793894] (-) TimerEvent: {}
+[62.895869] (-) TimerEvent: {}
+[62.998342] (-) TimerEvent: {}
+[63.100396] (-) TimerEvent: {}
+[63.202553] (-) TimerEvent: {}
+[63.296567] (turtlebot3_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/srv/dqn__type_support.cpp.o\x1b[0m\n'}
+[63.302874] (-) TimerEvent: {}
+[63.404996] (-) TimerEvent: {}
+[63.507171] (-) TimerEvent: {}
+[63.609336] (-) TimerEvent: {}
+[63.711558] (-) TimerEvent: {}
+[63.816569] (-) TimerEvent: {}
+[63.919152] (-) TimerEvent: {}
+[64.021356] (-) TimerEvent: {}
+[64.124447] (-) TimerEvent: {}
+[64.226815] (-) TimerEvent: {}
+[64.329128] (-) TimerEvent: {}
+[64.431490] (-) TimerEvent: {}
+[64.450022] (turtlebot3_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/srv/detail/dqn__type_support_c.cpp.o\x1b[0m\n'}
+[64.527033] (turtlebot3_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/srv/detail/dds_fastrtps/sound__type_support.cpp.o\x1b[0m\n'}
+[64.531708] (-) TimerEvent: {}
+[64.633269] (-) TimerEvent: {}
+[64.734835] (-) TimerEvent: {}
+[64.836382] (-) TimerEvent: {}
+[64.844141] (turtlebot3_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/srv/goal__type_support.cpp.o\x1b[0m\n'}
+[64.936605] (-) TimerEvent: {}
+[65.037371] (-) TimerEvent: {}
+[65.138869] (-) TimerEvent: {}
+[65.239895] (-) TimerEvent: {}
+[65.388590] (-) TimerEvent: {}
+[65.490886] (-) TimerEvent: {}
+[65.592867] (-) TimerEvent: {}
+[65.695265] (-) TimerEvent: {}
+[65.797516] (-) TimerEvent: {}
+[65.899957] (-) TimerEvent: {}
+[66.002099] (-) TimerEvent: {}
+[66.103473] (-) TimerEvent: {}
+[66.204772] (-) TimerEvent: {}
+[66.305844] (-) TimerEvent: {}
+[66.317995] (turtlebot3_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[66.406004] (-) TimerEvent: {}
+[66.439024] (turtlebot3_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/srv/detail/goal__type_support_c.cpp.o\x1b[0m\n'}
+[66.444402] (turtlebot3_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlebot3_msgs/action/patrol__type_support.cpp.o\x1b[0m\n'}
+[66.506281] (-) TimerEvent: {}
+[66.607265] (-) TimerEvent: {}
+[66.708151] (-) TimerEvent: {}
+[66.809013] (-) TimerEvent: {}
+[66.909871] (-) TimerEvent: {}
+[66.959017] (turtlebot3_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/srv/detail/dds_fastrtps/dqn__type_support.cpp.o\x1b[0m\n'}
+[67.010168] (-) TimerEvent: {}
+[67.111191] (-) TimerEvent: {}
+[67.212052] (-) TimerEvent: {}
+[67.312908] (-) TimerEvent: {}
+[67.413856] (-) TimerEvent: {}
+[67.514846] (-) TimerEvent: {}
+[67.616321] (-) TimerEvent: {}
+[67.717927] (-) TimerEvent: {}
+[67.818863] (-) TimerEvent: {}
+[67.919783] (-) TimerEvent: {}
+[68.020821] (-) TimerEvent: {}
+[68.122003] (-) TimerEvent: {}
+[68.223068] (-) TimerEvent: {}
+[68.324054] (-) TimerEvent: {}
+[68.424988] (-) TimerEvent: {}
+[68.525990] (-) TimerEvent: {}
+[68.627018] (-) TimerEvent: {}
+[68.679887] (turtlebot3_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlebot3_msgs/action/detail/patrol__type_support_c.cpp.o\x1b[0m\n'}
+[68.727226] (-) TimerEvent: {}
+[68.828413] (-) TimerEvent: {}
+[68.929529] (-) TimerEvent: {}
+[69.030555] (-) TimerEvent: {}
+[69.131435] (-) TimerEvent: {}
+[69.232349] (-) TimerEvent: {}
+[69.333294] (-) TimerEvent: {}
+[69.427784] (turtlebot3_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[69.433502] (-) TimerEvent: {}
+[69.534958] (-) TimerEvent: {}
+[69.636834] (-) TimerEvent: {}
+[69.670388] (turtlebot3_msgs) StdoutLine: {'line': b'[ 54%] Built target turtlebot3_msgs__rosidl_typesupport_cpp\n'}
+[69.735441] (turtlebot3_msgs) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[69.737060] (-) TimerEvent: {}
+[69.838933] (-) TimerEvent: {}
+[69.940593] (-) TimerEvent: {}
+[70.042937] (-) TimerEvent: {}
+[70.136490] (turtlebot3_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/srv/detail/dds_fastrtps/goal__type_support.cpp.o\x1b[0m\n'}
+[70.143100] (-) TimerEvent: {}
+[70.244445] (-) TimerEvent: {}
+[70.358550] (-) TimerEvent: {}
+[70.459811] (-) TimerEvent: {}
+[70.561061] (-) TimerEvent: {}
+[70.662275] (-) TimerEvent: {}
+[70.763438] (-) TimerEvent: {}
+[70.864680] (-) TimerEvent: {}
+[70.970036] (-) TimerEvent: {}
+[71.072254] (-) TimerEvent: {}
+[71.173868] (-) TimerEvent: {}
+[71.275375] (-) TimerEvent: {}
+[71.377187] (-) TimerEvent: {}
+[71.479212] (-) TimerEvent: {}
+[71.580708] (-) TimerEvent: {}
+[71.682334] (-) TimerEvent: {}
+[71.783803] (-) TimerEvent: {}
+[71.860833] (turtlebot3_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[71.884015] (-) TimerEvent: {}
+[71.985506] (-) TimerEvent: {}
+[72.086935] (-) TimerEvent: {}
+[72.115697] (turtlebot3_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/msg/detail/sensor_state__type_support.c.o\x1b[0m\n'}
+[72.187162] (-) TimerEvent: {}
+[72.288696] (-) TimerEvent: {}
+[72.390119] (-) TimerEvent: {}
+[72.491624] (-) TimerEvent: {}
+[72.520383] (turtlebot3_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/msg/detail/sound__type_support.c.o\x1b[0m\n'}
+[72.592117] (-) TimerEvent: {}
+[72.619808] (turtlebot3_msgs) StdoutLine: {'line': b'[ 60%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c\n'}
+[72.692104] (-) TimerEvent: {}
+[72.793636] (-) TimerEvent: {}
+[72.808251] (turtlebot3_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/msg/detail/version_info__type_support.c.o\x1b[0m\n'}
+[72.893908] (-) TimerEvent: {}
+[72.996073] (-) TimerEvent: {}
+[73.097479] (-) TimerEvent: {}
+[73.120614] (turtlebot3_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/srv/detail/sound__type_support.c.o\x1b[0m\n'}
+[73.197708] (-) TimerEvent: {}
+[73.299048] (-) TimerEvent: {}
+[73.400510] (-) TimerEvent: {}
+[73.434587] (turtlebot3_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/srv/detail/dqn__type_support.c.o\x1b[0m\n'}
+[73.500711] (-) TimerEvent: {}
+[73.546974] (turtlebot3_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlebot3_msgs/action/detail/dds_fastrtps/patrol__type_support.cpp.o\x1b[0m\n'}
+[73.601106] (-) TimerEvent: {}
+[73.702847] (-) TimerEvent: {}
+[73.716978] (turtlebot3_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/srv/detail/goal__type_support.c.o\x1b[0m\n'}
+[73.803028] (-) TimerEvent: {}
+[73.904766] (-) TimerEvent: {}
+[73.986014] (turtlebot3_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlebot3_msgs/action/detail/patrol__type_support.c.o\x1b[0m\n'}
+[74.005007] (-) TimerEvent: {}
+[74.106539] (-) TimerEvent: {}
+[74.207815] (-) TimerEvent: {}
+[74.310206] (-) TimerEvent: {}
+[74.328754] (turtlebot3_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libturtlebot3_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[74.410434] (-) TimerEvent: {}
+[74.429577] (turtlebot3_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/msg/sensor_state__type_support.cpp.o\x1b[0m\n'}
+[74.510975] (-) TimerEvent: {}
+[74.548777] (turtlebot3_msgs) StdoutLine: {'line': b'[ 70%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c\n'}
+[74.611206] (-) TimerEvent: {}
+[74.652597] (turtlebot3_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/msg/version_info__type_support.cpp.o\x1b[0m\n'}
+[74.711456] (-) TimerEvent: {}
+[74.813377] (-) TimerEvent: {}
+[74.855611] (turtlebot3_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/srv/sound__type_support.cpp.o\x1b[0m\n'}
+[74.913644] (-) TimerEvent: {}
+[75.015407] (-) TimerEvent: {}
+[75.086415] (turtlebot3_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/srv/dqn__type_support.cpp.o\x1b[0m\n'}
+[75.115641] (-) TimerEvent: {}
+[75.217323] (-) TimerEvent: {}
+[75.319370] (-) TimerEvent: {}
+[75.330913] (turtlebot3_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/srv/goal__type_support.cpp.o\x1b[0m\n'}
+[75.419591] (-) TimerEvent: {}
+[75.520842] (-) TimerEvent: {}
+[75.568458] (turtlebot3_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/action/patrol__type_support.cpp.o\x1b[0m\n'}
+[75.621131] (-) TimerEvent: {}
+[75.722558] (-) TimerEvent: {}
+[75.823599] (-) TimerEvent: {}
+[75.925671] (-) TimerEvent: {}
+[75.939720] (turtlebot3_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlebot3_msgs/msg/sound__type_support.cpp.o\x1b[0m\n'}
+[76.025909] (-) TimerEvent: {}
+[76.127228] (-) TimerEvent: {}
+[76.152331] (turtlebot3_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[76.227469] (-) TimerEvent: {}
+[76.328772] (-) TimerEvent: {}
+[76.391111] (turtlebot3_msgs) StdoutLine: {'line': b'[ 79%] Built target turtlebot3_msgs__rosidl_typesupport_c\n'}
+[76.428988] (-) TimerEvent: {}
+[76.529852] (-) TimerEvent: {}
+[76.630873] (-) TimerEvent: {}
+[76.732105] (-) TimerEvent: {}
+[76.831336] (turtlebot3_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libturtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[76.832296] (-) TimerEvent: {}
+[76.933179] (-) TimerEvent: {}
+[77.034089] (-) TimerEvent: {}
+[77.134970] (-) TimerEvent: {}
+[77.213865] (turtlebot3_msgs) StdoutLine: {'line': b'[ 81%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[77.235171] (-) TimerEvent: {}
+[77.310799] (turtlebot3_msgs) StdoutLine: {'line': b'[ 81%] Built target turtlebot3_msgs\n'}
+[77.335384] (-) TimerEvent: {}
+[77.408594] (turtlebot3_msgs) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[77.435538] (-) TimerEvent: {}
+[77.536186] (-) TimerEvent: {}
+[77.636898] (-) TimerEvent: {}
+[77.737602] (-) TimerEvent: {}
+[77.838275] (-) TimerEvent: {}
+[77.938934] (-) TimerEvent: {}
+[78.039583] (-) TimerEvent: {}
+[78.140398] (-) TimerEvent: {}
+[78.241083] (-) TimerEvent: {}
+[78.341796] (-) TimerEvent: {}
+[78.442446] (-) TimerEvent: {}
+[78.543087] (-) TimerEvent: {}
+[78.643833] (-) TimerEvent: {}
+[78.744534] (-) TimerEvent: {}
+[78.845172] (-) TimerEvent: {}
+[78.945800] (-) TimerEvent: {}
+[79.046418] (-) TimerEvent: {}
+[79.147089] (-) TimerEvent: {}
+[79.247874] (-) TimerEvent: {}
+[79.348517] (-) TimerEvent: {}
+[79.449262] (-) TimerEvent: {}
+[79.550196] (-) TimerEvent: {}
+[79.650819] (-) TimerEvent: {}
+[79.751462] (-) TimerEvent: {}
+[79.852098] (-) TimerEvent: {}
+[79.952719] (-) TimerEvent: {}
+[80.053331] (-) TimerEvent: {}
+[80.154025] (-) TimerEvent: {}
+[80.254745] (-) TimerEvent: {}
+[80.355630] (-) TimerEvent: {}
+[80.456432] (-) TimerEvent: {}
+[80.557256] (-) TimerEvent: {}
+[80.658025] (-) TimerEvent: {}
+[80.758689] (-) TimerEvent: {}
+[80.859323] (-) TimerEvent: {}
+[80.959987] (-) TimerEvent: {}
+[81.060664] (-) TimerEvent: {}
+[81.161289] (-) TimerEvent: {}
+[81.261948] (-) TimerEvent: {}
+[81.362625] (-) TimerEvent: {}
+[81.463272] (-) TimerEvent: {}
+[81.563955] (-) TimerEvent: {}
+[81.664667] (-) TimerEvent: {}
+[81.765350] (-) TimerEvent: {}
+[81.866641] (-) TimerEvent: {}
+[81.967787] (-) TimerEvent: {}
+[82.068464] (-) TimerEvent: {}
+[82.169111] (-) TimerEvent: {}
+[82.270451] (-) TimerEvent: {}
+[82.372129] (-) TimerEvent: {}
+[82.472800] (-) TimerEvent: {}
+[82.573477] (-) TimerEvent: {}
+[82.674191] (-) TimerEvent: {}
+[82.774923] (-) TimerEvent: {}
+[82.875672] (-) TimerEvent: {}
+[82.976605] (-) TimerEvent: {}
+[83.077248] (-) TimerEvent: {}
+[83.177970] (-) TimerEvent: {}
+[83.278647] (-) TimerEvent: {}
+[83.379318] (-) TimerEvent: {}
+[83.480004] (-) TimerEvent: {}
+[83.580665] (-) TimerEvent: {}
+[83.681325] (-) TimerEvent: {}
+[83.782017] (-) TimerEvent: {}
+[83.882645] (-) TimerEvent: {}
+[83.983299] (-) TimerEvent: {}
+[84.084228] (-) TimerEvent: {}
+[84.185154] (-) TimerEvent: {}
+[84.285841] (-) TimerEvent: {}
+[84.386520] (-) TimerEvent: {}
+[84.487319] (-) TimerEvent: {}
+[84.588010] (-) TimerEvent: {}
+[84.688704] (-) TimerEvent: {}
+[84.789422] (-) TimerEvent: {}
+[84.890226] (-) TimerEvent: {}
+[84.991050] (-) TimerEvent: {}
+[85.092460] (-) TimerEvent: {}
+[85.193418] (-) TimerEvent: {}
+[85.294367] (-) TimerEvent: {}
+[85.395129] (-) TimerEvent: {}
+[85.495924] (-) TimerEvent: {}
+[85.560389] (turtlebot3_msgs) StdoutLine: {'line': b'[ 82%] Built target turtlebot3_msgs__py\n'}
+[85.596130] (-) TimerEvent: {}
+[85.657837] (turtlebot3_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/msg/_sensor_state_s.c.o\x1b[0m\n'}
+[85.667391] (turtlebot3_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/msg/_sound_s.c.o\x1b[0m\n'}
+[85.696634] (-) TimerEvent: {}
+[85.797570] (-) TimerEvent: {}
+[85.898513] (-) TimerEvent: {}
+[86.001232] (-) TimerEvent: {}
+[86.103437] (-) TimerEvent: {}
+[86.204227] (-) TimerEvent: {}
+[86.249886] (turtlebot3_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/srv/_sound_s.c.o\x1b[0m\n'}
+[86.270753] (turtlebot3_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/srv/_dqn_s.c.o\x1b[0m\n'}
+[86.304434] (-) TimerEvent: {}
+[86.405231] (-) TimerEvent: {}
+[86.506173] (-) TimerEvent: {}
+[86.606961] (-) TimerEvent: {}
+[86.708230] (-) TimerEvent: {}
+[86.809859] (-) TimerEvent: {}
+[86.911535] (-) TimerEvent: {}
+[86.912589] (turtlebot3_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/action/_patrol_s.c.o\x1b[0m\n'}
+[87.011720] (-) TimerEvent: {}
+[87.113009] (-) TimerEvent: {}
+[87.214271] (-) TimerEvent: {}
+[87.315100] (-) TimerEvent: {}
+[87.415994] (-) TimerEvent: {}
+[87.517154] (-) TimerEvent: {}
+[87.618266] (-) TimerEvent: {}
+[87.627471] (turtlebot3_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/srv/_goal_s.c.o\x1b[0m\n'}
+[87.718460] (-) TimerEvent: {}
+[87.819220] (-) TimerEvent: {}
+[87.920042] (-) TimerEvent: {}
+[88.020744] (-) TimerEvent: {}
+[88.121515] (-) TimerEvent: {}
+[88.222321] (-) TimerEvent: {}
+[88.229176] (turtlebot3_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlebot3_msgs/msg/_version_info_s.c.o\x1b[0m\n'}
+[88.322516] (-) TimerEvent: {}
+[88.423333] (-) TimerEvent: {}
+[88.524056] (-) TimerEvent: {}
+[88.624829] (-) TimerEvent: {}
+[88.725573] (-) TimerEvent: {}
+[88.800577] (turtlebot3_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/turtlebot3_msgs/libturtlebot3_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[88.825935] (-) TimerEvent: {}
+[88.926800] (-) TimerEvent: {}
+[89.027668] (-) TimerEvent: {}
+[89.044534] (turtlebot3_msgs) StdoutLine: {'line': b'[ 92%] Built target turtlebot3_msgs__rosidl_generator_py\n'}
+[89.127898] (-) TimerEvent: {}
+[89.144612] (turtlebot3_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[89.149251] (turtlebot3_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[89.228090] (-) TimerEvent: {}
+[89.329332] (-) TimerEvent: {}
+[89.430599] (-) TimerEvent: {}
+[89.532119] (-) TimerEvent: {}
+[89.633781] (-) TimerEvent: {}
+[89.735283] (-) TimerEvent: {}
+[89.837102] (-) TimerEvent: {}
+[89.938814] (-) TimerEvent: {}
+[89.984209] (turtlebot3_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[89.992738] (turtlebot3_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[90.039028] (-) TimerEvent: {}
+[90.140246] (-) TimerEvent: {}
+[90.241969] (-) TimerEvent: {}
+[90.320786] (turtlebot3_msgs) StdoutLine: {'line': b'[ 97%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[90.323388] (turtlebot3_msgs) StdoutLine: {'line': b'[ 97%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[90.342144] (-) TimerEvent: {}
+[90.416644] (turtlebot3_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[90.442325] (-) TimerEvent: {}
+[90.543165] (-) TimerEvent: {}
+[90.644089] (-) TimerEvent: {}
+[90.744881] (-) TimerEvent: {}
+[90.845636] (-) TimerEvent: {}
+[90.946451] (-) TimerEvent: {}
+[91.047352] (-) TimerEvent: {}
+[91.148213] (-) TimerEvent: {}
+[91.211928] (turtlebot3_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[91.248406] (-) TimerEvent: {}
+[91.349138] (-) TimerEvent: {}
+[91.450275] (-) TimerEvent: {}
+[91.458425] (turtlebot3_msgs) StdoutLine: {'line': b'[100%] Built target turtlebot3_msgs__rosidl_typesupport_c__pyext\n'}
+[91.507917] (turtlebot3_msgs) JobEnded: {'identifier': 'turtlebot3_msgs', 'rc': 'SIGINT'}
+[91.520402] (cpp_talker_listener) JobSkipped: {'identifier': 'cpp_talker_listener'}
+[91.520779] (rescue_orchestrator) JobSkipped: {'identifier': 'rescue_orchestrator'}
+[91.521002] (ros_goal_client) JobSkipped: {'identifier': 'ros_goal_client'}
+[91.521125] (ros_tutorials_topic) JobSkipped: {'identifier': 'ros_tutorials_topic'}
+[91.521263] (simple_navigation_goals) JobSkipped: {'identifier': 'simple_navigation_goals'}
+[91.521573] (socket_server_pkg) JobSkipped: {'identifier': 'socket_server_pkg'}
+[91.522075] (turtlebot3_navigation2) JobSkipped: {'identifier': 'turtlebot3_navigation2'}
+[91.522251] (turtlebot3_teleop) JobSkipped: {'identifier': 'turtlebot3_teleop'}
+[91.522405] (uart_bridge_cpp) JobSkipped: {'identifier': 'uart_bridge_cpp'}
+[91.522555] (dynamixel_sdk_examples) JobSkipped: {'identifier': 'dynamixel_sdk_examples'}
+[91.522704] (roskccistc) JobSkipped: {'identifier': 'roskccistc'}
+[91.522854] (turtlebot3_example) JobSkipped: {'identifier': 'turtlebot3_example'}
+[91.523001] (turtlebot3_fake_node) JobSkipped: {'identifier': 'turtlebot3_fake_node'}
+[91.523148] (turtlebot3_node) JobSkipped: {'identifier': 'turtlebot3_node'}
+[91.523294] (turtlebot3_bringup) JobSkipped: {'identifier': 'turtlebot3_bringup'}
+[91.523441] (turtlebot3_simulations) JobSkipped: {'identifier': 'turtlebot3_simulations'}
+[91.523587] (turtlebot3) JobSkipped: {'identifier': 'turtlebot3'}
+[91.523802] (-) EventReactorShutdown: {}

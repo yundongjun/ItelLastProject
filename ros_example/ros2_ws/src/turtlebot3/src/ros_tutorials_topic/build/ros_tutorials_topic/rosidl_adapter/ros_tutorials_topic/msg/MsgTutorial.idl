@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_tutorials_topic/msg/MsgTutorial.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module ros_tutorials_topic {
+  module msg {
+    struct MsgTutorial {
+      builtin_interfaces::msg::Time stamp;
+
+      int32 data;
+    };
+  };
+};

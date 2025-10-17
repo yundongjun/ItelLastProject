@@ -727,8 +727,24 @@ CMakeFiles/uart_bridge_node.dir/src/uart_bridge_node.cpp.o: /home/ubuntu/ros2_ws
   /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/linux/falloc.h \
   /usr/include/aarch64-linux-gnu/bits/stat.h \
-  /usr/include/aarch64-linux-gnu/bits/struct_stat.h
+  /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+  /usr/include/aarch64-linux-gnu/sys/ioctl.h \
+  /usr/include/aarch64-linux-gnu/bits/ioctls.h \
+  /usr/include/aarch64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/aarch64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/aarch64-linux-gnu/bits/ioctl-types.h
 
+
+/usr/include/aarch64-linux-gnu/bits/ioctl-types.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm-generic/ioctls.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_stat.h:
 
@@ -805,6 +821,8 @@ CMakeFiles/uart_bridge_node.dir/src/uart_bridge_node.cpp.o: /home/ubuntu/ros2_ws
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/ioctls.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
@@ -1268,6 +1286,8 @@ CMakeFiles/uart_bridge_node.dir/src/uart_bridge_node.cpp.o: /home/ubuntu/ros2_ws
 
 /usr/include/c++/11/bits/stl_list.h:
 
+/usr/include/aarch64-linux-gnu/sys/ioctl.h:
+
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -1303,6 +1323,8 @@ CMakeFiles/uart_bridge_node.dir/src/uart_bridge_node.cpp.o: /home/ubuntu/ros2_ws
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/endian.h:
+
+/usr/include/aarch64-linux-gnu/asm/ioctls.h:
 
 /usr/include/aarch64-linux-gnu/bits/termios-c_oflag.h:
 
@@ -1911,6 +1933,8 @@ CMakeFiles/uart_bridge_node.dir/src/uart_bridge_node.cpp.o: /home/ubuntu/ros2_ws
 /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
 
 /opt/ros/humble/include/rcl/rcl/service.h:
+
+/usr/include/aarch64-linux-gnu/asm/ioctl.h:
 
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
