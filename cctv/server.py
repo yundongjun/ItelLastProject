@@ -24,6 +24,28 @@ try:
 except Exception:
     MAP_SCALE = 2.0
 
+# 디지털 줌 배율 (환경변수 DETECT_ZOOM 로 조정. 1.0=줌 없음)
+try:
+    DETECT_ZOOM = float(os.getenv("DETECT_ZOOM", "1.0"))
+except Exception:
+    DETECT_ZOOM = 1.0
+
+# 중앙 크롭 기반 디지털 줌 (모델 추론 전용)
+def digital_zoom(frame, zoom=1.5):
+    if zoom <= 1.0:
+        h, w = frame.shape[:2]
+        return frame, (0, 0), w, h
+    h, w = frame.shape[:2]
+    nh, nw = int(h / zoom), int(w / zoom)
+    nh = max(1, nh)
+    nw = max(1, nw)
+    y1 = max((h - nh) // 2, 0)
+    x1 = max((w - nw) // 2, 0)
+    crop = frame[y1:y1+nh, x1:x1+nw]
+    resized = cv2.resize(crop, (w, h), interpolation=cv2.INTER_LINEAR)
+    # 반환: 줌된 프레임, 크롭 오프셋(x1,y1), 원본 폭/높이
+    return resized, (x1, y1), w, h
+
 # --- Socket Client Configuration ---
 SERVER_HOST = "10.10.16.41"   # TurtleBot (ROS)
 SERVER_PORT = 5000
@@ -149,7 +171,15 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
         if frame is None:
             continue
 
-        annotated_frame = frame.copy()
+        # 디지털 줌 적용 (모델 추론용). 표시용 프레임도 줌된 프레임 기준으로 그립니다.
+        if DETECT_ZOOM > 1.0:
+            zoomed_frame, (crop_x1, crop_y1), orig_w, orig_h = digital_zoom(frame, DETECT_ZOOM)
+        else:
+            zoomed_frame = frame
+            crop_x1, crop_y1 = 0, 0
+            orig_w, orig_h = frame.shape[1], frame.shape[0]
+
+        annotated_frame = zoomed_frame.copy()
         if abs(MAP_SCALE - 1.0) > 1e-6:
             mh, mw = base_map.shape[:2]
             map_display = cv2.resize(
@@ -161,13 +191,20 @@ def display_stream(turtle_sock: socket.socket, buzzer_sock: socket.socket):
         person_coords = None
         fire_coords = None
 
-        results = model(frame, verbose=False, conf=0.3)
+        results = model(zoomed_frame, verbose=False, conf=0.3)
         for r in results:
             for box in r.boxes:
                 class_name = model.names[int(box.cls[0])]
                 x1, y1, x2, y2 = map(int, box.xyxy[0])
                 cx, cy = (x1+x2)//2, (y1+y2)//2
-                pts = np.array([[[cx, cy]]], dtype=np.float32)
+                # 맵 좌표 변환은 원본 좌표계 기준으로 수행해야 하므로 줌 보정
+                if DETECT_ZOOM > 1.0:
+                    cx_orig = crop_x1 + (cx / DETECT_ZOOM)
+                    cy_orig = crop_y1 + (cy / DETECT_ZOOM)
+                else:
+                    cx_orig, cy_orig = float(cx), float(cy)
+
+                pts = np.array([[[cx_orig, cy_orig]]], dtype=np.float32)
                 transformed = cv2.perspectiveTransform(pts, homography_matrix)
                 mx, my = int(transformed[0][0][0]), int(transformed[0][0][1])
 
