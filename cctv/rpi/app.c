@@ -8,6 +8,7 @@
 #include <signal.h>
 #include <sys/wait.h>
 #include <time.h>
+#include <errno.h>
 
 #define BUZZER_DEV "/dev/buzzer"
 #define SERVER_PORT 5000      // Ubuntu 연결용
@@ -37,8 +38,17 @@ void cleanup(int sig) {
     exit(0);
 }
 
+int wait_for_client() {
+    printf("💻 Waiting for Ubuntu client on port %d...\n", SERVER_PORT);
+    int client = accept(tcp_server, NULL, NULL);
+    if (client >= 0)
+        printf("✅ Ubuntu connected.\n");
+    return client;
+}
+
 int main(void) {
     signal(SIGINT, cleanup);
+    signal(SIGPIPE, SIG_IGN);  // 💡 클라이언트 끊김 시 종료 방지
 
     // --- /dev/buzzer 열기 ---
     buzzer_fd = open(BUZZER_DEV, O_WRONLY);
@@ -63,15 +73,15 @@ int main(void) {
 
     // --- TCP 서버 (Ubuntu 연결용) ---
     tcp_server = socket(AF_INET, SOCK_STREAM, 0);
+    int reuse = 1;
+    setsockopt(tcp_server, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse));
+
     struct sockaddr_in serv = {0};
     serv.sin_family = AF_INET;
     serv.sin_addr.s_addr = INADDR_ANY;
     serv.sin_port = htons(SERVER_PORT);
     bind(tcp_server, (struct sockaddr*)&serv, sizeof(serv));
     listen(tcp_server, 1);
-    printf("💻 Waiting for Ubuntu client on port %d...\n", SERVER_PORT);
-    tcp_client = accept(tcp_server, NULL, NULL);
-    printf("✅ Ubuntu connected.\n");
 
     // --- UDP 리시버 (Python → C, 온도수신) ---
     udp_sock = socket(AF_INET, SOCK_DGRAM, 0);
@@ -86,26 +96,47 @@ int main(void) {
     char cmd[64];
     double current_temp = 0.0;
 
+    // --- 최초 클라이언트 대기 ---
+    tcp_client = wait_for_client();
+
     while (1) {
-        // --- Python 온도 수신 ---
+        // --- Python → C (UDP) 수신 ---
         ssize_t n = recv(udp_sock, buf, sizeof(buf) - 1, MSG_DONTWAIT);
         if (n > 0) {
             buf[n] = '\0';
             current_temp = atof(buf);
             printf("🌡 Received from Python: %.2f °C\n", current_temp);
 
-            // Ubuntu로 전송
-            char msg[64];
-            snprintf(msg, sizeof(msg), "TEMP:%.2f\n", current_temp);
-            send(tcp_client, msg, strlen(msg), 0);
-            printf("📤 Sent to Ubuntu: %s", msg);
+            // Ubuntu로 전송 시도
+            if (tcp_client >= 0) {
+                char msg[64];
+                snprintf(msg, sizeof(msg), "TEMP:%.2f\n", current_temp);
+                ssize_t s = send(tcp_client, msg, strlen(msg), 0);
+                if (s < 0 && (errno == EPIPE || errno == ECONNRESET)) {
+                    printf("⚠️ Client disconnected (on send)\n");
+                    close(tcp_client);
+                    tcp_client = wait_for_client();
+                    continue;
+                }
+            }
         }
 
         // --- Ubuntu → RPi (버저 제어 명령 수신) ---
         int r = recv(tcp_client, cmd, sizeof(cmd) - 1, MSG_DONTWAIT);
+        if (r == 0) {
+            printf("🔌 Ubuntu client disconnected.\n");
+            close(tcp_client);
+            tcp_client = wait_for_client();
+            continue;
+        } else if (r < 0 && errno != EAGAIN && errno != EWOULDBLOCK) {
+            perror("recv");
+            close(tcp_client);
+            tcp_client = wait_for_client();
+            continue;
+        }
+
         if (r > 0) {
             cmd[r] = '\0';
-
             // 🔹 모든 개행/공백 제거
             for (int i = 0; cmd[i] != '\0'; i++) {
                 if (cmd[i] == '\n' || cmd[i] == '\r' || cmd[i] == ' ')
