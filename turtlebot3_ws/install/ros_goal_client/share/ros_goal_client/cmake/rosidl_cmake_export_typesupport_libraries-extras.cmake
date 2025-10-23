@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_goal_client/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

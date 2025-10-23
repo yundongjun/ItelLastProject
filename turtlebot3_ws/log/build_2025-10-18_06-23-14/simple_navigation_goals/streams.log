@@ -1,0 +1,96 @@
+[0.099s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/simple_navigation_goals -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals
+[0.588s] -- The C compiler identification is GNU 11.4.0
+[1.091s] -- The CXX compiler identification is GNU 11.4.0
+[1.173s] -- Detecting C compiler ABI info
+[1.767s] -- Detecting C compiler ABI info - done
+[1.800s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.802s] -- Detecting C compile features
+[1.806s] -- Detecting C compile features - done
+[1.824s] -- Detecting CXX compiler ABI info
+[2.787s] -- Detecting CXX compiler ABI info - done
+[2.860s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.863s] -- Detecting CXX compile features
+[2.866s] -- Detecting CXX compile features - done
+[2.944s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.179s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.329s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[6.007s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.110s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.232s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.385s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.605s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.250s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.309s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.231s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.550s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.056s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.258s] -- Looking for pthread.h
+[10.185s] -- Looking for pthread.h - found
+[10.200s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.904s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.910s] -- Found Threads: TRUE  
+[11.420s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[11.746s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[12.939s] -- Configuring done
+[13.101s] -- Generating done
+[13.120s] [33mCMake Warning:
+[13.121s]   Manually-specified variables were not used by the project:
+[13.121s] 
+[13.122s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[13.123s]     CATKIN_SYMLINK_INSTALL
+[13.123s] 
+[13.124s] [0m
+[13.161s] -- Build files have been written to: /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals
+[13.290s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/simple_navigation_goals -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals
+[13.292s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+[13.831s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_navigation_goals.dir/src/simple_navigation_goals.cpp.o[0m
+[33.556s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[33.557s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[33.558s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[33.560s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[33.561s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[33.562s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[33.563s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[33.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[33.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[33.566s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[33.567s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[33.568s]                  from [01m[K/home/ubuntu/turtlebot3_ws/src/simple_navigation_goals/src/simple_navigation_goals.cpp:6[m[K:
+[33.571s] [01m[K/home/ubuntu/turtlebot3_ws/src/simple_navigation_goals/src/simple_navigation_goals.cpp:[m[K In lambda function:
+[33.571s] [01m[K/home/ubuntu/turtlebot3_ws/src/simple_navigation_goals/src/simple_navigation_goals.cpp:46:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 6 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+[33.572s]    46 |                              [01;35m[K"feedback: dist_remain=%.2f  eta=%ld"[m[K,
+[33.573s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[33.573s]    47 |                              fb->distance_remaining,
+[33.574s]    48 |                              [32m[Kfb->estimated_time_remaining.sec[m[K);
+[33.583s]       |                              [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[33.583s]       |                                                           [32m[K|[m[K
+[33.584s]       |                                                           [32m[Kint[m[K
+[33.584s] [01m[K/home/ubuntu/turtlebot3_ws/src/simple_navigation_goals/src/simple_navigation_goals.cpp:46:65:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[33.585s]    46 |                              "feedback: dist_remain=%.2f  eta=[01;36m[K%ld[m[K",
+[33.585s]       |                                                               [01;36m[K~~^[m[K
+[33.586s]       |                                                                 [01;36m[K|[m[K
+[33.603s]       |                                                                 [01;36m[Klong int[m[K
+[33.605s]       |                                                               [32m[K%d[m[K
+[44.350s] [100%] [32m[1mLinking CXX executable simple_navigation_goals[0m
+[46.029s] [100%] Built target simple_navigation_goals
+[46.127s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+[46.139s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals
+[46.188s] -- Install configuration: ""
+[46.191s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/simple_navigation_goals/simple_navigation_goals
+[46.201s] -- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/simple_navigation_goals/simple_navigation_goals" to ""
+[46.202s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/package_run_dependencies/simple_navigation_goals
+[46.204s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/parent_prefix_path/simple_navigation_goals
+[46.207s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/ament_prefix_path.sh
+[46.208s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/ament_prefix_path.dsv
+[46.213s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/path.sh
+[46.215s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/path.dsv
+[46.217s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.bash
+[46.219s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.sh
+[46.221s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.zsh
+[46.223s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.dsv
+[46.224s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/package.dsv
+[46.227s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/packages/simple_navigation_goals
+[46.229s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/cmake/simple_navigation_goalsConfig.cmake
+[46.231s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/cmake/simple_navigation_goalsConfig-version.cmake
+[46.233s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/package.xml
+[46.251s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals

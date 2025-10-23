@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>roskccistc</name>
+  <version>0.0.1</version>
+  <description>ROS2 (Humble) port of the roskccistc package.</description>
+
+  <maintainer email="shkim@www.kccistc.net">shkim</maintainer>
+  <license>TODO</license>
+
+  <!-- Build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Interfaces (srv/msg) generation -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <!-- Core ROS 2 deps -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- TF2 (ROS2) -->
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <!-- Image pipeline -->
+  <depend>image_transport</depend>
+  <depend>cv_bridge</depend>
+
+  <!-- Optional: TurtleBot3 messages (only if used in sources) -->
+  <depend>turtlebot3_msgs</depend>
+
+  <!-- Qt (for the GUI). These are rosdep keys on Ubuntu -->
+  <depend>qtbase5-dev</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

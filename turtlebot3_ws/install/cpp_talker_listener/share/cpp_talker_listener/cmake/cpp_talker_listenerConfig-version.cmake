@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/cpp_talker_listener/ament_cmake_core/cpp_talker_listenerConfig-version.cmake

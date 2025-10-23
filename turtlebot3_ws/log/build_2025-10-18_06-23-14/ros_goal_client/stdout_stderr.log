@@ -1,0 +1,137 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/turtlebot3_ws/build/ros_goal_client
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ros_goal_client__cpp
+[  2%] Built target ament_cmake_python_symlink_ros_goal_client
+[  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  8%] [32mBuilding CXX object CMakeFiles/ros_goal_client__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_goal_client/srv/detail/dds_fastrtps/bot3_gpio__type_support.cpp.o[0m
+[ 11%] [32m[1mLinking CXX shared library libros_goal_client__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 11%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/ros_goal_client__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_goal_client/srv/detail/bot3_gpio__type_support.cpp.o[0m
+[ 20%] [32m[1mLinking CXX shared library libros_goal_client__rosidl_typesupport_introspection_cpp.so[0m
+[ 20%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+running egg_info
+creating ros_goal_client.egg-info
+writing ros_goal_client.egg-info/PKG-INFO
+writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+writing top-level names to ros_goal_client.egg-info/top_level.txt
+writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[ 20%] Built target ament_cmake_python_build_ros_goal_client_egg
+[ 22%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ros_goal_client__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_goal_client/srv/bot3_gpio__type_support.cpp.o[0m
+[ 28%] [32m[1mLinking CXX shared library libros_goal_client__rosidl_typesupport_cpp.so[0m
+[ 28%] Built target ros_goal_client__rosidl_typesupport_cpp
+[ 31%] [34m[1mGenerating C code for ROS interfaces[0m
+[ 34%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_generator_c.dir/rosidl_generator_c/ros_goal_client/srv/detail/bot3_gpio__functions.c.o[0m
+[ 37%] [32m[1mLinking C shared library libros_goal_client__rosidl_generator_c.so[0m
+[ 37%] Built target ros_goal_client__rosidl_generator_c
+[ 40%] [32mBuilding CXX object CMakeFiles/rosGoalClient.dir/src/rosGoalClient.cpp.o[0m
+[ 42%] [32m[1mLinking CXX executable rosGoalClient[0m
+[ 42%] Built target rosGoalClient
+[ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 48%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_goal_client/srv/detail/bot3_gpio__type_support.c.o[0m
+[ 51%] [32m[1mLinking C shared library libros_goal_client__rosidl_typesupport_introspection_c.so[0m
+[ 51%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/ros_goal_client__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_goal_client/srv/bot3_gpio__type_support.cpp.o[0m
+[ 60%] [32m[1mLinking CXX shared library libros_goal_client__rosidl_typesupport_c.so[0m
+[ 60%] Built target ros_goal_client__rosidl_typesupport_c
+[ 62%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ros_goal_client__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_goal_client/srv/detail/bot3_gpio__type_support_c.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library libros_goal_client__rosidl_typesupport_fastrtps_c.so[0m
+[ 68%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[ 71%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:107:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  107 | [01;31m[Kg_home_pose[m[K.header.frame_id = "map";
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:108:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  108 | [01;31m[Kg_home_pose[m[K.pose.position.x = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:109:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  109 | [01;31m[Kg_home_pose[m[K.pose.position.y = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:110:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  110 | [01;31m[Kg_home_pose[m[K.pose.position.z = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:112:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+  112 | [01;31m[Kq[m[K.x = q.y = q.z = 0.0;
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:113:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+  113 | [01;31m[Kq[m[K.w = 1.0;   // yaw 0
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:114:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  114 | [01;31m[Kg_home_pose[m[K.pose.orientation = q;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:115:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_ready[m[K’ does not name a type
+  115 | [01;31m[Kg_home_ready[m[K.store(true);
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:118:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_nav_client[m[K’ does not name a type
+  118 | [01;31m[Kg_nav_client[m[K = rclcpp_action::create_client<NavigateToPose>(g_node, "navigate_to_pose");
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:267:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_to_pose[m[K’ was not declared in this scope
+  267 |       [01;31m[Kgo_to_pose[m[K(g_home_pose);        // 귀환 후 go_to_pose 안에서 DOWN 명령 송신
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:272:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_to_pose[m[K’ was not declared in this scope
+  272 |       [01;31m[Kgo_to_pose[m[K(g_second_pose);          // 두번째 목표로 이동
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid* recv_msg(void*)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:511:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdSeqVal[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  511 |   double [01;35m[KdSeqVal[m[K[GOALCNT][3] = {
+      |          [01;35m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:280:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  280 | static void [01;35m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose)
+      |             [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

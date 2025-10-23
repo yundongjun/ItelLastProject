@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/turtlebot3_ws/build/ros_goal_client/rosGoalServer" "/home/ubuntu/turtlebot3_ws/build/ros_goal_client/rosGoalClient" "TARGETS" "rosGoalServer" "rosGoalClient" "DESTINATION" "lib/ros_goal_client")

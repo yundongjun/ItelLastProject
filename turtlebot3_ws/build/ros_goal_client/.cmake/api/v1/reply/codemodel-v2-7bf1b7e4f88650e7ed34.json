@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-df619e60e64670b19f52.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "ros_goal_client__py",
+					"jsonFile" : "directory-ros_goal_client__py-c78f8f001cb5ef427187.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ubuntu/turtlebot3_ws/build/ros_goal_client/ros_goal_client__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ros_goal_client",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ros_goal_client_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ros_goal_client_egg-f43b0821b06fbe5b7cc2.json",
+					"name" : "ament_cmake_python_build_ros_goal_client_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_ros_goal_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_ros_goal_client-d02483802cdd52fa503b.json",
+					"name" : "ament_cmake_python_symlink_ros_goal_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rosGoalClient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rosGoalClient-ee9bbb325350bb2215c0.json",
+					"name" : "rosGoalClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rosGoalServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rosGoalServer-6623262d97aa1d662c0a.json",
+					"name" : "rosGoalServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client-e8b3a984cae289d7ad37.json",
+					"name" : "ros_goal_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__cpp-30955276adf21fbf5b28.json",
+					"name" : "ros_goal_client__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ros_goal_client__py::@9791ab9b3b279a26b3ce",
+					"jsonFile" : "target-ros_goal_client__py-bb73074a3a2e0ae3c5d0.json",
+					"name" : "ros_goal_client__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_generator_c-22fb8dff7d267c608da8.json",
+					"name" : "ros_goal_client__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_generator_py-c1a52e8f8b42174506c7.json",
+					"name" : "ros_goal_client__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_c-0e3f9073adb352bae0ce.json",
+					"name" : "ros_goal_client__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_c__pyext-a2cfddf88560d55b1daf.json",
+					"name" : "ros_goal_client__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_cpp-5197c5197e67d883b3d7.json",
+					"name" : "ros_goal_client__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_fastrtps_c-d8325409ce6dc4ffcc7a.json",
+					"name" : "ros_goal_client__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_fastrtps_c__pyext-dafad3a8378695d9d035.json",
+					"name" : "ros_goal_client__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_fastrtps_cpp-462933495c7d2d341807.json",
+					"name" : "ros_goal_client__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_introspection_c-b5c97c6cb646410c6b51.json",
+					"name" : "ros_goal_client__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_introspection_c__pyext-feee134cfad8451260ea.json",
+					"name" : "ros_goal_client__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client__rosidl_typesupport_introspection_cpp-5d4f83a9fa0cc3c93101.json",
+					"name" : "ros_goal_client__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_goal_client_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_goal_client_uninstall-03523c7ab52460b2b722.json",
+					"name" : "ros_goal_client_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c5e6def65980a07eb585.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/turtlebot3_ws/build/ros_goal_client",
+		"source" : "/home/ubuntu/turtlebot3_ws/src/ros_goal_client"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

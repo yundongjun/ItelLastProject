@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target uart_bridge_ama1_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/uart_bridge_ama1_node.dir/src/uart_bridge_ama1_node.cpp.o[0m
+[ 75%] Built target uart_bridge_node
+[100%] [32m[1mLinking CXX executable uart_bridge_ama1_node[0m
+[100%] Built target uart_bridge_ama1_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/lib/uart_bridge_cpp/uart_bridge_node
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/lib/uart_bridge_cpp/uart_bridge_ama1_node
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/launch/multi_uart.launch.py
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/launch/uart_bridge.launch.py
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/launch/uart_bridge_ama1.launch.py
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/ament_index/resource_index/package_run_dependencies/uart_bridge_cpp
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/ament_index/resource_index/parent_prefix_path/uart_bridge_cpp
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/path.sh
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/environment/path.dsv
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.bash
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.sh
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.zsh
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/local_setup.dsv
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/package.dsv
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/ament_index/resource_index/packages/uart_bridge_cpp
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/cmake/uart_bridge_cppConfig.cmake
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/cmake/uart_bridge_cppConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp/share/uart_bridge_cpp/package.xml

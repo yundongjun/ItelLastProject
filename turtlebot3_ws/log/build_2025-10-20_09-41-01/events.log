@@ -1,0 +1,767 @@
+[0.000000] (-) TimerEvent: {}
+[0.001895] (-) JobUnselected: {'identifier': 'cpp_talker_listener'}
+[0.002467] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.002677] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.002995] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.003160] (-) JobUnselected: {'identifier': 'rescue_orchestrator'}
+[0.003250] (-) JobUnselected: {'identifier': 'ros_tutorials_topic'}
+[0.003345] (-) JobUnselected: {'identifier': 'simple_navigation_goals'}
+[0.003467] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.003562] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.003645] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.003731] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.004478] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.004669] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.004938] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.005098] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.005192] (-) JobUnselected: {'identifier': 'turtlebot3_msgs'}
+[0.005287] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.005367] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.005487] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.005584] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.005673] (-) JobUnselected: {'identifier': 'uart_bridge_cpp'}
+[0.006301] (ros_goal_client) JobQueued: {'identifier': 'ros_goal_client', 'dependencies': OrderedDict()}
+[0.006522] (ros_goal_client) JobStarted: {'identifier': 'ros_goal_client'}
+[0.063513] (ros_goal_client) JobProgress: {'identifier': 'ros_goal_client', 'progress': 'cmake'}
+[0.067159] (ros_goal_client) JobProgress: {'identifier': 'ros_goal_client', 'progress': 'build'}
+[0.070044] (ros_goal_client) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/turtlebot3_ws/build/ros_goal_client', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/turtlebot3_ws/build/ros_goal_client', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.11 55038 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib:/home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/turtlebot3_ws/build/ros_goal_client'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.11 55038 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[0.098342] (-) TimerEvent: {}
+[0.199080] (-) TimerEvent: {}
+[0.299853] (-) TimerEvent: {}
+[0.354741] (ros_goal_client) StdoutLine: {'line': b'[  2%] Built target ros_goal_client__cpp\n'}
+[0.367853] (ros_goal_client) StdoutLine: {'line': b'[ 11%] Built target ros_goal_client__rosidl_generator_c\n'}
+[0.400051] (-) TimerEvent: {}
+[0.421153] (ros_goal_client) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_symlink_ros_goal_client\n'}
+[0.498262] (ros_goal_client) StdoutLine: {'line': b'[ 20%] Built target ros_goal_client__rosidl_typesupport_cpp\n'}
+[0.500396] (-) TimerEvent: {}
+[0.520906] (ros_goal_client) StdoutLine: {'line': b'[ 28%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp\n'}
+[0.544780] (ros_goal_client) StdoutLine: {'line': b'[ 37%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp\n'}
+[0.568085] (ros_goal_client) StdoutLine: {'line': b'[ 45%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c\n'}
+[0.600531] (-) TimerEvent: {}
+[0.652106] (ros_goal_client) StdoutLine: {'line': b'[ 54%] Built target ros_goal_client__rosidl_typesupport_introspection_c\n'}
+[0.678956] (ros_goal_client) StdoutLine: {'line': b'[ 62%] Built target ros_goal_client__rosidl_typesupport_c\n'}
+[0.700700] (-) TimerEvent: {}
+[0.752356] (ros_goal_client) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rosGoalServer\x1b[0m\n'}
+[0.800898] (-) TimerEvent: {}
+[0.823369] (ros_goal_client) StdoutLine: {'line': b'[ 62%] Built target ros_goal_client\n'}
+[0.874183] (ros_goal_client) StdoutLine: {'line': b'[ 68%] Built target rosGoalClient\n'}
+[0.901098] (-) TimerEvent: {}
+[0.922266] (ros_goal_client) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o\x1b[0m\n'}
+[0.951880] (ros_goal_client) StdoutLine: {'line': b'[ 74%] Built target ros_goal_client__py\n'}
+[1.001281] (-) TimerEvent: {}
+[1.102048] (-) TimerEvent: {}
+[1.106198] (ros_goal_client) StdoutLine: {'line': b'[ 80%] Built target ros_goal_client__rosidl_generator_py\n'}
+[1.202185] (-) TimerEvent: {}
+[1.263987] (ros_goal_client) StdoutLine: {'line': b'[ 85%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext\n'}
+[1.302428] (-) TimerEvent: {}
+[1.312693] (ros_goal_client) StdoutLine: {'line': b'[ 91%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.402611] (-) TimerEvent: {}
+[1.416048] (ros_goal_client) StdoutLine: {'line': b'[ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext\n'}
+[1.502755] (-) TimerEvent: {}
+[1.603468] (-) TimerEvent: {}
+[1.704120] (-) TimerEvent: {}
+[1.804827] (-) TimerEvent: {}
+[1.906221] (-) TimerEvent: {}
+[2.007447] (-) TimerEvent: {}
+[2.072867] (ros_goal_client) StdoutLine: {'line': b'running egg_info\n'}
+[2.076619] (ros_goal_client) StdoutLine: {'line': b'writing ros_goal_client.egg-info/PKG-INFO\n'}
+[2.077884] (ros_goal_client) StdoutLine: {'line': b'writing dependency_links to ros_goal_client.egg-info/dependency_links.txt\n'}
+[2.078963] (ros_goal_client) StdoutLine: {'line': b'writing top-level names to ros_goal_client.egg-info/top_level.txt\n'}
+[2.090088] (ros_goal_client) StdoutLine: {'line': b"reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'\n"}
+[2.093004] (ros_goal_client) StdoutLine: {'line': b"writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'\n"}
+[2.107953] (-) TimerEvent: {}
+[2.209179] (-) TimerEvent: {}
+[2.239213] (ros_goal_client) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_ros_goal_client_egg\n'}
+[2.309367] (-) TimerEvent: {}
+[2.410070] (-) TimerEvent: {}
+[2.510749] (-) TimerEvent: {}
+[2.611411] (-) TimerEvent: {}
+[2.712303] (-) TimerEvent: {}
+[2.813025] (-) TimerEvent: {}
+[2.913798] (-) TimerEvent: {}
+[3.014556] (-) TimerEvent: {}
+[3.116122] (-) TimerEvent: {}
+[3.217719] (-) TimerEvent: {}
+[3.319582] (-) TimerEvent: {}
+[3.421499] (-) TimerEvent: {}
+[3.523240] (-) TimerEvent: {}
+[3.624935] (-) TimerEvent: {}
+[3.727280] (-) TimerEvent: {}
+[3.828950] (-) TimerEvent: {}
+[3.931315] (-) TimerEvent: {}
+[4.033260] (-) TimerEvent: {}
+[4.135204] (-) TimerEvent: {}
+[4.237084] (-) TimerEvent: {}
+[4.340699] (-) TimerEvent: {}
+[4.442530] (-) TimerEvent: {}
+[4.543351] (-) TimerEvent: {}
+[4.644450] (-) TimerEvent: {}
+[4.745378] (-) TimerEvent: {}
+[4.849510] (-) TimerEvent: {}
+[4.950471] (-) TimerEvent: {}
+[5.052311] (-) TimerEvent: {}
+[5.153074] (-) TimerEvent: {}
+[5.253957] (-) TimerEvent: {}
+[5.354848] (-) TimerEvent: {}
+[5.455659] (-) TimerEvent: {}
+[5.556476] (-) TimerEvent: {}
+[5.657292] (-) TimerEvent: {}
+[5.758140] (-) TimerEvent: {}
+[5.858939] (-) TimerEvent: {}
+[5.959747] (-) TimerEvent: {}
+[6.060558] (-) TimerEvent: {}
+[6.161922] (-) TimerEvent: {}
+[6.263555] (-) TimerEvent: {}
+[6.365077] (-) TimerEvent: {}
+[6.466456] (-) TimerEvent: {}
+[6.573691] (-) TimerEvent: {}
+[6.675053] (-) TimerEvent: {}
+[6.776413] (-) TimerEvent: {}
+[6.877847] (-) TimerEvent: {}
+[6.979258] (-) TimerEvent: {}
+[7.080615] (-) TimerEvent: {}
+[7.181920] (-) TimerEvent: {}
+[7.283270] (-) TimerEvent: {}
+[7.384653] (-) TimerEvent: {}
+[7.486684] (-) TimerEvent: {}
+[7.588300] (-) TimerEvent: {}
+[7.690610] (-) TimerEvent: {}
+[7.791937] (-) TimerEvent: {}
+[7.893387] (-) TimerEvent: {}
+[7.995074] (-) TimerEvent: {}
+[8.096607] (-) TimerEvent: {}
+[8.198007] (-) TimerEvent: {}
+[8.299263] (-) TimerEvent: {}
+[8.400393] (-) TimerEvent: {}
+[8.501820] (-) TimerEvent: {}
+[8.603229] (-) TimerEvent: {}
+[8.703994] (-) TimerEvent: {}
+[8.805440] (-) TimerEvent: {}
+[8.906840] (-) TimerEvent: {}
+[9.008198] (-) TimerEvent: {}
+[9.109449] (-) TimerEvent: {}
+[9.210818] (-) TimerEvent: {}
+[9.312188] (-) TimerEvent: {}
+[9.413742] (-) TimerEvent: {}
+[9.515214] (-) TimerEvent: {}
+[9.616615] (-) TimerEvent: {}
+[9.718119] (-) TimerEvent: {}
+[9.819529] (-) TimerEvent: {}
+[9.920940] (-) TimerEvent: {}
+[10.022490] (-) TimerEvent: {}
+[10.123834] (-) TimerEvent: {}
+[10.225245] (-) TimerEvent: {}
+[10.326683] (-) TimerEvent: {}
+[10.428011] (-) TimerEvent: {}
+[10.529377] (-) TimerEvent: {}
+[10.631135] (-) TimerEvent: {}
+[10.732535] (-) TimerEvent: {}
+[10.834312] (-) TimerEvent: {}
+[10.935710] (-) TimerEvent: {}
+[11.037125] (-) TimerEvent: {}
+[11.138786] (-) TimerEvent: {}
+[11.240647] (-) TimerEvent: {}
+[11.342215] (-) TimerEvent: {}
+[11.443623] (-) TimerEvent: {}
+[11.544963] (-) TimerEvent: {}
+[11.650417] (-) TimerEvent: {}
+[11.751743] (-) TimerEvent: {}
+[11.853116] (-) TimerEvent: {}
+[11.954676] (-) TimerEvent: {}
+[12.056151] (-) TimerEvent: {}
+[12.157643] (-) TimerEvent: {}
+[12.259277] (-) TimerEvent: {}
+[12.360747] (-) TimerEvent: {}
+[12.462485] (-) TimerEvent: {}
+[12.563833] (-) TimerEvent: {}
+[12.665225] (-) TimerEvent: {}
+[12.766619] (-) TimerEvent: {}
+[12.867931] (-) TimerEvent: {}
+[12.969367] (-) TimerEvent: {}
+[13.071104] (-) TimerEvent: {}
+[13.172476] (-) TimerEvent: {}
+[13.273877] (-) TimerEvent: {}
+[13.375218] (-) TimerEvent: {}
+[13.476469] (-) TimerEvent: {}
+[13.577362] (-) TimerEvent: {}
+[13.678517] (-) TimerEvent: {}
+[13.779266] (-) TimerEvent: {}
+[13.880038] (-) TimerEvent: {}
+[13.981852] (-) TimerEvent: {}
+[14.082537] (-) TimerEvent: {}
+[14.183546] (-) TimerEvent: {}
+[14.284329] (-) TimerEvent: {}
+[14.385650] (-) TimerEvent: {}
+[14.486493] (-) TimerEvent: {}
+[14.588355] (-) TimerEvent: {}
+[14.689253] (-) TimerEvent: {}
+[14.790090] (-) TimerEvent: {}
+[14.890939] (-) TimerEvent: {}
+[14.991668] (-) TimerEvent: {}
+[15.092654] (-) TimerEvent: {}
+[15.194757] (-) TimerEvent: {}
+[15.295943] (-) TimerEvent: {}
+[15.396702] (-) TimerEvent: {}
+[15.497440] (-) TimerEvent: {}
+[15.598553] (-) TimerEvent: {}
+[15.699634] (-) TimerEvent: {}
+[15.800769] (-) TimerEvent: {}
+[15.901720] (-) TimerEvent: {}
+[16.002548] (-) TimerEvent: {}
+[16.104120] (-) TimerEvent: {}
+[16.206038] (-) TimerEvent: {}
+[16.307312] (-) TimerEvent: {}
+[16.409116] (-) TimerEvent: {}
+[16.511088] (-) TimerEvent: {}
+[16.612778] (-) TimerEvent: {}
+[16.713631] (-) TimerEvent: {}
+[16.815561] (-) TimerEvent: {}
+[16.916768] (-) TimerEvent: {}
+[17.017835] (-) TimerEvent: {}
+[17.119052] (-) TimerEvent: {}
+[17.221268] (-) TimerEvent: {}
+[17.322314] (-) TimerEvent: {}
+[17.423435] (-) TimerEvent: {}
+[17.524916] (-) TimerEvent: {}
+[17.626119] (-) TimerEvent: {}
+[17.728052] (-) TimerEvent: {}
+[17.829392] (-) TimerEvent: {}
+[17.930915] (-) TimerEvent: {}
+[18.031661] (-) TimerEvent: {}
+[18.132539] (-) TimerEvent: {}
+[18.233572] (-) TimerEvent: {}
+[18.334590] (-) TimerEvent: {}
+[18.435398] (-) TimerEvent: {}
+[18.536160] (-) TimerEvent: {}
+[18.637305] (-) TimerEvent: {}
+[18.738271] (-) TimerEvent: {}
+[18.839009] (-) TimerEvent: {}
+[18.939790] (-) TimerEvent: {}
+[19.040660] (-) TimerEvent: {}
+[19.141702] (-) TimerEvent: {}
+[19.242650] (-) TimerEvent: {}
+[19.343529] (-) TimerEvent: {}
+[19.444578] (-) TimerEvent: {}
+[19.549912] (-) TimerEvent: {}
+[19.650735] (-) TimerEvent: {}
+[19.751520] (-) TimerEvent: {}
+[19.852240] (-) TimerEvent: {}
+[19.953021] (-) TimerEvent: {}
+[20.053866] (-) TimerEvent: {}
+[20.154894] (-) TimerEvent: {}
+[20.255622] (-) TimerEvent: {}
+[20.356458] (-) TimerEvent: {}
+[20.457229] (-) TimerEvent: {}
+[20.558197] (-) TimerEvent: {}
+[20.659074] (-) TimerEvent: {}
+[20.759881] (-) TimerEvent: {}
+[20.860637] (-) TimerEvent: {}
+[20.961433] (-) TimerEvent: {}
+[21.062250] (-) TimerEvent: {}
+[21.163025] (-) TimerEvent: {}
+[21.263886] (-) TimerEvent: {}
+[21.364663] (-) TimerEvent: {}
+[21.465430] (-) TimerEvent: {}
+[21.566276] (-) TimerEvent: {}
+[21.667072] (-) TimerEvent: {}
+[21.767930] (-) TimerEvent: {}
+[21.868685] (-) TimerEvent: {}
+[21.969499] (-) TimerEvent: {}
+[22.070294] (-) TimerEvent: {}
+[22.171418] (-) TimerEvent: {}
+[22.272161] (-) TimerEvent: {}
+[22.373298] (-) TimerEvent: {}
+[22.474109] (-) TimerEvent: {}
+[22.574810] (-) TimerEvent: {}
+[22.675557] (-) TimerEvent: {}
+[22.776636] (-) TimerEvent: {}
+[22.877400] (-) TimerEvent: {}
+[22.978189] (-) TimerEvent: {}
+[23.079276] (-) TimerEvent: {}
+[23.180029] (-) TimerEvent: {}
+[23.281122] (-) TimerEvent: {}
+[23.381924] (-) TimerEvent: {}
+[23.482675] (-) TimerEvent: {}
+[23.583756] (-) TimerEvent: {}
+[23.684491] (-) TimerEvent: {}
+[23.785238] (-) TimerEvent: {}
+[23.886070] (-) TimerEvent: {}
+[23.986809] (-) TimerEvent: {}
+[24.088141] (-) TimerEvent: {}
+[24.189229] (-) TimerEvent: {}
+[24.290107] (-) TimerEvent: {}
+[24.391547] (-) TimerEvent: {}
+[24.492328] (-) TimerEvent: {}
+[24.593112] (-) TimerEvent: {}
+[24.693907] (-) TimerEvent: {}
+[24.794694] (-) TimerEvent: {}
+[24.895725] (-) TimerEvent: {}
+[24.996474] (-) TimerEvent: {}
+[25.097215] (-) TimerEvent: {}
+[25.198005] (-) TimerEvent: {}
+[25.298741] (-) TimerEvent: {}
+[25.399492] (-) TimerEvent: {}
+[25.500241] (-) TimerEvent: {}
+[25.600973] (-) TimerEvent: {}
+[25.701718] (-) TimerEvent: {}
+[25.802495] (-) TimerEvent: {}
+[25.903235] (-) TimerEvent: {}
+[26.004345] (-) TimerEvent: {}
+[26.105461] (-) TimerEvent: {}
+[26.206620] (-) TimerEvent: {}
+[26.307729] (-) TimerEvent: {}
+[26.408487] (-) TimerEvent: {}
+[26.509237] (-) TimerEvent: {}
+[26.610040] (-) TimerEvent: {}
+[26.710790] (-) TimerEvent: {}
+[26.811663] (-) TimerEvent: {}
+[26.912435] (-) TimerEvent: {}
+[27.013278] (-) TimerEvent: {}
+[27.114021] (-) TimerEvent: {}
+[27.214724] (-) TimerEvent: {}
+[27.315398] (-) TimerEvent: {}
+[27.416084] (-) TimerEvent: {}
+[27.516763] (-) TimerEvent: {}
+[27.617488] (-) TimerEvent: {}
+[27.718190] (-) TimerEvent: {}
+[27.818872] (-) TimerEvent: {}
+[27.919614] (-) TimerEvent: {}
+[28.020382] (-) TimerEvent: {}
+[28.121353] (-) TimerEvent: {}
+[28.222148] (-) TimerEvent: {}
+[28.322913] (-) TimerEvent: {}
+[28.423684] (-) TimerEvent: {}
+[28.524452] (-) TimerEvent: {}
+[28.625175] (-) TimerEvent: {}
+[28.726317] (-) TimerEvent: {}
+[28.827462] (-) TimerEvent: {}
+[28.928246] (-) TimerEvent: {}
+[29.029013] (-) TimerEvent: {}
+[29.130618] (-) TimerEvent: {}
+[29.232619] (-) TimerEvent: {}
+[29.333551] (-) TimerEvent: {}
+[29.440989] (-) TimerEvent: {}
+[29.541711] (-) TimerEvent: {}
+[29.642789] (-) TimerEvent: {}
+[29.743605] (-) TimerEvent: {}
+[29.844449] (-) TimerEvent: {}
+[29.945330] (-) TimerEvent: {}
+[30.046238] (-) TimerEvent: {}
+[30.147283] (-) TimerEvent: {}
+[30.248483] (-) TimerEvent: {}
+[30.351747] (-) TimerEvent: {}
+[30.452714] (-) TimerEvent: {}
+[30.553756] (-) TimerEvent: {}
+[30.656120] (-) TimerEvent: {}
+[30.757203] (-) TimerEvent: {}
+[30.858088] (-) TimerEvent: {}
+[30.958789] (-) TimerEvent: {}
+[31.059612] (-) TimerEvent: {}
+[31.160409] (-) TimerEvent: {}
+[31.261346] (-) TimerEvent: {}
+[31.362367] (-) TimerEvent: {}
+[31.463397] (-) TimerEvent: {}
+[31.564906] (-) TimerEvent: {}
+[31.666555] (-) TimerEvent: {}
+[31.767412] (-) TimerEvent: {}
+[31.868237] (-) TimerEvent: {}
+[31.968996] (-) TimerEvent: {}
+[32.070456] (-) TimerEvent: {}
+[32.171216] (-) TimerEvent: {}
+[32.271993] (-) TimerEvent: {}
+[32.372778] (-) TimerEvent: {}
+[32.473567] (-) TimerEvent: {}
+[32.574480] (-) TimerEvent: {}
+[32.675704] (-) TimerEvent: {}
+[32.776806] (-) TimerEvent: {}
+[32.877950] (-) TimerEvent: {}
+[32.978749] (-) TimerEvent: {}
+[33.079509] (-) TimerEvent: {}
+[33.180829] (-) TimerEvent: {}
+[33.281601] (-) TimerEvent: {}
+[33.382384] (-) TimerEvent: {}
+[33.483467] (-) TimerEvent: {}
+[33.584214] (-) TimerEvent: {}
+[33.685005] (-) TimerEvent: {}
+[33.785937] (-) TimerEvent: {}
+[33.886828] (-) TimerEvent: {}
+[33.987984] (-) TimerEvent: {}
+[34.088988] (-) TimerEvent: {}
+[34.190371] (-) TimerEvent: {}
+[34.291765] (-) TimerEvent: {}
+[34.392538] (-) TimerEvent: {}
+[34.493329] (-) TimerEvent: {}
+[34.594171] (-) TimerEvent: {}
+[34.695959] (-) TimerEvent: {}
+[34.796727] (-) TimerEvent: {}
+[34.897380] (-) TimerEvent: {}
+[34.998224] (-) TimerEvent: {}
+[35.099066] (-) TimerEvent: {}
+[35.200096] (-) TimerEvent: {}
+[35.300977] (-) TimerEvent: {}
+[35.401923] (-) TimerEvent: {}
+[35.503013] (-) TimerEvent: {}
+[35.603905] (-) TimerEvent: {}
+[35.704768] (-) TimerEvent: {}
+[35.805661] (-) TimerEvent: {}
+[35.906558] (-) TimerEvent: {}
+[36.007352] (-) TimerEvent: {}
+[36.108438] (-) TimerEvent: {}
+[36.209384] (-) TimerEvent: {}
+[36.310474] (-) TimerEvent: {}
+[36.412178] (-) TimerEvent: {}
+[36.514237] (-) TimerEvent: {}
+[36.615662] (-) TimerEvent: {}
+[36.716668] (-) TimerEvent: {}
+[36.821282] (-) TimerEvent: {}
+[36.922230] (-) TimerEvent: {}
+[37.023055] (-) TimerEvent: {}
+[37.124171] (-) TimerEvent: {}
+[37.224958] (-) TimerEvent: {}
+[37.326157] (-) TimerEvent: {}
+[37.427029] (-) TimerEvent: {}
+[37.527824] (-) TimerEvent: {}
+[37.628819] (-) TimerEvent: {}
+[37.729741] (-) TimerEvent: {}
+[37.830651] (-) TimerEvent: {}
+[37.931672] (-) TimerEvent: {}
+[38.032570] (-) TimerEvent: {}
+[38.133495] (-) TimerEvent: {}
+[38.234332] (-) TimerEvent: {}
+[38.335158] (-) TimerEvent: {}
+[38.436061] (-) TimerEvent: {}
+[38.536812] (-) TimerEvent: {}
+[38.637936] (-) TimerEvent: {}
+[38.739117] (-) TimerEvent: {}
+[38.839832] (-) TimerEvent: {}
+[38.940809] (-) TimerEvent: {}
+[39.041639] (-) TimerEvent: {}
+[39.143520] (-) TimerEvent: {}
+[39.244219] (-) TimerEvent: {}
+[39.344989] (-) TimerEvent: {}
+[39.445895] (-) TimerEvent: {}
+[39.547012] (-) TimerEvent: {}
+[39.649633] (-) TimerEvent: {}
+[39.750461] (-) TimerEvent: {}
+[39.851173] (-) TimerEvent: {}
+[39.951943] (-) TimerEvent: {}
+[40.053547] (-) TimerEvent: {}
+[40.154412] (-) TimerEvent: {}
+[40.255206] (-) TimerEvent: {}
+[40.357123] (-) TimerEvent: {}
+[40.457958] (-) TimerEvent: {}
+[40.558776] (-) TimerEvent: {}
+[40.659672] (-) TimerEvent: {}
+[40.760423] (-) TimerEvent: {}
+[40.861138] (-) TimerEvent: {}
+[40.962034] (-) TimerEvent: {}
+[41.062922] (-) TimerEvent: {}
+[41.163661] (-) TimerEvent: {}
+[41.265362] (-) TimerEvent: {}
+[41.367007] (-) TimerEvent: {}
+[41.468120] (-) TimerEvent: {}
+[41.568938] (-) TimerEvent: {}
+[41.669794] (-) TimerEvent: {}
+[41.770571] (-) TimerEvent: {}
+[41.871318] (-) TimerEvent: {}
+[41.972131] (-) TimerEvent: {}
+[42.072887] (-) TimerEvent: {}
+[42.173645] (-) TimerEvent: {}
+[42.274415] (-) TimerEvent: {}
+[42.375184] (-) TimerEvent: {}
+[42.475944] (-) TimerEvent: {}
+[42.576743] (-) TimerEvent: {}
+[42.677542] (-) TimerEvent: {}
+[42.778346] (-) TimerEvent: {}
+[42.879150] (-) TimerEvent: {}
+[42.979937] (-) TimerEvent: {}
+[43.080646] (-) TimerEvent: {}
+[43.181434] (-) TimerEvent: {}
+[43.282263] (-) TimerEvent: {}
+[43.383007] (-) TimerEvent: {}
+[43.483752] (-) TimerEvent: {}
+[43.584503] (-) TimerEvent: {}
+[43.685342] (-) TimerEvent: {}
+[43.786705] (-) TimerEvent: {}
+[43.887444] (-) TimerEvent: {}
+[43.988301] (-) TimerEvent: {}
+[44.089098] (-) TimerEvent: {}
+[44.189993] (-) TimerEvent: {}
+[44.290766] (-) TimerEvent: {}
+[44.391541] (-) TimerEvent: {}
+[44.492330] (-) TimerEvent: {}
+[44.593089] (-) TimerEvent: {}
+[44.693883] (-) TimerEvent: {}
+[44.794632] (-) TimerEvent: {}
+[44.895404] (-) TimerEvent: {}
+[44.996165] (-) TimerEvent: {}
+[45.096958] (-) TimerEvent: {}
+[45.197713] (-) TimerEvent: {}
+[45.298501] (-) TimerEvent: {}
+[45.399263] (-) TimerEvent: {}
+[45.500066] (-) TimerEvent: {}
+[45.600828] (-) TimerEvent: {}
+[45.701617] (-) TimerEvent: {}
+[45.802569] (-) TimerEvent: {}
+[45.903310] (-) TimerEvent: {}
+[46.004053] (-) TimerEvent: {}
+[46.104813] (-) TimerEvent: {}
+[46.205607] (-) TimerEvent: {}
+[46.306826] (-) TimerEvent: {}
+[46.407589] (-) TimerEvent: {}
+[46.508334] (-) TimerEvent: {}
+[46.609075] (-) TimerEvent: {}
+[46.709854] (-) TimerEvent: {}
+[46.810595] (-) TimerEvent: {}
+[46.911368] (-) TimerEvent: {}
+[47.012093] (-) TimerEvent: {}
+[47.112910] (-) TimerEvent: {}
+[47.213666] (-) TimerEvent: {}
+[47.314460] (-) TimerEvent: {}
+[47.415182] (-) TimerEvent: {}
+[47.515973] (-) TimerEvent: {}
+[47.616724] (-) TimerEvent: {}
+[47.717509] (-) TimerEvent: {}
+[47.818295] (-) TimerEvent: {}
+[47.919182] (-) TimerEvent: {}
+[48.020286] (-) TimerEvent: {}
+[48.121081] (-) TimerEvent: {}
+[48.221867] (-) TimerEvent: {}
+[48.322605] (-) TimerEvent: {}
+[48.423366] (-) TimerEvent: {}
+[48.524091] (-) TimerEvent: {}
+[48.624926] (-) TimerEvent: {}
+[48.725715] (-) TimerEvent: {}
+[48.826552] (-) TimerEvent: {}
+[48.927319] (-) TimerEvent: {}
+[49.028064] (-) TimerEvent: {}
+[49.128811] (-) TimerEvent: {}
+[49.229558] (-) TimerEvent: {}
+[49.330667] (-) TimerEvent: {}
+[49.431423] (-) TimerEvent: {}
+[49.532204] (-) TimerEvent: {}
+[49.632952] (-) TimerEvent: {}
+[49.734472] (-) TimerEvent: {}
+[49.835491] (-) TimerEvent: {}
+[49.936554] (-) TimerEvent: {}
+[50.037539] (-) TimerEvent: {}
+[50.140797] (-) TimerEvent: {}
+[50.241573] (-) TimerEvent: {}
+[50.342468] (-) TimerEvent: {}
+[50.443638] (-) TimerEvent: {}
+[50.544799] (-) TimerEvent: {}
+[50.646079] (-) TimerEvent: {}
+[50.746844] (-) TimerEvent: {}
+[50.848090] (-) TimerEvent: {}
+[50.948799] (-) TimerEvent: {}
+[51.049540] (-) TimerEvent: {}
+[51.150406] (-) TimerEvent: {}
+[51.251146] (-) TimerEvent: {}
+[51.352899] (-) TimerEvent: {}
+[51.453912] (-) TimerEvent: {}
+[51.555130] (-) TimerEvent: {}
+[51.656063] (-) TimerEvent: {}
+[51.757342] (-) TimerEvent: {}
+[51.858244] (-) TimerEvent: {}
+[51.959678] (-) TimerEvent: {}
+[52.060545] (-) TimerEvent: {}
+[52.161915] (-) TimerEvent: {}
+[52.262764] (-) TimerEvent: {}
+[52.363927] (-) TimerEvent: {}
+[52.464581] (-) TimerEvent: {}
+[52.565505] (-) TimerEvent: {}
+[52.666329] (-) TimerEvent: {}
+[52.767081] (-) TimerEvent: {}
+[52.867828] (-) TimerEvent: {}
+[52.968670] (-) TimerEvent: {}
+[53.069973] (-) TimerEvent: {}
+[53.171226] (-) TimerEvent: {}
+[53.272433] (-) TimerEvent: {}
+[53.373503] (-) TimerEvent: {}
+[53.474645] (-) TimerEvent: {}
+[53.575356] (-) TimerEvent: {}
+[53.676364] (-) TimerEvent: {}
+[53.777353] (-) TimerEvent: {}
+[53.878409] (-) TimerEvent: {}
+[53.979280] (-) TimerEvent: {}
+[54.080440] (-) TimerEvent: {}
+[54.181275] (-) TimerEvent: {}
+[54.282177] (-) TimerEvent: {}
+[54.382908] (-) TimerEvent: {}
+[54.483584] (-) TimerEvent: {}
+[54.585109] (-) TimerEvent: {}
+[54.685978] (-) TimerEvent: {}
+[54.786685] (-) TimerEvent: {}
+[54.887408] (-) TimerEvent: {}
+[54.988213] (-) TimerEvent: {}
+[55.088996] (-) TimerEvent: {}
+[55.199190] (-) TimerEvent: {}
+[55.299933] (-) TimerEvent: {}
+[55.400814] (-) TimerEvent: {}
+[55.501703] (-) TimerEvent: {}
+[55.602482] (-) TimerEvent: {}
+[55.703192] (-) TimerEvent: {}
+[55.803909] (-) TimerEvent: {}
+[55.904685] (-) TimerEvent: {}
+[56.005393] (-) TimerEvent: {}
+[56.106345] (-) TimerEvent: {}
+[56.207067] (-) TimerEvent: {}
+[56.307976] (-) TimerEvent: {}
+[56.409390] (-) TimerEvent: {}
+[56.511925] (-) TimerEvent: {}
+[56.613203] (-) TimerEvent: {}
+[56.714100] (-) TimerEvent: {}
+[56.814880] (-) TimerEvent: {}
+[56.915779] (-) TimerEvent: {}
+[57.016696] (-) TimerEvent: {}
+[57.117680] (-) TimerEvent: {}
+[57.218795] (-) TimerEvent: {}
+[57.320427] (-) TimerEvent: {}
+[57.421583] (-) TimerEvent: {}
+[57.522841] (-) TimerEvent: {}
+[57.623694] (-) TimerEvent: {}
+[57.675313] (ros_goal_client) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rosGoalServer\x1b[0m\n'}
+[57.723884] (-) TimerEvent: {}
+[57.824803] (-) TimerEvent: {}
+[57.926400] (-) TimerEvent: {}
+[58.027152] (-) TimerEvent: {}
+[58.127930] (-) TimerEvent: {}
+[58.228779] (-) TimerEvent: {}
+[58.330062] (-) TimerEvent: {}
+[58.431300] (-) TimerEvent: {}
+[58.532987] (-) TimerEvent: {}
+[58.633944] (-) TimerEvent: {}
+[58.736203] (-) TimerEvent: {}
+[58.838104] (-) TimerEvent: {}
+[58.940962] (-) TimerEvent: {}
+[59.042375] (-) TimerEvent: {}
+[59.143870] (-) TimerEvent: {}
+[59.245736] (-) TimerEvent: {}
+[59.347856] (-) TimerEvent: {}
+[59.449138] (-) TimerEvent: {}
+[59.550605] (-) TimerEvent: {}
+[59.651431] (-) TimerEvent: {}
+[59.752162] (-) TimerEvent: {}
+[59.853181] (-) TimerEvent: {}
+[59.954060] (-) TimerEvent: {}
+[60.058419] (-) TimerEvent: {}
+[60.159223] (-) TimerEvent: {}
+[60.260556] (-) TimerEvent: {}
+[60.361250] (-) TimerEvent: {}
+[60.462666] (-) TimerEvent: {}
+[60.564171] (-) TimerEvent: {}
+[60.666027] (-) TimerEvent: {}
+[60.766948] (-) TimerEvent: {}
+[60.867620] (-) TimerEvent: {}
+[60.968366] (-) TimerEvent: {}
+[61.004301] (ros_goal_client) StdoutLine: {'line': b'[100%] Built target rosGoalServer\n'}
+[61.057173] (ros_goal_client) CommandEnded: {'returncode': 0}
+[61.060146] (ros_goal_client) JobProgress: {'identifier': 'ros_goal_client', 'progress': 'install'}
+[61.068558] (-) TimerEvent: {}
+[61.104472] (ros_goal_client) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/turtlebot3_ws/build/ros_goal_client'], 'cwd': '/home/ubuntu/turtlebot3_ws/build/ros_goal_client', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.11 55038 22'), ('ROS_PACKAGE_PATH', '/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib:/home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/turtlebot3_ws/build/ros_goal_client'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.11 55038 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/ubuntu/turtlebot3_ws/build/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/build/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[61.142989] (ros_goal_client) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[61.144798] (ros_goal_client) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[61.146452] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/rosidl_interfaces/ros_goal_client\n'}
+[61.149141] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_generator_c__visibility_control.h\n'}
+[61.150986] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/bot3_gpio.h\n'}
+[61.151981] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__functions.h\n'}
+[61.152985] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__struct.h\n'}
+[61.154031] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__type_support.h\n'}
+[61.155163] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/library_path.sh\n'}
+[61.156137] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/library_path.dsv\n'}
+[61.159529] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[61.160579] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_fastrtps_c.h\n'}
+[61.163232] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[61.164057] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/bot3_gpio.hpp\n'}
+[61.165115] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__builder.hpp\n'}
+[61.166117] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__struct.hpp\n'}
+[61.167127] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__traits.hpp\n'}
+[61.168160] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__type_support.hpp\n'}
+[61.168689] (-) TimerEvent: {}
+[61.171839] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[61.172940] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[61.175341] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[61.176312] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_introspection_c.h\n'}
+[61.178699] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_introspection_cpp.hpp\n'}
+[61.179671] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/pythonpath.sh\n'}
+[61.180705] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/pythonpath.dsv\n'}
+[61.182721] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[61.183678] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[61.184652] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[61.185732] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[61.190827] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/__init__.py\n'}
+[61.191749] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_c.c\n'}
+[61.192641] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[61.193547] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[61.194973] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/libros_goal_client__rosidl_generator_py.so\n'}
+[61.195851] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[61.197208] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[61.198251] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[61.199440] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv/__init__.py\n'}
+[61.201592] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv/_bot3_gpio.py\n'}
+[61.202627] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv/_bot3_gpio_s.c\n'}
+[61.204345] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[61.205991] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[61.207642] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[61.208688] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio.idl\n'}
+[61.209658] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio.srv\n'}
+[61.210842] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio_Request.msg\n'}
+[61.211805] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio_Response.msg\n'}
+[61.213189] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/ros_goal_client/rosGoalServer\n'}
+[61.214146] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/ros_goal_client/rosGoalClient\n'}
+[61.215475] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/package_run_dependencies/ros_goal_client\n'}
+[61.216672] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/parent_prefix_path/ros_goal_client\n'}
+[61.217729] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/ament_prefix_path.sh\n'}
+[61.218775] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/ament_prefix_path.dsv\n'}
+[61.219886] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/path.sh\n'}
+[61.220872] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/path.dsv\n'}
+[61.221907] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.bash\n'}
+[61.222905] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.sh\n'}
+[61.223825] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.zsh\n'}
+[61.224806] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.dsv\n'}
+[61.225441] (ros_goal_client) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/package.dsv\n'}
+[61.265956] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/packages/ros_goal_client\n'}
+[61.267136] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/rosidl_cmake-extras.cmake\n'}
+[61.268296] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[61.268801] (-) TimerEvent: {}
+[61.269938] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[61.271167] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[61.272215] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[61.273794] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[61.275565] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[61.276954] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_clientConfig.cmake\n'}
+[61.278598] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_clientConfig-version.cmake\n'}
+[61.280060] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/package.xml\n'}
+[61.282023] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_generator_c.so\n'}
+[61.284719] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_fastrtps_c.so\n'}
+[61.287817] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_fastrtps_cpp.so\n'}
+[61.290420] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_introspection_c.so\n'}
+[61.292383] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_c.so\n'}
+[61.294872] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_introspection_cpp.so\n'}
+[61.297109] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_cpp.so\n'}
+[61.368961] (-) TimerEvent: {}
+[61.469638] (-) TimerEvent: {}
+[61.483599] (ros_goal_client) StdoutLine: {'line': b"Listing '/home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client'...\n"}
+[61.485941] (ros_goal_client) StdoutLine: {'line': b"Listing '/home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv'...\n"}
+[61.512804] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_generator_py.so\n'}
+[61.514623] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_cExport.cmake\n'}
+[61.515228] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_cExport-noconfig.cmake\n'}
+[61.516049] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[61.516620] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[61.517864] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_cppExport.cmake\n'}
+[61.518739] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[61.519571] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[61.520462] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cExport.cmake\n'}
+[61.521091] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[61.522278] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cExport.cmake\n'}
+[61.523034] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[61.524007] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[61.524779] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[61.525860] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cppExport.cmake\n'}
+[61.526555] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[61.527575] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_pyExport.cmake\n'}
+[61.528146] (ros_goal_client) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_pyExport-noconfig.cmake\n'}
+[61.536169] (ros_goal_client) CommandEnded: {'returncode': 0}
+[61.573287] (-) TimerEvent: {}
+[61.653323] (ros_goal_client) JobEnded: {'identifier': 'ros_goal_client', 'rc': 0}
+[61.656476] (-) EventReactorShutdown: {}

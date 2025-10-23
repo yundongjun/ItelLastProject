@@ -1,0 +1,24 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:306:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knotify_jetson_second[m[K’ was not declared in this scope
+  306 |     if ([01;31m[Knotify_jetson_second[m[K && result.code == rclcpp_action::ResultCode::SUCCEEDED && g_uart_tx_pub) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid* recv_msg(void*)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:582:17:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[Kgo_to_pose(geometry_msgs::msg::PoseStamped&, const char [1])[m[K’ is ambiguous
+  582 |       [01;31m[Kgo_to_pose(g_first_goal, "")[m[K;
+      |       [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:93:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, bool)[m[K’
+   93 | static void [01;36m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:274:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&)[m[K’
+  274 | static void [01;36m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:93:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, bool)[m[K’ declared ‘[01m[Kstatic[m[K’ but never defined [[01;35m[K-Wunused-function[m[K]
+   93 | static void [01;35m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:274:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  274 | static void [01;35m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

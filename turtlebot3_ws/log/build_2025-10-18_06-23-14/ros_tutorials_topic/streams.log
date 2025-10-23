@@ -1,0 +1,123 @@
+[0.069s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/ros_tutorials_topic -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic
+[0.746s] -- The C compiler identification is GNU 11.4.0
+[1.272s] -- The CXX compiler identification is GNU 11.4.0
+[1.322s] -- Detecting C compiler ABI info
+[2.204s] -- Detecting C compiler ABI info - done
+[2.272s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.273s] -- Detecting C compile features
+[2.275s] -- Detecting C compile features - done
+[2.308s] -- Detecting CXX compiler ABI info
+[3.116s] -- Detecting CXX compiler ABI info - done
+[3.170s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.183s] -- Detecting CXX compile features
+[3.186s] -- Detecting CXX compile features - done
+[3.294s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.909s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.567s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.586s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[7.443s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.538s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.656s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.808s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.053s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.653s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.710s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[9.885s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[10.243s] -- Found FastRTPS: /opt/ros/humble/include  
+[10.785s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.959s] -- Looking for pthread.h
+[11.551s] -- Looking for pthread.h - found
+[11.555s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.040s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[12.046s] -- Found Threads: TRUE  
+[12.524s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[14.502s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[16.837s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[17.720s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[17.922s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[17.968s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[18.199s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[18.201s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[18.203s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[18.205s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[18.395s] -- Found PythonExtra: .so  
+[18.791s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[18.792s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[18.793s]   rosidl_target_interfaces()
+[18.794s] Call Stack (most recent call first):
+[18.795s]   CMakeLists.txt:26 (rosidl_target_interfaces)
+[18.795s] 
+[18.796s] [0m
+[18.796s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[18.797s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[18.798s]   rosidl_target_interfaces()
+[18.799s] Call Stack (most recent call first):
+[18.799s]   CMakeLists.txt:27 (rosidl_target_interfaces)
+[18.800s] 
+[18.801s] [0m
+[18.883s] -- Configuring done
+[19.195s] -- Generating done
+[19.273s] -- Build files have been written to: /home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic
+[19.356s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/ros_tutorials_topic -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic
+[19.359s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic -- -j4 -l4
+[19.681s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[21.328s] [  2%] Built target ros_tutorials_topic__cpp
+[21.496s] [  2%] Built target ament_cmake_python_symlink_ros_tutorials_topic
+[21.561s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[23.130s] [  8%] [32mBuilding CXX object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_tutorials_topic/msg/detail/dds_fastrtps/msg_tutorial__type_support.cpp.o[0m
+[25.801s] [ 11%] [32m[1mLinking CXX shared library libros_tutorials_topic__rosidl_typesupport_fastrtps_cpp.so[0m
+[26.254s] [ 11%] Built target ros_tutorials_topic__rosidl_typesupport_fastrtps_cpp
+[26.325s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[27.758s] [ 17%] [32mBuilding CXX object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_tutorials_topic/msg/detail/msg_tutorial__type_support.cpp.o[0m
+[29.959s] [ 20%] [32m[1mLinking CXX shared library libros_tutorials_topic__rosidl_typesupport_introspection_cpp.so[0m
+[30.335s] [ 20%] Built target ros_tutorials_topic__rosidl_typesupport_introspection_cpp
+[32.534s] running egg_info
+[32.541s] creating ros_tutorials_topic.egg-info
+[32.544s] writing ros_tutorials_topic.egg-info/PKG-INFO
+[32.547s] writing dependency_links to ros_tutorials_topic.egg-info/dependency_links.txt
+[32.551s] writing top-level names to ros_tutorials_topic.egg-info/top_level.txt
+[32.554s] writing manifest file 'ros_tutorials_topic.egg-info/SOURCES.txt'
+[32.569s] reading manifest file 'ros_tutorials_topic.egg-info/SOURCES.txt'
+[32.574s] writing manifest file 'ros_tutorials_topic.egg-info/SOURCES.txt'
+[32.810s] [ 20%] Built target ament_cmake_python_build_ros_tutorials_topic_egg
+[32.969s] [ 22%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[34.480s] [ 25%] [32mBuilding CXX object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_tutorials_topic/msg/msg_tutorial__type_support.cpp.o[0m
+[36.226s] [ 28%] [32m[1mLinking CXX shared library libros_tutorials_topic__rosidl_typesupport_cpp.so[0m
+[36.457s] [ 28%] Built target ros_tutorials_topic__rosidl_typesupport_cpp
+[36.525s] [ 31%] [34m[1mGenerating C code for ROS interfaces[0m
+[38.192s] [ 34%] [32mBuilding C object CMakeFiles/ros_tutorials_topic__rosidl_generator_c.dir/rosidl_generator_c/ros_tutorials_topic/msg/detail/msg_tutorial__functions.c.o[0m
+[38.499s] [ 37%] [32m[1mLinking C shared library libros_tutorials_topic__rosidl_generator_c.so[0m
+[38.727s] [ 37%] Built target ros_tutorials_topic__rosidl_generator_c
+[38.794s] [ 40%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[40.410s] [ 42%] [32mBuilding CXX object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_tutorials_topic/msg/detail/msg_tutorial__type_support_c.cpp.o[0m
+[43.249s] [ 45%] [32m[1mLinking CXX shared library libros_tutorials_topic__rosidl_typesupport_fastrtps_c.so[0m
+[43.713s] [ 45%] Built target ros_tutorials_topic__rosidl_typesupport_fastrtps_c
+[43.784s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[45.181s] [ 51%] [32mBuilding CXX object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_tutorials_topic/msg/msg_tutorial__type_support.cpp.o[0m
+[45.400s] [ 54%] [32m[1mLinking CXX shared library libros_tutorials_topic__rosidl_typesupport_c.so[0m
+[45.655s] [ 54%] Built target ros_tutorials_topic__rosidl_typesupport_c
+[45.732s] [ 57%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[47.265s] [ 60%] [32mBuilding C object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_tutorials_topic/msg/detail/msg_tutorial__type_support.c.o[0m
+[47.709s] [ 62%] [32m[1mLinking C shared library libros_tutorials_topic__rosidl_typesupport_introspection_c.so[0m
+[48.075s] [ 62%] Built target ros_tutorials_topic__rosidl_typesupport_introspection_c
+[48.310s] [ 62%] Built target ros_tutorials_topic
+[48.581s] [ 65%] [34m[1mGenerating Python code for ROS interfaces[0m
+[51.611s] [ 65%] Built target ros_tutorials_topic__py
+[51.920s] [ 68%] [32mBuilding CXX object CMakeFiles/topic_subscriber.dir/src/topic_subscriber.cpp.o[0m
+[116.909s] [ 71%] [32m[1mLinking CXX executable topic_subscriber[0m
+[119.325s] [ 71%] Built target topic_subscriber
+[119.599s] [ 74%] [32mBuilding C object CMakeFiles/ros_tutorials_topic__rosidl_generator_py.dir/rosidl_generator_py/ros_tutorials_topic/msg/_msg_tutorial_s.c.o[0m
+[120.364s] [ 77%] [32m[1mLinking C shared library rosidl_generator_py/ros_tutorials_topic/libros_tutorials_topic__rosidl_generator_py.so[0m
+[120.738s] [ 77%] Built target ros_tutorials_topic__rosidl_generator_py
+[120.952s] [ 80%] [32mBuilding CXX object CMakeFiles/topic_publisher.dir/src/topic_publisher.cpp.o[0m
+[151.300s] [ 82%] [32m[1mLinking CXX executable topic_publisher[0m
+[152.316s] [ 82%] Built target topic_publisher
+[152.437s] [ 85%] [32mBuilding C object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_c.c.o[0m
+[153.021s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[153.212s] [ 88%] Built target ros_tutorials_topic__rosidl_typesupport_c__pyext
+[153.326s] [ 91%] [32mBuilding C object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[153.845s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[154.039s] [ 94%] Built target ros_tutorials_topic__rosidl_typesupport_introspection_c__pyext
+[154.150s] [ 97%] [32mBuilding C object CMakeFiles/ros_tutorials_topic__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[154.668s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[154.864s] [100%] Built target ros_tutorials_topic__rosidl_typesupport_fastrtps_c__pyext

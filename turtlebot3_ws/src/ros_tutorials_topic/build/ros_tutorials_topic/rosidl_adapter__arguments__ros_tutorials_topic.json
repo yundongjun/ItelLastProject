@@ -1,0 +1,6 @@
+{
+  "package_name": "ros_tutorials_topic",
+  "non_idl_tuples": [
+    "/home/ubuntu/turtlebot3_ws/src/ros_tutorials_topic:msg/MsgTutorial.msg"
+  ]
+}

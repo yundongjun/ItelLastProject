@@ -1,0 +1,120 @@
+[0.076s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client': CMAKE_PREFIX_PATH=/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_simulations:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener:/home/ubuntu/turtlebot3_ws/src/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_simulations:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_gazebo:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/src/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/src/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/src/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/src/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/src/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/src/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/src/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/src/install/cpp_talker_listener:/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4
+[0.404s] [35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_generator_c[0m
+[0.535s] [  8%] Built target ros_goal_client__rosidl_generator_c
+[0.572s] [ 11%] Built target ros_goal_client__cpp
+[0.684s] [35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_fastrtps_c[0m
+[0.704s] [ 11%] Built target ament_cmake_python_symlink_ros_goal_client
+[0.710s] [35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_c[0m
+[0.746s] [35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_introspection_c[0m
+[0.806s] [35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_introspection_cpp[0m
+[0.844s] [ 20%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[0.856s] [ 28%] Built target ros_goal_client__rosidl_typesupport_c
+[0.920s] [ 37%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[0.970s] [ 45%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[1.008s] [35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_cpp[0m
+[1.070s] [35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_fastrtps_cpp[0m
+[1.190s] [ 54%] Built target ros_goal_client__rosidl_typesupport_cpp
+[1.314s] [ 62%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[1.347s] [35m[1mConsolidate compiler generated dependencies of target rosGoalClient[0m
+[1.369s] [35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[1.579s] [ 68%] Built target rosGoalClient
+[1.637s] [ 68%] Built target ros_goal_client
+[1.684s] [ 71%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[2.030s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.345s] running egg_info
+[3.350s] writing ros_goal_client.egg-info/PKG-INFO
+[3.353s] writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+[3.354s] writing top-level names to ros_goal_client.egg-info/top_level.txt
+[3.375s] reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[3.384s] writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[3.856s] [ 74%] Built target ament_cmake_python_build_ros_goal_client_egg
+[6.713s] [ 74%] Built target ros_goal_client__py
+[7.123s] [ 77%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_generator_py.dir/rosidl_generator_py/ros_goal_client/srv/_bot3_gpio_s.c.o[0m
+[8.522s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/libros_goal_client__rosidl_generator_py.so[0m
+[9.250s] [ 80%] Built target ros_goal_client__rosidl_generator_py
+[9.665s] [ 82%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.693s] [ 85%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_c.c.o[0m
+[9.704s] [ 88%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.026s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/ros_goal_client_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[11.132s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/ros_goal_client_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[11.424s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/ros_goal_client_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[11.726s] [ 97%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[11.757s] [ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+[11.842s] [ 97%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[30.335s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:106:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_second_ready[m[K’
+[30.337s]   106 | static std::atomic<bool> [01;31m[Kg_second_ready[m[K{false};
+[30.339s]       |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[30.342s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:101:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_second_ready[m[K’ previously defined here
+[30.345s]   101 | static std::atomic<bool> [01;36m[Kg_second_ready[m[K{false};
+[30.351s]       |                          [01;36m[K^~~~~~~~~~~~~~[m[K
+[30.352s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:107:40:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kgeometry_msgs::msg::PoseStamped g_second_pose[m[K’
+[30.353s]   107 | static geometry_msgs::msg::PoseStamped [01;31m[Kg_second_pose[m[K;
+[30.354s]       |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[30.372s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:99:40:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped g_second_pose[m[K’ previously declared here
+[30.373s]    99 | static geometry_msgs::msg::PoseStamped [01;36m[Kg_second_pose[m[K;
+[30.374s]       |                                        [01;36m[K^~~~~~~~~~~~~[m[K
+[30.385s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:110:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.388s]   110 | [01;31m[Kg_home_pose[m[K.header.frame_id = "map";
+[30.389s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.407s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:111:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.408s]   111 | [01;31m[Kg_home_pose[m[K.pose.position.x = 0.0;
+[30.408s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.432s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:112:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.433s]   112 | [01;31m[Kg_home_pose[m[K.pose.position.y = 0.0;
+[30.434s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.443s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:113:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.444s]   113 | [01;31m[Kg_home_pose[m[K.pose.position.z = 0.0;
+[30.444s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.460s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:115:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+[30.460s]   115 | [01;31m[Kq[m[K.x = q.y = q.z = 0.0;
+[30.461s]       | [01;31m[K^[m[K
+[30.466s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:116:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+[30.467s]   116 | [01;31m[Kq[m[K.w = 1.0;   // yaw 0
+[30.468s]       | [01;31m[K^[m[K
+[30.489s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:117:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.490s]   117 | [01;31m[Kg_home_pose[m[K.pose.orientation = q;
+[30.490s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.511s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:118:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_ready[m[K’ does not name a type
+[30.512s]   118 | [01;31m[Kg_home_ready[m[K.store(true);
+[30.512s]       | [01;31m[K^~~~~~~~~~~~[m[K
+[30.521s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:121:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_nav_client[m[K’ does not name a type
+[30.522s]   121 | [01;31m[Kg_nav_client[m[K = rclcpp_action::create_client<NavigateToPose>(g_node, "navigate_to_pose");
+[30.523s]       | [01;31m[K^~~~~~~~~~~~[m[K
+[30.545s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:123:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.545s]   123 | [01;31m[Kg_home_pose[m[K.header.frame_id = "map";
+[30.546s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.563s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:124:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.564s]   124 | [01;31m[Kg_home_pose[m[K.pose.position.x = 0.0;
+[30.565s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.574s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:125:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.574s]   125 | [01;31m[Kg_home_pose[m[K.pose.position.y = 0.0;
+[30.575s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.595s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:126:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.596s]   126 | [01;31m[Kg_home_pose[m[K.pose.position.z = 0.0;
+[30.596s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.615s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:127:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.616s]   127 | [01;31m[Kg_home_pose[m[K.pose.orientation.x = 0.0;
+[30.617s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.630s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:128:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.633s]   128 | [01;31m[Kg_home_pose[m[K.pose.orientation.y = 0.0;
+[30.634s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.655s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:129:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.656s]   129 | [01;31m[Kg_home_pose[m[K.pose.orientation.z = 0.0;
+[30.657s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.678s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:130:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+[30.679s]   130 | [01;31m[Kg_home_pose[m[K.pose.orientation.w = 1.0;
+[30.680s]       | [01;31m[K^~~~~~~~~~~[m[K
+[30.689s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:131:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_ready[m[K’ does not name a type
+[30.690s]   131 | [01;31m[Kg_home_ready[m[K.store(true);
+[30.691s]       | [01;31m[K^~~~~~~~~~~~[m[K
+[30.713s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:133:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_second_ready[m[K’ does not name a type
+[30.714s]   133 | [01;31m[Kg_second_ready[m[K.store(false);
+[30.715s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[31.827s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid* recv_msg(void*)[m[K’:
+[31.828s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:525:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdSeqVal[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[31.829s]   525 |   double [01;35m[KdSeqVal[m[K[GOALCNT][3] = {
+[31.829s]       |          [01;35m[K^~~~~~~[m[K
+[86.084s] gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+[86.087s] gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+[86.088s] gmake: *** [Makefile:146: all] Error 2
+[86.136s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_simulations:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener:/home/ubuntu/turtlebot3_ws/src/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_simulations:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_gazebo:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/src/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/src/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/src/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/src/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/src/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/src/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/src/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/src/install/cpp_talker_listener:/home/ubuntu/ros2_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4

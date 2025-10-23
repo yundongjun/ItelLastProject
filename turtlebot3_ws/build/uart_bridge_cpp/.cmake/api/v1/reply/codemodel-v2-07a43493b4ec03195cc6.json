@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-dcdb39856361e0236fc3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "uart_bridge_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uart_bridge_ama1_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uart_bridge_ama1_node-c98fc9ffd7545c0787c4.json",
+					"name" : "uart_bridge_ama1_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uart_bridge_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uart_bridge_cpp_uninstall-acc638d8ccdd8f000737.json",
+					"name" : "uart_bridge_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uart_bridge_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uart_bridge_node-70df686c0917b750f08c.json",
+					"name" : "uart_bridge_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3461030313bcd13bdfaf.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/turtlebot3_ws/build/uart_bridge_cpp",
+		"source" : "/home/ubuntu/turtlebot3_ws/src/uart_bridge_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

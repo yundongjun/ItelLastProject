@@ -1,0 +1,144 @@
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_generator_c[0m
+[  2%] Built target ros_tutorials_topic__cpp
+[  2%] Built target ament_cmake_python_symlink_ros_tutorials_topic
+[ 11%] Built target ros_tutorials_topic__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_introspection_cpp[0m
+[ 20%] Built target ros_tutorials_topic__rosidl_typesupport_cpp
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_fastrtps_c[0m
+[ 28%] Built target ros_tutorials_topic__rosidl_typesupport_fastrtps_cpp
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_introspection_c[0m
+[ 37%] Built target ros_tutorials_topic__rosidl_typesupport_fastrtps_c
+[ 45%] Built target ros_tutorials_topic__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_c[0m
+[ 54%] Built target ros_tutorials_topic__rosidl_typesupport_c
+[ 62%] Built target ros_tutorials_topic__rosidl_typesupport_introspection_c
+[ 62%] Built target ros_tutorials_topic
+[35m[1mConsolidate compiler generated dependencies of target topic_publisher[0m
+[35m[1mConsolidate compiler generated dependencies of target topic_subscriber[0m
+[ 65%] Built target ros_tutorials_topic__py
+[ 71%] Built target topic_publisher
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_generator_py[0m
+[ 77%] Built target topic_subscriber
+[ 82%] Built target ros_tutorials_topic__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target ros_tutorials_topic__rosidl_typesupport_introspection_c__pyext[0m
+[ 88%] Built target ros_tutorials_topic__rosidl_typesupport_c__pyext
+[ 94%] Built target ros_tutorials_topic__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target ros_tutorials_topic__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing ros_tutorials_topic.egg-info/PKG-INFO
+writing dependency_links to ros_tutorials_topic.egg-info/dependency_links.txt
+writing top-level names to ros_tutorials_topic.egg-info/top_level.txt
+reading manifest file 'ros_tutorials_topic.egg-info/SOURCES.txt'
+writing manifest file 'ros_tutorials_topic.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_ros_tutorials_topic_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ament_index/resource_index/rosidl_interfaces/ros_tutorials_topic
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__functions.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__struct.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__type_support.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/msg_tutorial.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/library_path.sh
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/library_path.dsv
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__builder.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__struct.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__traits.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__type_support.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/msg_tutorial.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/include/ros_tutorials_topic/ros_tutorials_topic/msg/detail/msg_tutorial__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/pythonpath.sh
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/pythonpath.dsv
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic-0.1.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic-0.1.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic-0.1.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic-0.1.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/__init__.py
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/libros_tutorials_topic__rosidl_generator_py.so
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/msg/__init__.py
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/msg/_msg_tutorial.py
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/msg/_msg_tutorial_s.c
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/ros_tutorials_topic_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/msg/MsgTutorial.idl
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/msg/MsgTutorial.msg
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/ros_tutorials_topic/topic_publisher
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/ros_tutorials_topic/topic_subscriber
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ament_index/resource_index/package_run_dependencies/ros_tutorials_topic
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ament_index/resource_index/parent_prefix_path/ros_tutorials_topic
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/path.sh
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/environment/path.dsv
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/local_setup.bash
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/local_setup.sh
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/local_setup.zsh
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/local_setup.dsv
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/package.dsv
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ament_index/resource_index/packages/ros_tutorials_topic
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topicConfig.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topicConfig-version.cmake
+-- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/package.xml
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_generator_c.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_generator_c.so" to ""
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_c.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_c.so" to ""
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_typesupport_cpp.so" to ""
+Listing '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic'...
+Compiling '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/__init__.py'...
+Listing '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/msg'...
+Compiling '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/msg/__init__.py'...
+Compiling '/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/local/lib/python3.10/dist-packages/ros_tutorials_topic/msg/_msg_tutorial.py'...
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_generator_py.so
+-- Set runtime path of "/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/lib/libros_tutorials_topic__rosidl_generator_py.so" to ""
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_generator_cExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_generator_cppExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_cExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/ros_tutorials_topic__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_generator_pyExport.cmake
+-- Installing: /home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic/share/ros_tutorials_topic/cmake/export_ros_tutorials_topic__rosidl_generator_pyExport-noconfig.cmake

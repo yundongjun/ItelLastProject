@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/build/uart_bridge_cpp/ament_cmake_core/uart_bridge_cppConfig.cmake

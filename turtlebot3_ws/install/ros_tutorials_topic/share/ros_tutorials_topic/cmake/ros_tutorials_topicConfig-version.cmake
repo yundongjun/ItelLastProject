@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/ament_cmake_core/ros_tutorials_topicConfig-version.cmake

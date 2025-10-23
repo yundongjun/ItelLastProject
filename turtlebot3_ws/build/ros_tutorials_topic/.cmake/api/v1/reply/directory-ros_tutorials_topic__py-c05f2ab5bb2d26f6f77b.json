@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ros_tutorials_topic__py",
+		"source" : "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/ros_tutorials_topic__py"
+	}
+}

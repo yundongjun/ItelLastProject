@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator/rescue_orchestrator_node" "TARGETS" "rescue_orchestrator_node" "DESTINATION" "lib/rescue_orchestrator")

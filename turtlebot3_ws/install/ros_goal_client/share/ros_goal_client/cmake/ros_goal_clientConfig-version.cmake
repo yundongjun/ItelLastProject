@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_goal_client/ament_cmake_core/ros_goal_clientConfig-version.cmake
