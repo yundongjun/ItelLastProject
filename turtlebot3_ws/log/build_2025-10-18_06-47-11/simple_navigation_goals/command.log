@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals
+Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals

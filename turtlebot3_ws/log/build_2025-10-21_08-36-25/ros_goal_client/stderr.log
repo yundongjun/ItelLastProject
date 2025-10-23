@@ -1,0 +1,33 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:103:19:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::mutex g_motion_mutex[m[K’
+  103 | static std::mutex [01;31m[Kg_motion_mutex[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:62:19:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex g_motion_mutex[m[K’ previously defined here
+   62 | static std::mutex [01;36m[Kg_motion_mutex[m[K;
+      |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:104:34:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kgeometry_msgs::msg::Point g_last_position[m[K’
+  104 | static geometry_msgs::msg::Point [01;31m[Kg_last_position[m[K{};
+      |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:63:34:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point g_last_position[m[K’ previously declared here
+   63 | static geometry_msgs::msg::Point [01;36m[Kg_last_position[m[K{};
+      |                                  [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:106:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_motion_ready[m[K’
+  106 | static std::atomic<bool> [01;31m[Kg_motion_ready[m[K{false};
+      |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:64:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_motion_ready[m[K’ previously defined here
+   64 | static std::atomic<bool> [01;36m[Kg_motion_ready[m[K{false};
+      |                          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:107:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_idle_watchdog_running[m[K’
+  107 | static std::atomic<bool> [01;31m[Kg_idle_watchdog_running[m[K{false};
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:66:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_idle_watchdog_running[m[K’ previously defined here
+   66 | static std::atomic<bool> [01;36m[Kg_idle_watchdog_running[m[K{false};
+      |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:108:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_idle_watchdog_stop[m[K’
+  108 | static std::atomic<bool> [01;31m[Kg_idle_watchdog_stop[m[K{false};
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:67:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_idle_watchdog_stop[m[K’ previously defined here
+   67 | static std::atomic<bool> [01;36m[Kg_idle_watchdog_stop[m[K{false};
+      |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

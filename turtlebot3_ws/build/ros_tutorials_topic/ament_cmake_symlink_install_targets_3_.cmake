@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/topic_publisher" "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/topic_subscriber" "TARGETS" "topic_publisher" "topic_subscriber" "DESTINATION" "lib/ros_tutorials_topic")

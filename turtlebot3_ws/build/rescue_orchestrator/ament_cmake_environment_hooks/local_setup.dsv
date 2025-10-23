@@ -1,0 +1,2 @@
+source;share/rescue_orchestrator/environment/ament_prefix_path.sh
+source;share/rescue_orchestrator/environment/path.sh

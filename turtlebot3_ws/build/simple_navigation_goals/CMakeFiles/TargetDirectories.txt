@@ -1,0 +1,10 @@
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/uninstall.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/simple_navigation_goals_uninstall.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/test.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/edit_cache.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/list_install_components.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/install.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/install/local.dir
+/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals/CMakeFiles/install/strip.dir

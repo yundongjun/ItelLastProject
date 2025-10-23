@@ -1,0 +1,231 @@
+[0.000000] (-) TimerEvent: {}
+[0.001168] (-) JobUnselected: {'identifier': 'cpp_talker_listener'}
+[0.001438] (-) JobUnselected: {'identifier': 'dynamixel_sdk'}
+[0.001719] (-) JobUnselected: {'identifier': 'dynamixel_sdk_custom_interfaces'}
+[0.001874] (-) JobUnselected: {'identifier': 'dynamixel_sdk_examples'}
+[0.001966] (-) JobUnselected: {'identifier': 'rescue_orchestrator'}
+[0.002045] (-) JobUnselected: {'identifier': 'ros_tutorials_topic'}
+[0.002121] (-) JobUnselected: {'identifier': 'simple_navigation_goals'}
+[0.002194] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.002268] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.002341] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.002414] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.002486] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.002558] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.002630] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.002702] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.002774] (-) JobUnselected: {'identifier': 'turtlebot3_msgs'}
+[0.002844] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.002914] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.002984] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.003059] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.003129] (-) JobUnselected: {'identifier': 'uart_bridge_cpp'}
+[0.003208] (ros_goal_client) JobQueued: {'identifier': 'ros_goal_client', 'dependencies': OrderedDict()}
+[0.003290] (ros_goal_client) JobStarted: {'identifier': 'ros_goal_client'}
+[0.025121] (ros_goal_client) JobProgress: {'identifier': 'ros_goal_client', 'progress': 'cmake'}
+[0.028132] (ros_goal_client) JobProgress: {'identifier': 'ros_goal_client', 'progress': 'build'}
+[0.031393] (ros_goal_client) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/turtlebot3_ws/build/ros_goal_client', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/turtlebot3_ws/build/ros_goal_client', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.10.16.11 51953 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '1'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/turtlebot3_ws/build/ros_goal_client'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.10.16.11 51953 10.10.16.166 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.098222] (-) TimerEvent: {}
+[0.199063] (-) TimerEvent: {}
+[0.240006] (ros_goal_client) StdoutLine: {'line': b'[  2%] Built target ros_goal_client__cpp\n'}
+[0.245662] (ros_goal_client) StdoutLine: {'line': b'[ 11%] Built target ros_goal_client__rosidl_generator_c\n'}
+[0.272760] (ros_goal_client) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_symlink_ros_goal_client\n'}
+[0.299341] (-) TimerEvent: {}
+[0.334944] (ros_goal_client) StdoutLine: {'line': b'[ 20%] Built target ros_goal_client__rosidl_typesupport_cpp\n'}
+[0.339725] (ros_goal_client) StdoutLine: {'line': b'[ 28%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp\n'}
+[0.342475] (ros_goal_client) StdoutLine: {'line': b'[ 37%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp\n'}
+[0.368223] (ros_goal_client) StdoutLine: {'line': b'[ 45%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c\n'}
+[0.399640] (-) TimerEvent: {}
+[0.424760] (ros_goal_client) StdoutLine: {'line': b'[ 54%] Built target ros_goal_client__rosidl_typesupport_introspection_c\n'}
+[0.428855] (ros_goal_client) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rosGoalServer\x1b[0m\n'}
+[0.432220] (ros_goal_client) StdoutLine: {'line': b'[ 62%] Built target ros_goal_client__rosidl_typesupport_c\n'}
+[0.499824] (-) TimerEvent: {}
+[0.514271] (ros_goal_client) StdoutLine: {'line': b'[ 62%] Built target ros_goal_client\n'}
+[0.549785] (ros_goal_client) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o\x1b[0m\n'}
+[0.556055] (ros_goal_client) StdoutLine: {'line': b'[ 71%] Built target rosGoalClient\n'}
+[0.598607] (ros_goal_client) StdoutLine: {'line': b'[ 74%] Built target ros_goal_client__py\n'}
+[0.600093] (-) TimerEvent: {}
+[0.681483] (ros_goal_client) StdoutLine: {'line': b'[ 80%] Built target ros_goal_client__rosidl_generator_py\n'}
+[0.700331] (-) TimerEvent: {}
+[0.772379] (ros_goal_client) StdoutLine: {'line': b'[ 85%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.776798] (ros_goal_client) StdoutLine: {'line': b'[ 91%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext\n'}
+[0.800539] (-) TimerEvent: {}
+[0.858196] (ros_goal_client) StdoutLine: {'line': b'[ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext\n'}
+[0.900733] (-) TimerEvent: {}
+[1.001427] (-) TimerEvent: {}
+[1.102125] (-) TimerEvent: {}
+[1.202965] (-) TimerEvent: {}
+[1.275660] (ros_goal_client) StdoutLine: {'line': b'running egg_info\n'}
+[1.278748] (ros_goal_client) StdoutLine: {'line': b'writing ros_goal_client.egg-info/PKG-INFO\n'}
+[1.279780] (ros_goal_client) StdoutLine: {'line': b'writing dependency_links to ros_goal_client.egg-info/dependency_links.txt\n'}
+[1.280764] (ros_goal_client) StdoutLine: {'line': b'writing top-level names to ros_goal_client.egg-info/top_level.txt\n'}
+[1.289323] (ros_goal_client) StdoutLine: {'line': b"reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'\n"}
+[1.291941] (ros_goal_client) StdoutLine: {'line': b"writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'\n"}
+[1.303261] (-) TimerEvent: {}
+[1.404557] (-) TimerEvent: {}
+[1.418095] (ros_goal_client) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_ros_goal_client_egg\n'}
+[1.504733] (-) TimerEvent: {}
+[1.605405] (-) TimerEvent: {}
+[1.706095] (-) TimerEvent: {}
+[1.806762] (-) TimerEvent: {}
+[1.907443] (-) TimerEvent: {}
+[2.008089] (-) TimerEvent: {}
+[2.108826] (-) TimerEvent: {}
+[2.209512] (-) TimerEvent: {}
+[2.310152] (-) TimerEvent: {}
+[2.410804] (-) TimerEvent: {}
+[2.511439] (-) TimerEvent: {}
+[2.612172] (-) TimerEvent: {}
+[2.712871] (-) TimerEvent: {}
+[2.813620] (-) TimerEvent: {}
+[2.914437] (-) TimerEvent: {}
+[3.015180] (-) TimerEvent: {}
+[3.116001] (-) TimerEvent: {}
+[3.216703] (-) TimerEvent: {}
+[3.317508] (-) TimerEvent: {}
+[3.418344] (-) TimerEvent: {}
+[3.519064] (-) TimerEvent: {}
+[3.619782] (-) TimerEvent: {}
+[3.720523] (-) TimerEvent: {}
+[3.821282] (-) TimerEvent: {}
+[3.922034] (-) TimerEvent: {}
+[4.022739] (-) TimerEvent: {}
+[4.123726] (-) TimerEvent: {}
+[4.224549] (-) TimerEvent: {}
+[4.325297] (-) TimerEvent: {}
+[4.425989] (-) TimerEvent: {}
+[4.526707] (-) TimerEvent: {}
+[4.627437] (-) TimerEvent: {}
+[4.728181] (-) TimerEvent: {}
+[4.828930] (-) TimerEvent: {}
+[4.929671] (-) TimerEvent: {}
+[5.030350] (-) TimerEvent: {}
+[5.131060] (-) TimerEvent: {}
+[5.231778] (-) TimerEvent: {}
+[5.332473] (-) TimerEvent: {}
+[5.433187] (-) TimerEvent: {}
+[5.533912] (-) TimerEvent: {}
+[5.634615] (-) TimerEvent: {}
+[5.735323] (-) TimerEvent: {}
+[5.836038] (-) TimerEvent: {}
+[5.936774] (-) TimerEvent: {}
+[6.037478] (-) TimerEvent: {}
+[6.138197] (-) TimerEvent: {}
+[6.238927] (-) TimerEvent: {}
+[6.339636] (-) TimerEvent: {}
+[6.440341] (-) TimerEvent: {}
+[6.541062] (-) TimerEvent: {}
+[6.641803] (-) TimerEvent: {}
+[6.742513] (-) TimerEvent: {}
+[6.843233] (-) TimerEvent: {}
+[6.943980] (-) TimerEvent: {}
+[7.044734] (-) TimerEvent: {}
+[7.145487] (-) TimerEvent: {}
+[7.246211] (-) TimerEvent: {}
+[7.346930] (-) TimerEvent: {}
+[7.447685] (-) TimerEvent: {}
+[7.548376] (-) TimerEvent: {}
+[7.649092] (-) TimerEvent: {}
+[7.749825] (-) TimerEvent: {}
+[7.850516] (-) TimerEvent: {}
+[7.951195] (-) TimerEvent: {}
+[8.051904] (-) TimerEvent: {}
+[8.152618] (-) TimerEvent: {}
+[8.253411] (-) TimerEvent: {}
+[8.354103] (-) TimerEvent: {}
+[8.454817] (-) TimerEvent: {}
+[8.555507] (-) TimerEvent: {}
+[8.656225] (-) TimerEvent: {}
+[8.756959] (-) TimerEvent: {}
+[8.857741] (-) TimerEvent: {}
+[8.958435] (-) TimerEvent: {}
+[9.059127] (-) TimerEvent: {}
+[9.159835] (-) TimerEvent: {}
+[9.260687] (-) TimerEvent: {}
+[9.361395] (-) TimerEvent: {}
+[9.462098] (-) TimerEvent: {}
+[9.562809] (-) TimerEvent: {}
+[9.663622] (-) TimerEvent: {}
+[9.764366] (-) TimerEvent: {}
+[9.865132] (-) TimerEvent: {}
+[9.965863] (-) TimerEvent: {}
+[10.066584] (-) TimerEvent: {}
+[10.167326] (-) TimerEvent: {}
+[10.268060] (-) TimerEvent: {}
+[10.368811] (-) TimerEvent: {}
+[10.469567] (-) TimerEvent: {}
+[10.570253] (-) TimerEvent: {}
+[10.670975] (-) TimerEvent: {}
+[10.771678] (-) TimerEvent: {}
+[10.872427] (-) TimerEvent: {}
+[10.973149] (-) TimerEvent: {}
+[11.073934] (-) TimerEvent: {}
+[11.174639] (-) TimerEvent: {}
+[11.275347] (-) TimerEvent: {}
+[11.376079] (-) TimerEvent: {}
+[11.427851] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.428830] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:318:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.429345] (ros_goal_client) StderrLine: {'line': b'  318 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[11.429923] (ros_goal_client) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.430425] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:353:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.430795] (ros_goal_client) StderrLine: {'line': b'  353 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[11.431127] (ros_goal_client) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.431461] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:536:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.431867] (ros_goal_client) StderrLine: {'line': b'  536 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[11.432394] (ros_goal_client) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.432752] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:576:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.433109] (ros_goal_client) StderrLine: {'line': b'  576 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[11.433502] (ros_goal_client) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.433824] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:614:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.434154] (ros_goal_client) StderrLine: {'line': b'  614 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[11.434484] (ros_goal_client) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.434812] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:618:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[11.435156] (ros_goal_client) StderrLine: {'line': b'  618 | }\n'}
+[11.435487] (ros_goal_client) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.435816] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:257:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.436159] (ros_goal_client) StderrLine: {'line': b'  257 | \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[11.436506] (ros_goal_client) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[11.476276] (-) TimerEvent: {}
+[11.577017] (-) TimerEvent: {}
+[11.678123] (-) TimerEvent: {}
+[11.778829] (-) TimerEvent: {}
+[11.879591] (-) TimerEvent: {}
+[11.980300] (-) TimerEvent: {}
+[12.081022] (-) TimerEvent: {}
+[12.181751] (-) TimerEvent: {}
+[12.282451] (-) TimerEvent: {}
+[12.383179] (-) TimerEvent: {}
+[12.483919] (-) TimerEvent: {}
+[12.584633] (-) TimerEvent: {}
+[12.685393] (-) TimerEvent: {}
+[12.786091] (-) TimerEvent: {}
+[12.886796] (-) TimerEvent: {}
+[12.987506] (-) TimerEvent: {}
+[13.088245] (-) TimerEvent: {}
+[13.188933] (-) TimerEvent: {}
+[13.289730] (-) TimerEvent: {}
+[13.365495] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.366520] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:96:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid go_to_pose(const PoseStamped&, const string&)\x1b[m\x1b[K\xe2\x80\x99 declared \xe2\x80\x98\x1b[01m\x1b[Kstatic\x1b[m\x1b[K\xe2\x80\x99 but never defined [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[13.367401] (ros_goal_client) StderrLine: {'line': b'   96 | static void \x1b[01;35m\x1b[Kgo_to_pose\x1b[m\x1b[K(const geometry_msgs::msg::PoseStamped &pose,\n'}
+[13.367798] (ros_goal_client) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.389917] (-) TimerEvent: {}
+[13.490618] (-) TimerEvent: {}
+[13.591296] (-) TimerEvent: {}
+[13.673913] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:96:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid go_to_pose(const PoseStamped&, const string&)\x1b[m\x1b[K\xe2\x80\x99 used but never defined\n'}
+[13.676401] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:256:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[13.677374] (ros_goal_client) StderrLine: {'line': b'  256 | static void \x1b[01;35m\x1b[Kon_stm_rx\x1b[m\x1b[K(const std_msgs::msg::String::SharedPtr msg)\n'}
+[13.677994] (ros_goal_client) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.678777] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:214:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid on_uart_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[13.679770] (ros_goal_client) StderrLine: {'line': b'  214 | static void \x1b[01;35m\x1b[Kon_uart_rx\x1b[m\x1b[K(const std_msgs::msg::String::SharedPtr msg)\n'}
+[13.680634] (ros_goal_client) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.681551] (ros_goal_client) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:99:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid map_cb(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-function\x1b[m\x1b[K]\n'}
+[13.682466] (ros_goal_client) StderrLine: {'line': b'   99 | static void \x1b[01;35m\x1b[Kmap_cb\x1b[m\x1b[K(const nav_msgs::msg::OccupancyGrid::SharedPtr msg)\n'}
+[13.683296] (ros_goal_client) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[13.691511] (-) TimerEvent: {}
+[13.756733] (ros_goal_client) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1\n'}
+[13.757695] (ros_goal_client) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2\n'}
+[13.758650] (ros_goal_client) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.765143] (ros_goal_client) CommandEnded: {'returncode': 2}
+[13.791637] (-) TimerEvent: {}
+[13.834915] (ros_goal_client) JobEnded: {'identifier': 'ros_goal_client', 'rc': 2}
+[13.846367] (-) EventReactorShutdown: {}

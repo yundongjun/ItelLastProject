@@ -1,0 +1,39 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:318:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  318 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:353:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  353 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:536:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  536 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:576:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  576 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:614:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  614 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:618:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  618 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:257:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  257 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:96:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&)[m[K’ declared ‘[01m[Kstatic[m[K’ but never defined [[01;35m[K-Wunused-function[m[K]
+   96 | static void [01;35m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:96:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&)[m[K’ used but never defined
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:256:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  256 | static void [01;35m[Kon_stm_rx[m[K(const std_msgs::msg::String::SharedPtr msg)
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:214:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid on_uart_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  214 | static void [01;35m[Kon_uart_rx[m[K(const std_msgs::msg::String::SharedPtr msg)
+      |             [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:99:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid map_cb(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+   99 | static void [01;35m[Kmap_cb[m[K(const nav_msgs::msg::OccupancyGrid::SharedPtr msg)
+      |             [01;35m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

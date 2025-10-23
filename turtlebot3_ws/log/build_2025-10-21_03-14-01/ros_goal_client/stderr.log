@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

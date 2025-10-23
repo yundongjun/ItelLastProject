@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/turtlebot3_ws/build/turtlebot3_node/turtlebot3_dc_motor_node" "TARGETS" "turtlebot3_dc_motor_node" "DESTINATION" "lib/turtlebot3_node")

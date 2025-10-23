@@ -1,0 +1,45 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:107:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  107 | [01;31m[Kg_home_pose[m[K.header.frame_id = "map";
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:108:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  108 | [01;31m[Kg_home_pose[m[K.pose.position.x = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:109:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  109 | [01;31m[Kg_home_pose[m[K.pose.position.y = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:110:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  110 | [01;31m[Kg_home_pose[m[K.pose.position.z = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:112:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+  112 | [01;31m[Kq[m[K.x = q.y = q.z = 0.0;
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:113:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+  113 | [01;31m[Kq[m[K.w = 1.0;   // yaw 0
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:114:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  114 | [01;31m[Kg_home_pose[m[K.pose.orientation = q;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:115:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_ready[m[K’ does not name a type
+  115 | [01;31m[Kg_home_ready[m[K.store(true);
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:118:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_nav_client[m[K’ does not name a type
+  118 | [01;31m[Kg_nav_client[m[K = rclcpp_action::create_client<NavigateToPose>(g_node, "navigate_to_pose");
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:267:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_to_pose[m[K’ was not declared in this scope
+  267 |       [01;31m[Kgo_to_pose[m[K(g_home_pose);        // 귀환 후 go_to_pose 안에서 DOWN 명령 송신
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:272:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_to_pose[m[K’ was not declared in this scope
+  272 |       [01;31m[Kgo_to_pose[m[K(g_second_pose);          // 두번째 목표로 이동
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid* recv_msg(void*)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:511:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdSeqVal[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  511 |   double [01;35m[KdSeqVal[m[K[GOALCNT][3] = {
+      |          [01;35m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:280:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  280 | static void [01;35m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose)
+      |             [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

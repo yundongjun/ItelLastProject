@@ -1,0 +1,129 @@
+[0.041s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4
+[0.235s] [  2%] Built target ros_goal_client__cpp
+[0.240s] [ 11%] Built target ros_goal_client__rosidl_generator_c
+[0.268s] [ 11%] Built target ament_cmake_python_symlink_ros_goal_client
+[0.328s] [ 20%] Built target ros_goal_client__rosidl_typesupport_cpp
+[0.334s] [ 28%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[0.337s] [ 37%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[0.366s] [ 45%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[0.421s] [35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[0.424s] [ 57%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[0.425s] [ 62%] Built target ros_goal_client__rosidl_typesupport_c
+[0.509s] [ 62%] Built target ros_goal_client
+[0.530s] [ 65%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[0.548s] [ 71%] Built target rosGoalClient
+[0.594s] [ 74%] Built target ros_goal_client__py
+[0.677s] [ 80%] Built target ros_goal_client__rosidl_generator_py
+[0.766s] [ 85%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[0.769s] [ 91%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[0.850s] [ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+[1.256s] running egg_info
+[1.259s] writing ros_goal_client.egg-info/PKG-INFO
+[1.260s] writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+[1.261s] writing top-level names to ros_goal_client.egg-info/top_level.txt
+[1.269s] reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.272s] writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.396s] [ 97%] Built target ament_cmake_python_build_ros_goal_client_egg
+[77.279s] [100%] [32m[1mLinking CXX executable rosGoalServer[0m
+[82.578s] [100%] Built target rosGoalServer
+[82.617s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client' returned '0': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4
+[82.652s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/ros_goal_client
+[82.684s] -- Install configuration: ""
+[82.691s] -- Execute custom install script
+[82.696s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/rosidl_interfaces/ros_goal_client
+[82.707s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_generator_c__visibility_control.h
+[82.709s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/bot3_gpio.h
+[82.712s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__functions.h
+[82.714s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__struct.h
+[82.716s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__type_support.h
+[82.719s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/library_path.sh
+[82.720s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/library_path.dsv
+[82.724s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[82.726s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_fastrtps_c.h
+[82.730s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_generator_cpp__visibility_control.hpp
+[82.731s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/bot3_gpio.hpp
+[82.733s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__builder.hpp
+[82.734s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__struct.hpp
+[82.736s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__traits.hpp
+[82.738s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__type_support.hpp
+[82.742s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[82.744s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_fastrtps_cpp.hpp
+[82.747s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[82.749s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_introspection_c.h
+[82.751s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/include/ros_goal_client/ros_goal_client/srv/detail/bot3_gpio__rosidl_typesupport_introspection_cpp.hpp
+[82.753s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/pythonpath.sh
+[82.755s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/pythonpath.dsv
+[82.757s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/PKG-INFO
+[82.758s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/SOURCES.txt
+[82.759s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/dependency_links.txt
+[82.760s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client-0.0.0-py3.10.egg-info/top_level.txt
+[82.765s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/__init__.py
+[82.766s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_c.c
+[82.767s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_fastrtps_c.c
+[82.768s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_introspection_c.c
+[82.769s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/libros_goal_client__rosidl_generator_py.so
+[82.770s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[82.771s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[82.772s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[82.773s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv/__init__.py
+[82.773s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv/_bot3_gpio.py
+[82.774s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv/_bot3_gpio_s.c
+[82.779s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[82.781s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[82.783s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/ros_goal_client_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[82.786s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio.idl
+[82.787s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio.srv
+[82.789s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio_Request.msg
+[82.791s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/srv/Bot3Gpio_Response.msg
+[82.793s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/ros_goal_client/rosGoalServer
+[82.794s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/ros_goal_client/rosGoalClient
+[82.796s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/package_run_dependencies/ros_goal_client
+[82.798s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/parent_prefix_path/ros_goal_client
+[82.800s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/ament_prefix_path.sh
+[82.802s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/ament_prefix_path.dsv
+[82.804s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/path.sh
+[82.805s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/environment/path.dsv
+[82.806s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.bash
+[82.807s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.sh
+[82.808s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.zsh
+[82.810s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/local_setup.dsv
+[82.810s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/package.dsv
+[82.844s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ament_index/resource_index/packages/ros_goal_client
+[82.845s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/rosidl_cmake-extras.cmake
+[82.846s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_dependencies-extras.cmake
+[82.847s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_include_directories-extras.cmake
+[82.848s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_libraries-extras.cmake
+[82.849s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ament_cmake_export_targets-extras.cmake
+[82.851s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[82.853s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[82.854s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_clientConfig.cmake
+[82.855s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_clientConfig-version.cmake
+[82.857s] -- Up-to-date symlink: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/package.xml
+[82.862s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_generator_c.so
+[82.865s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_fastrtps_c.so
+[82.869s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_fastrtps_cpp.so
+[82.873s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_introspection_c.so
+[82.876s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_c.so
+[82.880s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_introspection_cpp.so
+[82.883s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_typesupport_cpp.so
+[83.043s] Listing '/home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client'...
+[83.044s] Listing '/home/ubuntu/turtlebot3_ws/install/ros_goal_client/local/lib/python3.10/dist-packages/ros_goal_client/srv'...
+[83.089s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/lib/libros_goal_client__rosidl_generator_py.so
+[83.103s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_cExport.cmake
+[83.103s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_cExport-noconfig.cmake
+[83.106s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cExport.cmake
+[83.107s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[83.110s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_cppExport.cmake
+[83.112s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cppExport.cmake
+[83.113s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[83.116s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cExport.cmake
+[83.117s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[83.120s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cExport.cmake
+[83.120s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cExport-noconfig.cmake
+[83.123s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cppExport.cmake
+[83.123s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[83.126s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cppExport.cmake
+[83.127s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/ros_goal_client__rosidl_typesupport_cppExport-noconfig.cmake
+[83.129s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_pyExport.cmake
+[83.130s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/ros_goal_client/share/ros_goal_client/cmake/export_ros_goal_client__rosidl_generator_pyExport-noconfig.cmake
+[83.138s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client' returned '0': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/ros_goal_client

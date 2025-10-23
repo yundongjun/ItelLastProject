@@ -1,0 +1,9 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:273:13:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 3 of ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, bool)[m[K’ [[01;31m[K-fpermissive[m[K]
+  273 | static void [01;31m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:93:13:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, bool)[m[K’ here
+   93 | static void [01;36m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

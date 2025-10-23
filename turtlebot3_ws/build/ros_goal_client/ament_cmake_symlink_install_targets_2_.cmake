@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/turtlebot3_ws/build/ros_goal_client/rosidl_generator_py/ros_goal_client/ros_goal_client_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" "TARGETS" "ros_goal_client__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/ros_goal_client")

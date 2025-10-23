@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ros_goal_client</name>
+  <version>0.0.0</version>
+  <description>ROS 2 goal client and Bot3Gpio service</description>
+
+  <maintainer email="aiot@kccistc.net">shkim</maintainer>
+  <license>MIT</license>
+
+  <!-- build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- deps (build / exec 분리) -->
+  <build_depend>rclcpp</build_depend>
+  <exec_depend>rclcpp</exec_depend>
+
+  <build_depend>rclcpp_action</build_depend>
+  <exec_depend>rclcpp_action</exec_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <build_depend>nav2_msgs</build_depend>
+  <exec_depend>nav2_msgs</exec_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <!-- rosidl (srv/msg 인터페이스 생성/런타임) -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- ★ 인터페이스 패키지 필수 선언 -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

@@ -1,0 +1,23 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:386:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_fork_cmd_pub[m[K’ was not declared in this scope
+  386 |   [01;31m[Kg_fork_cmd_pub[m[K = g_node->create_publisher<std_msgs::msg::UInt8>("/fork/cmd", 10);
+      |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:389:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_fork_busy_sub[m[K’ was not declared in this scope
+  389 | [01;31m[Kg_fork_busy_sub[m[K = g_node->create_subscription<std_msgs::msg::Bool>(
+      | [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid* recv_msg(void*)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:591:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  591 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:595:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  595 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:549:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  549 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:595:2:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  595 | }
+      |  [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,4 @@
+source;share/uart_bridge_cpp/local_setup.bash
+source;share/uart_bridge_cpp/local_setup.dsv
+source;share/uart_bridge_cpp/local_setup.sh
+source;share/uart_bridge_cpp/local_setup.zsh

@@ -1,0 +1,4 @@
+source;share/rescue_orchestrator/local_setup.bash
+source;share/rescue_orchestrator/local_setup.dsv
+source;share/rescue_orchestrator/local_setup.sh
+source;share/rescue_orchestrator/local_setup.zsh

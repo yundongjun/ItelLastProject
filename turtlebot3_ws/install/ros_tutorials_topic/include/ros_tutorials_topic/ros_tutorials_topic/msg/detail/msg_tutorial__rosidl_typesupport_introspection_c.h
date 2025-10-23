@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/rosidl_typesupport_introspection_c/ros_tutorials_topic/msg/detail/msg_tutorial__rosidl_typesupport_introspection_c.h

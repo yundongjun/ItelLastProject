@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_goal_client/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

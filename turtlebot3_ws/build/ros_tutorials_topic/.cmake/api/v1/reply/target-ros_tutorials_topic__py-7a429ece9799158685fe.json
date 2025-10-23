@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/ros_tutorials_topic__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ros_tutorials_topic::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ros_tutorials_topic__py::@858c7a29671c451c5a16",
+	"name" : "ros_tutorials_topic__py",
+	"paths" : 
+	{
+		"build" : "ros_tutorials_topic__py",
+		"source" : "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/ros_tutorials_topic__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/ros_tutorials_topic__py/CMakeFiles/ros_tutorials_topic__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/ros_tutorials_topic__py/CMakeFiles/ros_tutorials_topic__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/rosidl_generator_py/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

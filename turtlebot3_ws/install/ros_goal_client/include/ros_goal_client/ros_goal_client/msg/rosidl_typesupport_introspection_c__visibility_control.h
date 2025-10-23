@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_goal_client/rosidl_typesupport_introspection_c/ros_goal_client/msg/rosidl_typesupport_introspection_c__visibility_control.h

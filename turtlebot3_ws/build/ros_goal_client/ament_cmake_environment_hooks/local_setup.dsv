@@ -1,0 +1,4 @@
+source;share/ros_goal_client/environment/ament_prefix_path.sh
+source;share/ros_goal_client/environment/library_path.sh
+source;share/ros_goal_client/environment/path.sh
+source;share/ros_goal_client/environment/pythonpath.sh

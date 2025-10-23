@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/rosidl_generator_py/ros_tutorials_topic/_ros_tutorials_topic_s.ep.rosidl_typesupport_c.c

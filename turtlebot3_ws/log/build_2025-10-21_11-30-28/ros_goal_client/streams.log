@@ -1,0 +1,49 @@
+[0.037s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4
+[0.231s] [  2%] Built target ros_goal_client__cpp
+[0.235s] [ 11%] Built target ros_goal_client__rosidl_generator_c
+[0.263s] [ 11%] Built target ament_cmake_python_symlink_ros_goal_client
+[0.327s] [ 20%] Built target ros_goal_client__rosidl_typesupport_cpp
+[0.329s] [ 28%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[0.341s] [ 37%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[0.363s] [ 45%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[0.418s] [ 54%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[0.424s] [35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[0.428s] [ 62%] Built target ros_goal_client__rosidl_typesupport_c
+[0.509s] [ 62%] Built target ros_goal_client
+[0.538s] [ 65%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[0.542s] [ 71%] Built target rosGoalClient
+[0.594s] [ 74%] Built target ros_goal_client__py
+[0.676s] [ 80%] Built target ros_goal_client__rosidl_generator_py
+[0.767s] [ 85%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[0.771s] [ 91%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[0.851s] [ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+[1.264s] running egg_info
+[1.267s] writing ros_goal_client.egg-info/PKG-INFO
+[1.268s] writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+[1.269s] writing top-level names to ros_goal_client.egg-info/top_level.txt
+[1.278s] reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.280s] writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.406s] [ 97%] Built target ament_cmake_python_build_ros_goal_client_egg
+[11.557s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:286:1:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kif[m[K’
+[11.558s]   286 | [01;31m[Kif[m[K (reached_flag) reached_flag->store(false);
+[11.558s]       | [01;31m[K^~[m[K
+[11.559s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:287:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+[11.559s]   287 | [01;31m[K{[m[K
+[11.559s]       | [01;31m[K^[m[K
+[13.685s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:95:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, const string&, std::atomic<bool>*)[m[K’ declared ‘[01m[Kstatic[m[K’ but never defined [[01;35m[K-Wunused-function[m[K]
+[13.687s]    95 | static void [01;35m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+[13.687s]       |             [01;35m[K^~~~~~~~~~[m[K
+[13.981s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:95:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, const string&, std::atomic<bool>*)[m[K’ used but never defined
+[13.984s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:258:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[13.985s]   258 | static void [01;35m[Kon_stm_rx[m[K(const std_msgs::msg::String::SharedPtr msg)
+[13.986s]       |             [01;35m[K^~~~~~~~~[m[K
+[13.987s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:215:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid on_uart_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[13.988s]   215 | static void [01;35m[Kon_uart_rx[m[K(const std_msgs::msg::String::SharedPtr msg)
+[13.989s]       |             [01;35m[K^~~~~~~~~~[m[K
+[13.991s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:100:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid map_cb(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[13.992s]   100 | static void [01;35m[Kmap_cb[m[K(const nav_msgs::msg::OccupancyGrid::SharedPtr msg)
+[13.993s]       |             [01;35m[K^~~~~~[m[K
+[14.067s] gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+[14.068s] gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+[14.069s] gmake: *** [Makefile:146: all] Error 2
+[14.077s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client' returned '2': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4

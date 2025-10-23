@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/rosidl_typesupport_fastrtps_c/ros_tutorials_topic/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

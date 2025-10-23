@@ -1,0 +1,60 @@
+[0.071s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/cpp_talker_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/cpp_talker_listener -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener
+[0.955s] -- The C compiler identification is GNU 11.4.0
+[2.108s] -- The CXX compiler identification is GNU 11.4.0
+[2.190s] -- Detecting C compiler ABI info
+[3.568s] -- Detecting C compiler ABI info - done
+[3.687s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.696s] -- Detecting C compile features
+[3.699s] -- Detecting C compile features - done
+[3.739s] -- Detecting CXX compiler ABI info
+[4.951s] -- Detecting CXX compiler ABI info - done
+[5.002s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.003s] -- Detecting CXX compile features
+[5.006s] -- Detecting CXX compile features - done
+[5.065s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.349s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.920s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.544s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[8.189s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[8.290s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.417s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.566s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.766s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.375s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[9.435s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.685s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.197s] -- Found FastRTPS: /opt/ros/humble/include  
+[11.853s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.178s] -- Looking for pthread.h
+[12.846s] -- Looking for pthread.h - found
+[12.850s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.538s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[13.542s] -- Found Threads: TRUE  
+[14.112s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[15.043s] -- Added test 'lint_cmake' to check CMake code style
+[15.067s] -- Added test 'xmllint' to check XML markup files
+[15.097s] -- Configuring done
+[15.148s] -- Generating done
+[15.181s] -- Build files have been written to: /home/ubuntu/turtlebot3_ws/build/cpp_talker_listener
+[15.257s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/cpp_talker_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/cpp_talker_listener -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener
+[15.258s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/cpp_talker_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/cpp_talker_listener -- -j4 -l4
+[15.583s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/cpp_talker_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/cpp_talker_listener -- -j4 -l4
+[15.585s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/cpp_talker_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/cpp_talker_listener
+[15.661s] -- Install configuration: ""
+[15.687s] -- Execute custom install script
+[15.690s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/ament_index/resource_index/package_run_dependencies/cpp_talker_listener
+[15.787s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/ament_index/resource_index/parent_prefix_path/cpp_talker_listener
+[15.854s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/environment/ament_prefix_path.sh
+[15.897s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/environment/ament_prefix_path.dsv
+[15.942s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/environment/path.sh
+[15.986s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/environment/path.dsv
+[16.030s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/local_setup.bash
+[16.072s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/local_setup.sh
+[16.114s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/local_setup.zsh
+[16.162s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/local_setup.dsv
+[16.205s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/package.dsv
+[16.252s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/ament_index/resource_index/packages/cpp_talker_listener
+[16.300s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/cmake/cpp_talker_listenerConfig.cmake
+[16.346s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/cmake/cpp_talker_listenerConfig-version.cmake
+[16.391s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/cpp_talker_listener/share/cpp_talker_listener/package.xml
+[16.446s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/cpp_talker_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/cpp_talker_listener
