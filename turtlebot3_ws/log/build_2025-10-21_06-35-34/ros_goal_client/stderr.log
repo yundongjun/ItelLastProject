@@ -1,0 +1,10 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:252:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_to_pose[m[K’ was not declared in this scope
+  252 |       [01;31m[Kgo_to_pose[m[K(g_home_pose, "DOWN", "");
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:256:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgo_to_pose[m[K’ was not declared in this scope
+  256 |     [01;31m[Kgo_to_pose[m[K(g_second_goal, "", "2");
+      |     [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

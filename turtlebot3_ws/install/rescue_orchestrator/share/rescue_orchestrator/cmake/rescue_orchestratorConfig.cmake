@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator/ament_cmake_core/rescue_orchestratorConfig.cmake

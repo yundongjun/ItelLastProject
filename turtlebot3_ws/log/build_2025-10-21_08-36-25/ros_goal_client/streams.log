@@ -1,0 +1,60 @@
+[0.078s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4
+[0.729s] [  2%] Built target ros_goal_client__cpp
+[0.767s] [  2%] Built target ament_cmake_python_symlink_ros_goal_client
+[0.800s] [ 11%] Built target ros_goal_client__rosidl_generator_c
+[0.882s] [ 20%] Built target ros_goal_client__rosidl_typesupport_cpp
+[0.885s] [ 28%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[0.887s] [ 37%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[0.995s] [ 45%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[1.000s] [ 54%] Built target ros_goal_client__rosidl_typesupport_c
+[1.009s] [ 62%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[1.076s] [35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[1.099s] [ 62%] Built target ros_goal_client
+[1.205s] [ 65%] Built target ros_goal_client__py
+[1.233s] [ 71%] Built target rosGoalClient
+[1.240s] [ 74%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[1.349s] [ 80%] Built target ros_goal_client__rosidl_generator_py
+[1.495s] [ 85%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[1.500s] [ 91%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[1.609s] [ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+[1.824s] running egg_info
+[1.827s] writing ros_goal_client.egg-info/PKG-INFO
+[1.828s] writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+[1.829s] writing top-level names to ros_goal_client.egg-info/top_level.txt
+[1.841s] reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.845s] writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.966s] [ 97%] Built target ament_cmake_python_build_ros_goal_client_egg
+[15.326s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:103:19:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::mutex g_motion_mutex[m[K’
+[15.327s]   103 | static std::mutex [01;31m[Kg_motion_mutex[m[K;
+[15.327s]       |                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.328s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:62:19:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex g_motion_mutex[m[K’ previously defined here
+[15.328s]    62 | static std::mutex [01;36m[Kg_motion_mutex[m[K;
+[15.328s]       |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[15.329s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:104:34:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kgeometry_msgs::msg::Point g_last_position[m[K’
+[15.329s]   104 | static geometry_msgs::msg::Point [01;31m[Kg_last_position[m[K{};
+[15.329s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[15.330s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:63:34:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point g_last_position[m[K’ previously declared here
+[15.330s]    63 | static geometry_msgs::msg::Point [01;36m[Kg_last_position[m[K{};
+[15.330s]       |                                  [01;36m[K^~~~~~~~~~~~~~~[m[K
+[15.331s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:106:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_motion_ready[m[K’
+[15.331s]   106 | static std::atomic<bool> [01;31m[Kg_motion_ready[m[K{false};
+[15.331s]       |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.332s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:64:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_motion_ready[m[K’ previously defined here
+[15.332s]    64 | static std::atomic<bool> [01;36m[Kg_motion_ready[m[K{false};
+[15.332s]       |                          [01;36m[K^~~~~~~~~~~~~~[m[K
+[15.333s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:107:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_idle_watchdog_running[m[K’
+[15.333s]   107 | static std::atomic<bool> [01;31m[Kg_idle_watchdog_running[m[K{false};
+[15.333s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.334s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:66:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_idle_watchdog_running[m[K’ previously defined here
+[15.334s]    66 | static std::atomic<bool> [01;36m[Kg_idle_watchdog_running[m[K{false};
+[15.334s]       |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.335s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:108:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_idle_watchdog_stop[m[K’
+[15.335s]   108 | static std::atomic<bool> [01;31m[Kg_idle_watchdog_stop[m[K{false};
+[15.335s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[15.336s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:67:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_idle_watchdog_stop[m[K’ previously defined here
+[15.336s]    67 | static std::atomic<bool> [01;36m[Kg_idle_watchdog_stop[m[K{false};
+[15.336s]       |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[37.844s] gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+[37.844s] gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+[37.845s] gmake: *** [Makefile:146: all] Error 2
+[37.852s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client' returned '2': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4

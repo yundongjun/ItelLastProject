@@ -1,0 +1,16 @@
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/simple_navigation_goals/simple_navigation_goals
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/package_run_dependencies/simple_navigation_goals
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/parent_prefix_path/simple_navigation_goals
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/ament_prefix_path.sh
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/ament_prefix_path.dsv
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/path.sh
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/path.dsv
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.bash
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.sh
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.zsh
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.dsv
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/package.dsv
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/packages/simple_navigation_goals
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/cmake/simple_navigation_goalsConfig.cmake
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/cmake/simple_navigation_goalsConfig-version.cmake
+/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/package.xml

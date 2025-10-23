@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ros_goal_client__py",
+		"source" : "/home/ubuntu/turtlebot3_ws/build/ros_goal_client/ros_goal_client__py"
+	}
+}

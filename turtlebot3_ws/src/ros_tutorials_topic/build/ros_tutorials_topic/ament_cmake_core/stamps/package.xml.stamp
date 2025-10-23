@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ros_tutorials_topic</name>
+  <version>0.1.0</version>
+  <description>ROS2 topic tutorial with custom message</description>
+
+  <!-- build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- code/runtime deps -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>builtin_interfaces</depend>
+
+  <!-- message generation deps -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <build_export_depend>rosidl_default_generators</build_export_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <license>MIT</license>
+  <maintainer email="ubuntu@example.com">ubuntu</maintainer>
+  <author email="ubuntu@example.com">ubuntu</author>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <member_of_group>rosidl_interface_packages</member_of_group>
+  </export>
+</package>

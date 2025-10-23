@@ -1,0 +1,38 @@
+[  5%] Built target ros_goal_client__cpp
+[ 11%] Built target ros_goal_client__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_symlink_ros_goal_client
+[ 20%] Built target ros_goal_client__rosidl_typesupport_c
+[ 28%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[ 37%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[ 45%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[ 54%] Built target ros_goal_client__rosidl_typesupport_cpp
+[ 62%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[ 68%] Built target rosGoalClient
+[ 68%] Built target ros_goal_client
+[35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[ 74%] Built target ros_goal_client__py
+[ 80%] Built target ros_goal_client__rosidl_generator_py
+[ 85%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[ 91%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+running egg_info
+writing ros_goal_client.egg-info/PKG-INFO
+writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+writing top-level names to ros_goal_client.egg-info/top_level.txt
+reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_ros_goal_client_egg
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid schedule_jetson2_after_ms(int)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:113:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_jetson_tx_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kg_stm_tx_pub[m[K’?
+  113 |   if (!g_node || ![01;31m[Kg_jetson_tx_pub[m[K) return;
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                   [32m[Kg_stm_tx_pub[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:123:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_jetson_tx_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kg_stm_tx_pub[m[K’?
+  123 |       [01;31m[Kg_jetson_tx_pub[m[K->publish(m);
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |       [32m[Kg_stm_tx_pub[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

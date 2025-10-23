@@ -1,0 +1,6 @@
+{
+  "package_name": "ros_goal_client",
+  "non_idl_tuples": [
+    "/home/ubuntu/turtlebot3_ws/src/ros_goal_client:srv/Bot3Gpio.srv"
+  ]
+}

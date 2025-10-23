@@ -1,0 +1,22 @@
+[0.124s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+[0.823s] [100%] Built target simple_navigation_goals
+[1.192s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+[1.206s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals
+[1.258s] -- Install configuration: ""
+[1.265s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/lib/simple_navigation_goals/simple_navigation_goals
+[1.269s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/package_run_dependencies/simple_navigation_goals
+[1.271s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/parent_prefix_path/simple_navigation_goals
+[1.273s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/ament_prefix_path.sh
+[1.275s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/ament_prefix_path.dsv
+[1.278s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/path.sh
+[1.280s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/environment/path.dsv
+[1.282s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.bash
+[1.284s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.sh
+[1.286s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.zsh
+[1.288s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/local_setup.dsv
+[1.291s] -- Installing: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/package.dsv
+[1.294s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/ament_index/resource_index/packages/simple_navigation_goals
+[1.297s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/cmake/simple_navigation_goalsConfig.cmake
+[1.298s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/cmake/simple_navigation_goalsConfig-version.cmake
+[1.301s] -- Up-to-date: /home/ubuntu/turtlebot3_ws/install/simple_navigation_goals/share/simple_navigation_goals/package.xml
+[1.312s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals

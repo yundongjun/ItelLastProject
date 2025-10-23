@@ -1,0 +1,118 @@
+[35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_generator_c[0m
+[  8%] Built target ros_goal_client__rosidl_generator_c
+[ 11%] Built target ros_goal_client__cpp
+[35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_fastrtps_c[0m
+[ 11%] Built target ament_cmake_python_symlink_ros_goal_client
+[35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_introspection_cpp[0m
+[ 20%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[ 28%] Built target ros_goal_client__rosidl_typesupport_c
+[ 37%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[ 45%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target ros_goal_client__rosidl_typesupport_fastrtps_cpp[0m
+[ 54%] Built target ros_goal_client__rosidl_typesupport_cpp
+[ 62%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[35m[1mConsolidate compiler generated dependencies of target rosGoalClient[0m
+[35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[ 68%] Built target rosGoalClient
+[ 68%] Built target ros_goal_client
+[ 71%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+running egg_info
+writing ros_goal_client.egg-info/PKG-INFO
+writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+writing top-level names to ros_goal_client.egg-info/top_level.txt
+reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[ 74%] Built target ament_cmake_python_build_ros_goal_client_egg
+[ 74%] Built target ros_goal_client__py
+[ 77%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_generator_py.dir/rosidl_generator_py/ros_goal_client/srv/_bot3_gpio_s.c.o[0m
+[ 80%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/libros_goal_client__rosidl_generator_py.so[0m
+[ 80%] Built target ros_goal_client__rosidl_generator_py
+[ 82%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_c.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/ros_goal_client__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 91%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/ros_goal_client_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 94%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/ros_goal_client_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/ros_goal_client/ros_goal_client_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 97%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+[ 97%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:106:26:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstd::atomic<bool> g_second_ready[m[K’
+  106 | static std::atomic<bool> [01;31m[Kg_second_ready[m[K{false};
+      |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:101:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::atomic<bool> g_second_ready[m[K’ previously defined here
+  101 | static std::atomic<bool> [01;36m[Kg_second_ready[m[K{false};
+      |                          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:107:40:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kgeometry_msgs::msg::PoseStamped g_second_pose[m[K’
+  107 | static geometry_msgs::msg::PoseStamped [01;31m[Kg_second_pose[m[K;
+      |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:99:40:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped g_second_pose[m[K’ previously declared here
+   99 | static geometry_msgs::msg::PoseStamped [01;36m[Kg_second_pose[m[K;
+      |                                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:110:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  110 | [01;31m[Kg_home_pose[m[K.header.frame_id = "map";
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:111:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  111 | [01;31m[Kg_home_pose[m[K.pose.position.x = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:112:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  112 | [01;31m[Kg_home_pose[m[K.pose.position.y = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:113:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  113 | [01;31m[Kg_home_pose[m[K.pose.position.z = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:115:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+  115 | [01;31m[Kq[m[K.x = q.y = q.z = 0.0;
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:116:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ does not name a type
+  116 | [01;31m[Kq[m[K.w = 1.0;   // yaw 0
+      | [01;31m[K^[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:117:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  117 | [01;31m[Kg_home_pose[m[K.pose.orientation = q;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:118:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_ready[m[K’ does not name a type
+  118 | [01;31m[Kg_home_ready[m[K.store(true);
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:121:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_nav_client[m[K’ does not name a type
+  121 | [01;31m[Kg_nav_client[m[K = rclcpp_action::create_client<NavigateToPose>(g_node, "navigate_to_pose");
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:123:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  123 | [01;31m[Kg_home_pose[m[K.header.frame_id = "map";
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:124:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  124 | [01;31m[Kg_home_pose[m[K.pose.position.x = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:125:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  125 | [01;31m[Kg_home_pose[m[K.pose.position.y = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:126:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  126 | [01;31m[Kg_home_pose[m[K.pose.position.z = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:127:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  127 | [01;31m[Kg_home_pose[m[K.pose.orientation.x = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:128:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  128 | [01;31m[Kg_home_pose[m[K.pose.orientation.y = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:129:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  129 | [01;31m[Kg_home_pose[m[K.pose.orientation.z = 0.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:130:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_pose[m[K’ does not name a type
+  130 | [01;31m[Kg_home_pose[m[K.pose.orientation.w = 1.0;
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:131:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_home_ready[m[K’ does not name a type
+  131 | [01;31m[Kg_home_ready[m[K.store(true);
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:133:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_second_ready[m[K’ does not name a type
+  133 | [01;31m[Kg_second_ready[m[K.store(false);
+      | [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid* recv_msg(void*)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:525:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdSeqVal[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  525 |   double [01;35m[KdSeqVal[m[K[GOALCNT][3] = {
+      |          [01;35m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

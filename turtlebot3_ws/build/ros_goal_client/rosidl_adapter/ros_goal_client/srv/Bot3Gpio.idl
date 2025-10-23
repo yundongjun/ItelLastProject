@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ros_goal_client/srv/Bot3Gpio.srv
+// generated code does not contain a copyright notice
+
+
+module ros_goal_client {
+  module srv {
+    struct Bot3Gpio_Request {
+      int64 a;
+
+      int64 b;
+    };
+    struct Bot3Gpio_Response {
+      int64 result;
+    };
+  };
+};

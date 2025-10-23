@@ -1,0 +1,8 @@
+setup.py
+ros_goal_client/__init__.py
+ros_goal_client.egg-info/PKG-INFO
+ros_goal_client.egg-info/SOURCES.txt
+ros_goal_client.egg-info/dependency_links.txt
+ros_goal_client.egg-info/top_level.txt
+ros_goal_client/srv/__init__.py
+ros_goal_client/srv/_bot3_gpio.py

@@ -1,0 +1,33 @@
+[0.040s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4
+[0.231s] [  2%] Built target ros_goal_client__cpp
+[0.240s] [ 11%] Built target ros_goal_client__rosidl_generator_c
+[0.267s] [ 11%] Built target ament_cmake_python_symlink_ros_goal_client
+[0.325s] [ 20%] Built target ros_goal_client__rosidl_typesupport_cpp
+[0.335s] [ 28%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[0.340s] [ 37%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[0.364s] [ 45%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[0.412s] [ 54%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[0.424s] [ 62%] Built target ros_goal_client__rosidl_typesupport_c
+[0.431s] [35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[0.520s] [ 62%] Built target ros_goal_client
+[0.537s] [ 68%] Built target rosGoalClient
+[0.540s] [ 71%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[0.607s] [ 74%] Built target ros_goal_client__py
+[0.689s] [ 80%] Built target ros_goal_client__rosidl_generator_py
+[0.778s] [ 85%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[0.780s] [ 91%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[0.865s] [ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+[1.275s] running egg_info
+[1.278s] writing ros_goal_client.egg-info/PKG-INFO
+[1.279s] writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+[1.280s] writing top-level names to ros_goal_client.egg-info/top_level.txt
+[1.290s] reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.293s] writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[1.423s] [ 97%] Built target ament_cmake_python_build_ros_goal_client_egg
+[12.214s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:289:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[12.214s]   289 |   } } [01;31m[Kelse[m[K if (payload == "STOP2") {
+[12.215s]       |       [01;31m[K^~~~[m[K
+[25.525s] gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+[25.526s] gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+[25.527s] gmake: *** [Makefile:146: all] Error 2
+[25.534s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client' returned '2': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4

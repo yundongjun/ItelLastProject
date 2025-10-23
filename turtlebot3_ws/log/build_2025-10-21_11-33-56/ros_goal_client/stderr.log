@@ -1,0 +1,45 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:268:15:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, const string&)[m[K’
+  268 |     [01;31m[Kgo_to_pose(g_home_pose, "", "", &g_home_reached)[m[K;
+      |     [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:95:13:[m[K [01;36m[Knote: [m[Kdeclared here
+   95 | static void [01;36m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, const string&)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:281:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpose[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  281 | static void go_to_pose([01;35m[Kconst geometry_msgs::msg::PoseStamped &pose[m[K,
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:282:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpost_command[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  282 |                        [01;35m[Kconst std::string &post_command[m[K,
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:283:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knotify_jetson_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  283 |                        [01;35m[Kconst std::string &notify_jetson_msg[m[K)
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:293:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ does not name a type
+  293 |   [01;31m[Kgoal[m[K.pose = pose;
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:294:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ does not name a type
+  294 |   [01;31m[Kgoal[m[K.pose.header.stamp = g_node->now();
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:299:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  299 |   [01;31m[Kif[m[K (gh_rc != rclcpp::FutureReturnCode::SUCCESS) return;
+      |   [01;31m[K^~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:301:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  301 |   [01;31m[Kif[m[K (!gh) return;
+      |   [01;31m[K^~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:305:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  305 |   [01;31m[Kif[m[K (res_rc == rclcpp::FutureReturnCode::SUCCESS) {
+      |   [01;31m[K^~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:257:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid on_stm_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  257 | static void [01;35m[Kon_stm_rx[m[K(const std_msgs::msg::String::SharedPtr msg)
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:214:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid on_uart_rx(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  214 | static void [01;35m[Kon_uart_rx[m[K(const std_msgs::msg::String::SharedPtr msg)
+      |             [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:99:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid map_cb(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+   99 | static void [01;35m[Kmap_cb[m[K(const nav_msgs::msg::OccupancyGrid::SharedPtr msg)
+      |             [01;35m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

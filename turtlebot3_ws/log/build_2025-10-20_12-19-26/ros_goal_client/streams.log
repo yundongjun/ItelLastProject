@@ -1,0 +1,50 @@
+[0.067s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client': CMAKE_PREFIX_PATH=/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4
+[0.345s] [  2%] Built target ros_goal_client__cpp
+[0.358s] [ 11%] Built target ros_goal_client__rosidl_generator_c
+[0.456s] [ 11%] Built target ament_cmake_python_symlink_ros_goal_client
+[0.505s] [ 20%] Built target ros_goal_client__rosidl_typesupport_introspection_cpp
+[0.523s] [ 28%] Built target ros_goal_client__rosidl_typesupport_cpp
+[0.539s] [ 37%] Built target ros_goal_client__rosidl_typesupport_fastrtps_cpp
+[0.643s] [ 45%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c
+[0.670s] [ 54%] Built target ros_goal_client__rosidl_typesupport_introspection_c
+[0.710s] [ 62%] Built target ros_goal_client__rosidl_typesupport_c
+[0.780s] [35m[1mConsolidate compiler generated dependencies of target rosGoalServer[0m
+[0.846s] [ 68%] Built target rosGoalClient
+[0.875s] [ 68%] Built target ros_goal_client
+[0.902s] [ 71%] [32mBuilding CXX object CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o[0m
+[0.994s] [ 74%] Built target ros_goal_client__py
+[1.133s] [ 80%] Built target ros_goal_client__rosidl_generator_py
+[1.274s] [ 85%] Built target ros_goal_client__rosidl_typesupport_fastrtps_c__pyext
+[1.294s] [ 91%] Built target ros_goal_client__rosidl_typesupport_introspection_c__pyext
+[1.412s] [ 97%] Built target ros_goal_client__rosidl_typesupport_c__pyext
+[2.151s] running egg_info
+[2.155s] writing ros_goal_client.egg-info/PKG-INFO
+[2.157s] writing dependency_links to ros_goal_client.egg-info/dependency_links.txt
+[2.158s] writing top-level names to ros_goal_client.egg-info/top_level.txt
+[2.170s] reading manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[2.173s] writing manifest file 'ros_goal_client.egg-info/SOURCES.txt'
+[2.321s] [ 97%] Built target ament_cmake_python_build_ros_goal_client_egg
+[13.220s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[13.221s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:386:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_fork_cmd_pub[m[K’ was not declared in this scope
+[13.221s]   386 |   [01;31m[Kg_fork_cmd_pub[m[K = g_node->create_publisher<std_msgs::msg::UInt8>("/fork/cmd", 10);
+[13.221s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[13.250s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:389:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_fork_busy_sub[m[K’ was not declared in this scope
+[13.250s]   389 | [01;31m[Kg_fork_busy_sub[m[K = g_node->create_subscription<std_msgs::msg::Bool>(
+[13.251s]       | [01;31m[K^~~~~~~~~~~~~~~[m[K
+[13.451s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid* recv_msg(void*)[m[K’:
+[13.452s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:591:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[13.452s]   591 | [01;31m[K{[m[K
+[13.453s]       | [01;31m[K^[m[K
+[13.453s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:595:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[13.454s]   595 | }
+[13.454s]       |  [01;31m[K^[m[K
+[13.454s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:549:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[13.455s]   549 | [01;36m[K{[m[K
+[13.455s]       | [01;36m[K^[m[K
+[30.646s] [01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:595:2:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+[30.646s]   595 | }
+[30.647s]       |  [01;35m[K^[m[K
+[31.065s] gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+[31.066s] gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+[31.067s] gmake: *** [Makefile:146: all] Error 2
+[31.074s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/ros_goal_client' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu/turtlebot3_ws/install/uart_bridge_cpp:/home/ubuntu/turtlebot3_ws/install/turtlebot3:/home/ubuntu/turtlebot3_ws/install/turtlebot3_bringup:/home/ubuntu/turtlebot3_ws/install/turtlebot3_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_navigation2:/home/ubuntu/turtlebot3_ws/install/turtlebot3_fake_node:/home/ubuntu/turtlebot3_ws/install/turtlebot3_msgs:/home/ubuntu/turtlebot3_ws/install/turtlebot3_manipulation_gazebo:/home/ubuntu/turtlebot3_ws/install/turtlebot3_description:/home/ubuntu/turtlebot3_ws/install/turtlebot3_cartographer:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals:/home/ubuntu/turtlebot3_ws/install/ros_tutorials_topic:/home/ubuntu/turtlebot3_ws/install/ros_goal_client:/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_examples:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/ubuntu/turtlebot3_ws/install/dynamixel_sdk:/home/ubuntu/turtlebot3_ws/install/cpp_talker_listener /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/ros_goal_client -- -j4 -l4

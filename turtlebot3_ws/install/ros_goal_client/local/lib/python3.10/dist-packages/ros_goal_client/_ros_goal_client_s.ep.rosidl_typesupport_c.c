@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_goal_client/rosidl_generator_py/ros_goal_client/_ros_goal_client_s.ep.rosidl_typesupport_c.c

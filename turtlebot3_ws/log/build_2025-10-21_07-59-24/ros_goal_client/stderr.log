@@ -1,0 +1,15 @@
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:282:13:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 4 of ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, const string&, std::atomic<bool>*)[m[K’ [[01;31m[K-fpermissive[m[K]
+  282 | static void [01;31m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:95:13:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, const string&, std::atomic<bool>*)[m[K’ here
+   95 | static void [01;36m[Kgo_to_pose[m[K(const geometry_msgs::msg::PoseStamped &pose,
+      |             [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:[m[K In function ‘[01m[Kvoid go_to_pose(const PoseStamped&, const string&, const string&, std::atomic<bool>*)[m[K’:
+[01m[K/home/ubuntu/turtlebot3_ws/src/ros_goal_client/src/rosGoalServer.cpp:310:32:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator==[m[K’ (operand types are ‘[01m[Kconst rclcpp_action::ResultCode[m[K’ and ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’})
+  310 | const bool succeeded = ([32m[Kstatus[m[K [01;31m[K==[m[K [34m[Kaction_msgs::msg::GoalStatus::STATUS_SUCCEEDED[m[K);
+      |                         [32m[K~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                         [32m[K|[m[K                                       [34m[K|[m[K
+      |                         [32m[Kconst rclcpp_action::ResultCode[m[K         [34m[Kconst int8_t {aka const signed char}[m[K
+gmake[2]: *** [CMakeFiles/rosGoalServer.dir/build.make:76: CMakeFiles/rosGoalServer.dir/src/rosGoalServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/rosGoalServer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

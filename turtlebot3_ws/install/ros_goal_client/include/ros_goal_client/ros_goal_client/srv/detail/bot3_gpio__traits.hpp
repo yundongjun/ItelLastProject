@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_goal_client/rosidl_generator_cpp/ros_goal_client/srv/detail/bot3_gpio__traits.hpp

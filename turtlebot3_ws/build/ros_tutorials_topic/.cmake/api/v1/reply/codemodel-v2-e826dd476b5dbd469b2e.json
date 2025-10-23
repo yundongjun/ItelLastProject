@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-456993da3af1ddfe8292.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "ros_tutorials_topic__py",
+					"jsonFile" : "directory-ros_tutorials_topic__py-c05f2ab5bb2d26f6f77b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/ros_tutorials_topic__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ros_tutorials_topic",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ros_tutorials_topic_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ros_tutorials_topic_egg-7181d3a73b96201abeee.json",
+					"name" : "ament_cmake_python_build_ros_tutorials_topic_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_ros_tutorials_topic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_ros_tutorials_topic-48d4ea8f4b7ebf987302.json",
+					"name" : "ament_cmake_python_symlink_ros_tutorials_topic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic-39e6eae1d707fee4ca43.json",
+					"name" : "ros_tutorials_topic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__cpp-3f11a756b1ef34bf8e6d.json",
+					"name" : "ros_tutorials_topic__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ros_tutorials_topic__py::@858c7a29671c451c5a16",
+					"jsonFile" : "target-ros_tutorials_topic__py-7a429ece9799158685fe.json",
+					"name" : "ros_tutorials_topic__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_generator_c-f453cfae6697e6b7ee3f.json",
+					"name" : "ros_tutorials_topic__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_generator_py-1c920a826731aa9b2cbc.json",
+					"name" : "ros_tutorials_topic__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_c-c0d28ff5901bbf114108.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_c__pyext-20b0ab5d266c2ec833a3.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_cpp-cacd44472c22052408ed.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_fastrtps_c-56d01ff561678c82cc72.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_fastrtps_c__pyext-2398176312518f9ab04e.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_fastrtps_cpp-f4de36ceeea566230250.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_introspection_c-c9973b825ce6a5c23c7a.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_introspection_c__pyext-78cf4638ec8bd117f305.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic__rosidl_typesupport_introspection_cpp-ee034290e61af4fb3712.json",
+					"name" : "ros_tutorials_topic__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_tutorials_topic_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_tutorials_topic_uninstall-bb55bcb3cd11e435ac4a.json",
+					"name" : "ros_tutorials_topic_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "topic_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-topic_publisher-2ff0145f4458d94ff0d3.json",
+					"name" : "topic_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "topic_subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-topic_subscriber-4527f788ded2e001bfac.json",
+					"name" : "topic_subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fa89ad1c4c44f0dfd6a7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic",
+		"source" : "/home/ubuntu/turtlebot3_ws/src/ros_tutorials_topic"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

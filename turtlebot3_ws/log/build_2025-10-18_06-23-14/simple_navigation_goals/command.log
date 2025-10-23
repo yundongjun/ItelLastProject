@@ -1,0 +1,6 @@
+Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/simple_navigation_goals -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals
+Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/simple_navigation_goals -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/simple_navigation_goals
+Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals -- -j4 -l4
+Invoking command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals
+Invoked command in '/home/ubuntu/turtlebot3_ws/build/simple_navigation_goals' returned '0': /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/simple_navigation_goals

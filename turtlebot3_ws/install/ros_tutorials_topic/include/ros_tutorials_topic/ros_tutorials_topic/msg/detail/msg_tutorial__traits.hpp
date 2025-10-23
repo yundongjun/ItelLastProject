@@ -1,0 +1,1 @@
+/home/ubuntu/turtlebot3_ws/build/ros_tutorials_topic/rosidl_generator_cpp/ros_tutorials_topic/msg/detail/msg_tutorial__traits.hpp

@@ -1,0 +1,71 @@
+[0.072s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/rescue_orchestrator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator
+[0.587s] -- The C compiler identification is GNU 11.4.0
+[1.228s] -- The CXX compiler identification is GNU 11.4.0
+[1.268s] -- Detecting C compiler ABI info
+[1.857s] -- Detecting C compiler ABI info - done
+[1.919s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.921s] -- Detecting C compile features
+[1.924s] -- Detecting C compile features - done
+[1.951s] -- Detecting CXX compiler ABI info
+[2.885s] -- Detecting CXX compiler ABI info - done
+[2.916s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.919s] -- Detecting CXX compile features
+[2.922s] -- Detecting CXX compile features - done
+[2.974s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.363s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.905s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.495s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[6.157s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.247s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.356s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.523s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.895s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.566s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.629s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.812s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.189s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.803s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.976s] -- Looking for pthread.h
+[10.693s] -- Looking for pthread.h - found
+[10.697s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.313s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.324s] -- Found Threads: TRUE  
+[11.850s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[12.199s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[12.806s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[13.069s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[13.263s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[14.037s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[14.380s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[14.392s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[14.393s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[15.031s] -- Configuring done
+[15.167s] -- Generating done
+[15.216s] -- Build files have been written to: /home/ubuntu/turtlebot3_ws/build/rescue_orchestrator
+[15.279s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/turtlebot3_ws/src/rescue_orchestrator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/turtlebot3_ws/install/rescue_orchestrator
+[15.282s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/rescue_orchestrator -- -j4 -l4
+[15.667s] [ 50%] [32mBuilding CXX object CMakeFiles/rescue_orchestrator_node.dir/src/rescue_orchestrator_node.cpp.o[0m
+[111.754s] [100%] [32m[1mLinking CXX executable rescue_orchestrator_node[0m
+[119.723s] [100%] Built target rescue_orchestrator_node
+[119.850s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/turtlebot3_ws/build/rescue_orchestrator -- -j4 -l4
+[119.874s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/rescue_orchestrator
+[119.961s] -- Install configuration: ""
+[119.965s] -- Execute custom install script
+[119.969s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/lib/rescue_orchestrator/rescue_orchestrator_node
+[120.087s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator//launch/rescue_orchestrator.launch.py
+[120.214s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/ament_index/resource_index/package_run_dependencies/rescue_orchestrator
+[120.334s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/ament_index/resource_index/parent_prefix_path/rescue_orchestrator
+[120.426s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/environment/ament_prefix_path.sh
+[120.479s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/environment/ament_prefix_path.dsv
+[120.531s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/environment/path.sh
+[120.584s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/environment/path.dsv
+[120.636s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/local_setup.bash
+[120.689s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/local_setup.sh
+[120.741s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/local_setup.zsh
+[120.793s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/local_setup.dsv
+[120.846s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/package.dsv
+[120.899s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/ament_index/resource_index/packages/rescue_orchestrator
+[120.962s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/cmake/rescue_orchestratorConfig.cmake
+[121.015s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/cmake/rescue_orchestratorConfig-version.cmake
+[121.069s] -- Symlinking: /home/ubuntu/turtlebot3_ws/install/rescue_orchestrator/share/rescue_orchestrator/package.xml
+[121.135s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/rescue_orchestrator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/src/install/turtlebot3_example:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/turtlebot3_ws/build/rescue_orchestrator
