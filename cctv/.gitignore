@@ -1,0 +1,5 @@
+# Ignore local recordings
+*.mp4
+
+# Misc temp
+server_tmp.txt
